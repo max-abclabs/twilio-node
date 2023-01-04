@@ -34,7 +34,7 @@ export interface FactorContextUpdateOptions {
   authPayload?: string;
   /** The new friendly name of this Factor. It can be up to 64 characters. */
   friendlyName?: string;
-  /** For APN, the device token. For FCM, the registration token. It is used to send the push notifications. Required when &#x60;factor_type&#x60; is &#x60;push&#x60;. If specified, this value must be between 32 and 255 characters long. */
+  /** For APN, the device token. For FCM, the registration token. It is used to send the push notifications. Required when `factor_type` is `push`. If specified, this value must be between 32 and 255 characters long. */
   "config.notificationToken"?: string;
   /** The Verify Push SDK version used to configure the factor */
   "config.sdkVersion"?: string;
@@ -46,7 +46,7 @@ export interface FactorContextUpdateOptions {
   "config.codeLength"?: number;
   /**  */
   "config.alg"?: FactorTotpAlgorithms;
-  /** The transport technology used to generate the Notification Token. Can be &#x60;apn&#x60;, &#x60;fcm&#x60; or &#x60;none&#x60;.  Required when &#x60;factor_type&#x60; is &#x60;push&#x60;. */
+  /** The transport technology used to generate the Notification Token. Can be `apn`, `fcm` or `none`.  Required when `factor_type` is `push`. */
   "config.notificationPlatform"?: string;
 }
 /**

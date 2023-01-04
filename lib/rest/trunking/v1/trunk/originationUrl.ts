@@ -28,11 +28,11 @@ export interface OriginationUrlContextUpdateOptions {
   weight?: number;
   /** The relative importance of the URI. Can be an integer from 0 to 65535, inclusive, and the default is 10. The lowest number represents the most important URI. */
   priority?: number;
-  /** Whether the URL is enabled. The default is &#x60;true&#x60;. */
+  /** Whether the URL is enabled. The default is `true`. */
   enabled?: boolean;
   /** A descriptive string that you create to describe the resource. It can be up to 64 characters long. */
   friendlyName?: string;
-  /** The SIP address you want Twilio to route your Origination calls to. This must be a &#x60;sip:&#x60; schema. &#x60;sips&#x60; is NOT supported. */
+  /** The SIP address you want Twilio to route your Origination calls to. This must be a `sip:` schema. `sips` is NOT supported. */
   sipUrl?: string;
 }
 
@@ -44,11 +44,11 @@ export interface OriginationUrlListInstanceCreateOptions {
   weight: number;
   /** The relative importance of the URI. Can be an integer from 0 to 65535, inclusive, and the default is 10. The lowest number represents the most important URI. */
   priority: number;
-  /** Whether the URL is enabled. The default is &#x60;true&#x60;. */
+  /** Whether the URL is enabled. The default is `true`. */
   enabled: boolean;
   /** A descriptive string that you create to describe the resource. It can be up to 64 characters long. */
   friendlyName: string;
-  /** The SIP address you want Twilio to route your Origination calls to. This must be a &#x60;sip:&#x60; schema. */
+  /** The SIP address you want Twilio to route your Origination calls to. This must be a `sip:` schema. */
   sipUrl: string;
 }
 /**

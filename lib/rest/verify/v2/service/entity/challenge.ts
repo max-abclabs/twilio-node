@@ -33,9 +33,9 @@ type ChallengeListOrders = "asc" | "desc";
  * Options to pass to update a ChallengeInstance
  */
 export interface ChallengeContextUpdateOptions {
-  /** The optional payload needed to verify the Challenge. E.g., a TOTP would use the numeric code. For &#x60;TOTP&#x60; this value must be between 3 and 8 characters long. For &#x60;Push&#x60; this value can be up to 5456 characters in length */
+  /** The optional payload needed to verify the Challenge. E.g., a TOTP would use the numeric code. For `TOTP` this value must be between 3 and 8 characters long. For `Push` this value can be up to 5456 characters in length */
   authPayload?: string;
-  /** Custom metadata associated with the challenge. This is added by the Device/SDK directly to allow for the inclusion of device information. It must be a stringified JSON with only strings values eg. &#x60;{\\\&quot;os\\\&quot;: \\\&quot;Android\\\&quot;}&#x60;. Can be up to 1024 characters in length. */
+  /** Custom metadata associated with the challenge. This is added by the Device/SDK directly to allow for the inclusion of device information. It must be a stringified JSON with only strings values eg. `{\\\"os\\\": \\\"Android\\\"}`. Can be up to 1024 characters in length. */
   metadata?: any;
 }
 
@@ -47,13 +47,13 @@ export interface ChallengeListInstanceCreateOptions {
   factorSid: string;
   /** The date-time when this Challenge expires, given in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format. The default value is five (5) minutes after Challenge creation. The max value is sixty (60) minutes after creation. */
   expirationDate?: Date;
-  /** Shown to the user when the push notification arrives. Required when &#x60;factor_type&#x60; is &#x60;push&#x60;. Can be up to 256 characters in length */
+  /** Shown to the user when the push notification arrives. Required when `factor_type` is `push`. Can be up to 256 characters in length */
   "details.message"?: string;
-  /** A list of objects that describe the Fields included in the Challenge. Each object contains the label and value of the field, the label can be up to 36 characters in length and the value can be up to 128 characters in length. Used when &#x60;factor_type&#x60; is &#x60;push&#x60;. There can be up to 20 details fields. */
+  /** A list of objects that describe the Fields included in the Challenge. Each object contains the label and value of the field, the label can be up to 36 characters in length and the value can be up to 128 characters in length. Used when `factor_type` is `push`. There can be up to 20 details fields. */
   "details.fields"?: Array<any>;
-  /** Details provided to give context about the Challenge. Not shown to the end user. It must be a stringified JSON with only strings values eg. &#x60;{\\\&quot;ip\\\&quot;: \\\&quot;172.168.1.234\\\&quot;}&#x60;. Can be up to 1024 characters in length */
+  /** Details provided to give context about the Challenge. Not shown to the end user. It must be a stringified JSON with only strings values eg. `{\\\"ip\\\": \\\"172.168.1.234\\\"}`. Can be up to 1024 characters in length */
   hiddenDetails?: any;
-  /** Optional payload used to verify the Challenge upon creation. Only used with a Factor of type &#x60;totp&#x60; to carry the TOTP code that needs to be verified. For &#x60;TOTP&#x60; this value must be between 3 and 8 characters long. */
+  /** Optional payload used to verify the Challenge upon creation. Only used with a Factor of type `totp` to carry the TOTP code that needs to be verified. For `TOTP` this value must be between 3 and 8 characters long. */
   authPayload?: string;
 }
 /**
@@ -62,9 +62,9 @@ export interface ChallengeListInstanceCreateOptions {
 export interface ChallengeListInstanceEachOptions {
   /** The unique SID identifier of the Factor. */
   factorSid?: string;
-  /** The Status of the Challenges to fetch. One of &#x60;pending&#x60;, &#x60;expired&#x60;, &#x60;approved&#x60; or &#x60;denied&#x60;. */
+  /** The Status of the Challenges to fetch. One of `pending`, `expired`, `approved` or `denied`. */
   status?: ChallengeChallengeStatuses;
-  /** The desired sort order of the Challenges list. One of &#x60;asc&#x60; or &#x60;desc&#x60; for ascending and descending respectively. Defaults to &#x60;asc&#x60;. */
+  /** The desired sort order of the Challenges list. One of `asc` or `desc` for ascending and descending respectively. Defaults to `asc`. */
   order?: ChallengeListOrders;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -82,9 +82,9 @@ export interface ChallengeListInstanceEachOptions {
 export interface ChallengeListInstanceOptions {
   /** The unique SID identifier of the Factor. */
   factorSid?: string;
-  /** The Status of the Challenges to fetch. One of &#x60;pending&#x60;, &#x60;expired&#x60;, &#x60;approved&#x60; or &#x60;denied&#x60;. */
+  /** The Status of the Challenges to fetch. One of `pending`, `expired`, `approved` or `denied`. */
   status?: ChallengeChallengeStatuses;
-  /** The desired sort order of the Challenges list. One of &#x60;asc&#x60; or &#x60;desc&#x60; for ascending and descending respectively. Defaults to &#x60;asc&#x60;. */
+  /** The desired sort order of the Challenges list. One of `asc` or `desc` for ascending and descending respectively. Defaults to `asc`. */
   order?: ChallengeListOrders;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -98,9 +98,9 @@ export interface ChallengeListInstanceOptions {
 export interface ChallengeListInstancePageOptions {
   /** The unique SID identifier of the Factor. */
   factorSid?: string;
-  /** The Status of the Challenges to fetch. One of &#x60;pending&#x60;, &#x60;expired&#x60;, &#x60;approved&#x60; or &#x60;denied&#x60;. */
+  /** The Status of the Challenges to fetch. One of `pending`, `expired`, `approved` or `denied`. */
   status?: ChallengeChallengeStatuses;
-  /** The desired sort order of the Challenges list. One of &#x60;asc&#x60; or &#x60;desc&#x60; for ascending and descending respectively. Defaults to &#x60;asc&#x60;. */
+  /** The desired sort order of the Challenges list. One of `asc` or `desc` for ascending and descending respectively. Defaults to `asc`. */
   order?: ChallengeListOrders;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

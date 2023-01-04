@@ -28,7 +28,7 @@ export interface EventListInstanceEachOptions {
   endDate?: Date;
   /** The type of Events to read. Returns only Events of the type specified. */
   eventType?: string;
-  /** The period of events to read in minutes. Returns only Events that occurred since this many minutes in the past. The default is &#x60;15&#x60; minutes. Task Attributes for Events occuring more 43,200 minutes ago will be redacted. */
+  /** The period of events to read in minutes. Returns only Events that occurred since this many minutes in the past. The default is `15` minutes. Task Attributes for Events occuring more 43,200 minutes ago will be redacted. */
   minutes?: number;
   /** The SID of the Reservation with the Events to read. Returns only Events that pertain to the specified Reservation. */
   reservationSid?: string;
@@ -64,7 +64,7 @@ export interface EventListInstanceOptions {
   endDate?: Date;
   /** The type of Events to read. Returns only Events of the type specified. */
   eventType?: string;
-  /** The period of events to read in minutes. Returns only Events that occurred since this many minutes in the past. The default is &#x60;15&#x60; minutes. Task Attributes for Events occuring more 43,200 minutes ago will be redacted. */
+  /** The period of events to read in minutes. Returns only Events that occurred since this many minutes in the past. The default is `15` minutes. Task Attributes for Events occuring more 43,200 minutes ago will be redacted. */
   minutes?: number;
   /** The SID of the Reservation with the Events to read. Returns only Events that pertain to the specified Reservation. */
   reservationSid?: string;
@@ -96,7 +96,7 @@ export interface EventListInstancePageOptions {
   endDate?: Date;
   /** The type of Events to read. Returns only Events of the type specified. */
   eventType?: string;
-  /** The period of events to read in minutes. Returns only Events that occurred since this many minutes in the past. The default is &#x60;15&#x60; minutes. Task Attributes for Events occuring more 43,200 minutes ago will be redacted. */
+  /** The period of events to read in minutes. Returns only Events that occurred since this many minutes in the past. The default is `15` minutes. Task Attributes for Events occuring more 43,200 minutes ago will be redacted. */
   minutes?: number;
   /** The SID of the Reservation with the Events to read. Returns only Events that pertain to the specified Reservation. */
   reservationSid?: string;

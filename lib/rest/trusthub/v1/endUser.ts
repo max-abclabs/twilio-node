@@ -36,7 +36,7 @@ export interface EndUserContextUpdateOptions {
 export interface EndUserListInstanceCreateOptions {
   /** The string that you assigned to describe the resource. */
   friendlyName: string;
-  /** The type of end user of the Bundle resource - can be &#x60;individual&#x60; or &#x60;business&#x60;. */
+  /** The type of end user of the Bundle resource - can be `individual` or `business`. */
   type: string;
   /** The set of parameters that are the attributes of the End User resource which are derived End User Types. */
   attributes?: any;

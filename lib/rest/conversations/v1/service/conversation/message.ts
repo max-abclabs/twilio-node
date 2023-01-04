@@ -39,15 +39,15 @@ export interface MessageContextRemoveOptions {
 export interface MessageContextUpdateOptions {
   /** The X-Twilio-Webhook-Enabled HTTP request header */
   xTwilioWebhookEnabled?: ServiceConversationMessageWebhookEnabledType;
-  /** The channel specific identifier of the message\\\&#39;s author. Defaults to &#x60;system&#x60;. */
+  /** The channel specific identifier of the message\\\'s author. Defaults to `system`. */
   author?: string;
   /** The content of the message, can be up to 1,600 characters long. */
   body?: string;
   /** The date that this resource was created. */
   dateCreated?: Date;
-  /** The date that this resource was last updated. &#x60;null&#x60; if the message has not been edited. */
+  /** The date that this resource was last updated. `null` if the message has not been edited. */
   dateUpdated?: Date;
-  /** A string metadata field you can use to store any data you wish. The string value must contain structurally valid JSON if specified.  **Note** that if the attributes are not set \\\&quot;{}\\\&quot; will be returned. */
+  /** A string metadata field you can use to store any data you wish. The string value must contain structurally valid JSON if specified.  **Note** that if the attributes are not set \\\"{}\\\" will be returned. */
   attributes?: string;
 }
 
@@ -57,15 +57,15 @@ export interface MessageContextUpdateOptions {
 export interface MessageListInstanceCreateOptions {
   /** The X-Twilio-Webhook-Enabled HTTP request header */
   xTwilioWebhookEnabled?: ServiceConversationMessageWebhookEnabledType;
-  /** The channel specific identifier of the message\\\&#39;s author. Defaults to &#x60;system&#x60;. */
+  /** The channel specific identifier of the message\\\'s author. Defaults to `system`. */
   author?: string;
   /** The content of the message, can be up to 1,600 characters long. */
   body?: string;
   /** The date that this resource was created. */
   dateCreated?: Date;
-  /** The date that this resource was last updated. &#x60;null&#x60; if the message has not been edited. */
+  /** The date that this resource was last updated. `null` if the message has not been edited. */
   dateUpdated?: Date;
-  /** A string metadata field you can use to store any data you wish. The string value must contain structurally valid JSON if specified.  **Note** that if the attributes are not set \\\&quot;{}\\\&quot; will be returned. */
+  /** A string metadata field you can use to store any data you wish. The string value must contain structurally valid JSON if specified.  **Note** that if the attributes are not set \\\"{}\\\" will be returned. */
   attributes?: string;
   /** The Media SID to be attached to the new Message. */
   mediaSid?: string;
@@ -74,7 +74,7 @@ export interface MessageListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface MessageListInstanceEachOptions {
-  /** The sort order of the returned messages. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending), with &#x60;asc&#x60; as the default. */
+  /** The sort order of the returned messages. Can be: `asc` (ascending) or `desc` (descending), with `asc` as the default. */
   order?: ServiceConversationMessageOrderType;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -90,7 +90,7 @@ export interface MessageListInstanceEachOptions {
  * Options to pass to list
  */
 export interface MessageListInstanceOptions {
-  /** The sort order of the returned messages. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending), with &#x60;asc&#x60; as the default. */
+  /** The sort order of the returned messages. Can be: `asc` (ascending) or `desc` (descending), with `asc` as the default. */
   order?: ServiceConversationMessageOrderType;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -102,7 +102,7 @@ export interface MessageListInstanceOptions {
  * Options to pass to page
  */
 export interface MessageListInstancePageOptions {
-  /** The sort order of the returned messages. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending), with &#x60;asc&#x60; as the default. */
+  /** The sort order of the returned messages. Can be: `asc` (ascending) or `desc` (descending), with `asc` as the default. */
   order?: ServiceConversationMessageOrderType;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

@@ -26,7 +26,7 @@ import { isValidPathParam } from "../../../../base/utility";
 export interface QueryContextUpdateOptions {
   /** The SID of an optional reference to the [Sample](https://www.twilio.com/docs/autopilot/api/task-sample) created from the query. */
   sampleSid?: string;
-  /** The new status of the resource. Can be: &#x60;pending-review&#x60;, &#x60;reviewed&#x60;, or &#x60;discarded&#x60; */
+  /** The new status of the resource. Can be: `pending-review`, `reviewed`, or `discarded` */
   status?: string;
 }
 
@@ -34,11 +34,11 @@ export interface QueryContextUpdateOptions {
  * Options to pass to create a QueryInstance
  */
 export interface QueryListInstanceCreateOptions {
-  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) string that specifies the language used for the new query. For example: &#x60;en-US&#x60;. */
+  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) string that specifies the language used for the new query. For example: `en-US`. */
   language: string;
-  /** The end-user\\\&#39;s natural language input. It can be up to 2048 characters long. */
+  /** The end-user\\\'s natural language input. It can be up to 2048 characters long. */
   query: string;
-  /** The list of tasks to limit the new query to. Tasks are expressed as a comma-separated list of task &#x60;unique_name&#x60; values. For example, &#x60;task-unique_name-1, task-unique_name-2&#x60;. Listing specific tasks is useful to constrain the paths that a user can take. */
+  /** The list of tasks to limit the new query to. Tasks are expressed as a comma-separated list of task `unique_name` values. For example, `task-unique_name-1, task-unique_name-2`. Listing specific tasks is useful to constrain the paths that a user can take. */
   tasks?: string;
   /** The SID or unique name of the [Model Build](https://www.twilio.com/docs/autopilot/api/model-build) to be queried. */
   modelBuild?: string;
@@ -47,11 +47,11 @@ export interface QueryListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface QueryListInstanceEachOptions {
-  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) string that specifies the language used by the Query resources to read. For example: &#x60;en-US&#x60;. */
+  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) string that specifies the language used by the Query resources to read. For example: `en-US`. */
   language?: string;
   /** The SID or unique name of the [Model Build](https://www.twilio.com/docs/autopilot/api/model-build) to be queried. */
   modelBuild?: string;
-  /** The status of the resources to read. Can be: &#x60;pending-review&#x60;, &#x60;reviewed&#x60;, or &#x60;discarded&#x60; */
+  /** The status of the resources to read. Can be: `pending-review`, `reviewed`, or `discarded` */
   status?: string;
   /** The SID of the [Dialogue](https://www.twilio.com/docs/autopilot/api/dialogue). */
   dialogueSid?: string;
@@ -69,11 +69,11 @@ export interface QueryListInstanceEachOptions {
  * Options to pass to list
  */
 export interface QueryListInstanceOptions {
-  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) string that specifies the language used by the Query resources to read. For example: &#x60;en-US&#x60;. */
+  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) string that specifies the language used by the Query resources to read. For example: `en-US`. */
   language?: string;
   /** The SID or unique name of the [Model Build](https://www.twilio.com/docs/autopilot/api/model-build) to be queried. */
   modelBuild?: string;
-  /** The status of the resources to read. Can be: &#x60;pending-review&#x60;, &#x60;reviewed&#x60;, or &#x60;discarded&#x60; */
+  /** The status of the resources to read. Can be: `pending-review`, `reviewed`, or `discarded` */
   status?: string;
   /** The SID of the [Dialogue](https://www.twilio.com/docs/autopilot/api/dialogue). */
   dialogueSid?: string;
@@ -87,11 +87,11 @@ export interface QueryListInstanceOptions {
  * Options to pass to page
  */
 export interface QueryListInstancePageOptions {
-  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) string that specifies the language used by the Query resources to read. For example: &#x60;en-US&#x60;. */
+  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) string that specifies the language used by the Query resources to read. For example: `en-US`. */
   language?: string;
   /** The SID or unique name of the [Model Build](https://www.twilio.com/docs/autopilot/api/model-build) to be queried. */
   modelBuild?: string;
-  /** The status of the resources to read. Can be: &#x60;pending-review&#x60;, &#x60;reviewed&#x60;, or &#x60;discarded&#x60; */
+  /** The status of the resources to read. Can be: `pending-review`, `reviewed`, or `discarded` */
   status?: string;
   /** The SID of the [Dialogue](https://www.twilio.com/docs/autopilot/api/dialogue). */
   dialogueSid?: string;

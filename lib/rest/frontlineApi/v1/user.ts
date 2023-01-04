@@ -30,7 +30,7 @@ export interface UserContextUpdateOptions {
   avatar?: string;
   /**  */
   state?: UserStateType;
-  /** Whether the User is available for new conversations. Set to &#x60;false&#x60; to prevent User from receiving new inbound conversations if you are using [Pool Routing](https://www.twilio.com/docs/frontline/handle-incoming-conversations#3-pool-routing). */
+  /** Whether the User is available for new conversations. Set to `false` to prevent User from receiving new inbound conversations if you are using [Pool Routing](https://www.twilio.com/docs/frontline/handle-incoming-conversations#3-pool-routing). */
   isAvailable?: boolean;
 }
 

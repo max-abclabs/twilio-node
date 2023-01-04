@@ -22,7 +22,7 @@ import { isValidPathParam } from "../../../base/utility";
  * Options to pass to update a ExportConfigurationInstance
  */
 export interface ExportConfigurationContextUpdateOptions {
-  /** If true, Twilio will automatically generate every day\\\&#39;s file when the day is over. */
+  /** If true, Twilio will automatically generate every day\\\'s file when the day is over. */
   enabled?: boolean;
   /** Stores the URL destination for the method specified in webhook_method. */
   webhookUrl?: string;

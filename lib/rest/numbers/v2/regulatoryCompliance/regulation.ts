@@ -26,9 +26,9 @@ type RegulationEndUserType = "individual" | "business";
  * Options to pass to each
  */
 export interface RegulationListInstanceEachOptions {
-  /** The type of End User the regulation requires - can be &#x60;individual&#x60; or &#x60;business&#x60;. */
+  /** The type of End User the regulation requires - can be `individual` or `business`. */
   endUserType?: RegulationEndUserType;
-  /** The ISO country code of the phone number\&#39;s country. */
+  /** The ISO country code of the phone number\'s country. */
   isoCountry?: string;
   /** The type of phone number that the regulatory requiremnt is restricting. */
   numberType?: string;
@@ -46,9 +46,9 @@ export interface RegulationListInstanceEachOptions {
  * Options to pass to list
  */
 export interface RegulationListInstanceOptions {
-  /** The type of End User the regulation requires - can be &#x60;individual&#x60; or &#x60;business&#x60;. */
+  /** The type of End User the regulation requires - can be `individual` or `business`. */
   endUserType?: RegulationEndUserType;
-  /** The ISO country code of the phone number\&#39;s country. */
+  /** The ISO country code of the phone number\'s country. */
   isoCountry?: string;
   /** The type of phone number that the regulatory requiremnt is restricting. */
   numberType?: string;
@@ -62,9 +62,9 @@ export interface RegulationListInstanceOptions {
  * Options to pass to page
  */
 export interface RegulationListInstancePageOptions {
-  /** The type of End User the regulation requires - can be &#x60;individual&#x60; or &#x60;business&#x60;. */
+  /** The type of End User the regulation requires - can be `individual` or `business`. */
   endUserType?: RegulationEndUserType;
-  /** The ISO country code of the phone number\&#39;s country. */
+  /** The ISO country code of the phone number\'s country. */
   isoCountry?: string;
   /** The type of phone number that the regulatory requiremnt is restricting. */
   numberType?: string;

@@ -37,7 +37,7 @@ export interface UserContextUpdateOptions {
  * Options to pass to create a UserInstance
  */
 export interface UserListInstanceCreateOptions {
-  /** The &#x60;identity&#x60; value that uniquely identifies the new resource\\\&#39;s [User](https://www.twilio.com/docs/api/chat/rest/v1/user) within the [Service](https://www.twilio.com/docs/api/chat/rest/v1/service). This value is often a username or email address. See the Identity documentation for more details. */
+  /** The `identity` value that uniquely identifies the new resource\\\'s [User](https://www.twilio.com/docs/api/chat/rest/v1/user) within the [Service](https://www.twilio.com/docs/api/chat/rest/v1/service). This value is often a username or email address. See the Identity documentation for more details. */
   identity: string;
   /** The SID of the [Role](https://www.twilio.com/docs/api/chat/rest/roles) assigned to the new User. */
   roleSid?: string;

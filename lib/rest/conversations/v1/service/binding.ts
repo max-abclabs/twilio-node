@@ -26,7 +26,7 @@ type ServiceBindingBindingType = "apn" | "gcm" | "fcm";
  * Options to pass to each
  */
 export interface BindingListInstanceEachOptions {
-  /** The push technology used by the Binding resources to read.  Can be: &#x60;apn&#x60;, &#x60;gcm&#x60;, or &#x60;fcm&#x60;.  See [push notification configuration](https://www.twilio.com/docs/chat/push-notification-configuration) for more info. */
+  /** The push technology used by the Binding resources to read.  Can be: `apn`, `gcm`, or `fcm`.  See [push notification configuration](https://www.twilio.com/docs/chat/push-notification-configuration) for more info. */
   bindingType?: Array<ServiceBindingBindingType>;
   /** The identity of a [Conversation User](https://www.twilio.com/docs/conversations/api/user-resource) this binding belongs to. See [access tokens](https://www.twilio.com/docs/conversations/create-tokens) for more details. */
   identity?: Array<string>;
@@ -44,7 +44,7 @@ export interface BindingListInstanceEachOptions {
  * Options to pass to list
  */
 export interface BindingListInstanceOptions {
-  /** The push technology used by the Binding resources to read.  Can be: &#x60;apn&#x60;, &#x60;gcm&#x60;, or &#x60;fcm&#x60;.  See [push notification configuration](https://www.twilio.com/docs/chat/push-notification-configuration) for more info. */
+  /** The push technology used by the Binding resources to read.  Can be: `apn`, `gcm`, or `fcm`.  See [push notification configuration](https://www.twilio.com/docs/chat/push-notification-configuration) for more info. */
   bindingType?: Array<ServiceBindingBindingType>;
   /** The identity of a [Conversation User](https://www.twilio.com/docs/conversations/api/user-resource) this binding belongs to. See [access tokens](https://www.twilio.com/docs/conversations/create-tokens) for more details. */
   identity?: Array<string>;
@@ -58,7 +58,7 @@ export interface BindingListInstanceOptions {
  * Options to pass to page
  */
 export interface BindingListInstancePageOptions {
-  /** The push technology used by the Binding resources to read.  Can be: &#x60;apn&#x60;, &#x60;gcm&#x60;, or &#x60;fcm&#x60;.  See [push notification configuration](https://www.twilio.com/docs/chat/push-notification-configuration) for more info. */
+  /** The push technology used by the Binding resources to read.  Can be: `apn`, `gcm`, or `fcm`.  See [push notification configuration](https://www.twilio.com/docs/chat/push-notification-configuration) for more info. */
   bindingType?: Array<ServiceBindingBindingType>;
   /** The identity of a [Conversation User](https://www.twilio.com/docs/conversations/api/user-resource) this binding belongs to. See [access tokens](https://www.twilio.com/docs/conversations/create-tokens) for more details. */
   identity?: Array<string>;

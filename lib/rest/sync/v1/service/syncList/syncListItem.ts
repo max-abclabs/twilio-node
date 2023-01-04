@@ -40,11 +40,11 @@ export interface SyncListItemContextUpdateOptions {
   ifMatch?: string;
   /** A JSON string that represents an arbitrary, schema-less object that the List Item stores. Can be up to 16 KiB in length. */
   data?: any;
-  /** An alias for &#x60;item_ttl&#x60;. If both parameters are provided, this value is ignored. */
+  /** An alias for `item_ttl`. If both parameters are provided, this value is ignored. */
   ttl?: number;
   /** How long, [in seconds](https://www.twilio.com/docs/sync/limits#sync-payload-limits), before the List Item expires (time-to-live) and is deleted. */
   itemTtl?: number;
-  /** How long, [in seconds](https://www.twilio.com/docs/sync/limits#sync-payload-limits), before the List Item\\\&#39;s parent Sync List expires (time-to-live) and is deleted. This parameter can only be used when the List Item\\\&#39;s &#x60;data&#x60; or &#x60;ttl&#x60; is updated in the same request. */
+  /** How long, [in seconds](https://www.twilio.com/docs/sync/limits#sync-payload-limits), before the List Item\\\'s parent Sync List expires (time-to-live) and is deleted. This parameter can only be used when the List Item\\\'s `data` or `ttl` is updated in the same request. */
   collectionTtl?: number;
 }
 
@@ -54,22 +54,22 @@ export interface SyncListItemContextUpdateOptions {
 export interface SyncListItemListInstanceCreateOptions {
   /** A JSON string that represents an arbitrary, schema-less object that the List Item stores. Can be up to 16 KiB in length. */
   data: any;
-  /** An alias for &#x60;item_ttl&#x60;. If both parameters are provided, this value is ignored. */
+  /** An alias for `item_ttl`. If both parameters are provided, this value is ignored. */
   ttl?: number;
   /** How long, [in seconds](https://www.twilio.com/docs/sync/limits#sync-payload-limits), before the List Item expires (time-to-live) and is deleted. */
   itemTtl?: number;
-  /** How long, [in seconds](https://www.twilio.com/docs/sync/limits#sync-payload-limits), before the List Item\\\&#39;s parent Sync List expires (time-to-live) and is deleted. */
+  /** How long, [in seconds](https://www.twilio.com/docs/sync/limits#sync-payload-limits), before the List Item\\\'s parent Sync List expires (time-to-live) and is deleted. */
   collectionTtl?: number;
 }
 /**
  * Options to pass to each
  */
 export interface SyncListItemListInstanceEachOptions {
-  /** How to order the List Items returned by their &#x60;index&#x60; value. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending) and the default is ascending. */
+  /** How to order the List Items returned by their `index` value. Can be: `asc` (ascending) or `desc` (descending) and the default is ascending. */
   order?: SyncListItemQueryResultOrder;
-  /** The &#x60;index&#x60; of the first Sync List Item resource to read. See also &#x60;bounds&#x60;. */
+  /** The `index` of the first Sync List Item resource to read. See also `bounds`. */
   from?: string;
-  /** Whether to include the List Item referenced by the &#x60;from&#x60; parameter. Can be: &#x60;inclusive&#x60; to include the List Item referenced by the &#x60;from&#x60; parameter or &#x60;exclusive&#x60; to start with the next List Item. The default value is &#x60;inclusive&#x60;. */
+  /** Whether to include the List Item referenced by the `from` parameter. Can be: `inclusive` to include the List Item referenced by the `from` parameter or `exclusive` to start with the next List Item. The default value is `inclusive`. */
   bounds?: SyncListItemQueryFromBoundType;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -85,11 +85,11 @@ export interface SyncListItemListInstanceEachOptions {
  * Options to pass to list
  */
 export interface SyncListItemListInstanceOptions {
-  /** How to order the List Items returned by their &#x60;index&#x60; value. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending) and the default is ascending. */
+  /** How to order the List Items returned by their `index` value. Can be: `asc` (ascending) or `desc` (descending) and the default is ascending. */
   order?: SyncListItemQueryResultOrder;
-  /** The &#x60;index&#x60; of the first Sync List Item resource to read. See also &#x60;bounds&#x60;. */
+  /** The `index` of the first Sync List Item resource to read. See also `bounds`. */
   from?: string;
-  /** Whether to include the List Item referenced by the &#x60;from&#x60; parameter. Can be: &#x60;inclusive&#x60; to include the List Item referenced by the &#x60;from&#x60; parameter or &#x60;exclusive&#x60; to start with the next List Item. The default value is &#x60;inclusive&#x60;. */
+  /** Whether to include the List Item referenced by the `from` parameter. Can be: `inclusive` to include the List Item referenced by the `from` parameter or `exclusive` to start with the next List Item. The default value is `inclusive`. */
   bounds?: SyncListItemQueryFromBoundType;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -101,11 +101,11 @@ export interface SyncListItemListInstanceOptions {
  * Options to pass to page
  */
 export interface SyncListItemListInstancePageOptions {
-  /** How to order the List Items returned by their &#x60;index&#x60; value. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending) and the default is ascending. */
+  /** How to order the List Items returned by their `index` value. Can be: `asc` (ascending) or `desc` (descending) and the default is ascending. */
   order?: SyncListItemQueryResultOrder;
-  /** The &#x60;index&#x60; of the first Sync List Item resource to read. See also &#x60;bounds&#x60;. */
+  /** The `index` of the first Sync List Item resource to read. See also `bounds`. */
   from?: string;
-  /** Whether to include the List Item referenced by the &#x60;from&#x60; parameter. Can be: &#x60;inclusive&#x60; to include the List Item referenced by the &#x60;from&#x60; parameter or &#x60;exclusive&#x60; to start with the next List Item. The default value is &#x60;inclusive&#x60;. */
+  /** Whether to include the List Item referenced by the `from` parameter. Can be: `inclusive` to include the List Item referenced by the `from` parameter or `exclusive` to start with the next List Item. The default value is `inclusive`. */
   bounds?: SyncListItemQueryFromBoundType;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

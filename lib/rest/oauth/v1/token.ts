@@ -22,7 +22,7 @@ import { isValidPathParam } from "../../../base/utility";
  * Options to pass to create a TokenInstance
  */
 export interface TokenListInstanceCreateOptions {
-  /** Grant type is a credential representing resource owner\\\&#39;s authorization which can be used by client to obtain access token. */
+  /** Grant type is a credential representing resource owner\\\'s authorization which can be used by client to obtain access token. */
   grantType: string;
   /** A 34 character string that uniquely identifies this OAuth App. */
   clientSid: string;

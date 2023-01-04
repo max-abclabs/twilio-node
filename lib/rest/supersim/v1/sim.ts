@@ -30,17 +30,17 @@ type SimStatusUpdate = "ready" | "active" | "inactive";
  * Options to pass to update a SimInstance
  */
 export interface SimContextUpdateOptions {
-  /** An application-defined string that uniquely identifies the resource. It can be used in place of the resource\\\&#39;s &#x60;sid&#x60; in the URL to address the resource. */
+  /** An application-defined string that uniquely identifies the resource. It can be used in place of the resource\\\'s `sid` in the URL to address the resource. */
   uniqueName?: string;
   /**  */
   status?: SimStatusUpdate;
   /** The SID or unique name of the Fleet to which the SIM resource should be assigned. */
   fleet?: string;
-  /** The URL we should call using the &#x60;callback_method&#x60; after an asynchronous update has finished. */
+  /** The URL we should call using the `callback_method` after an asynchronous update has finished. */
   callbackUrl?: string;
-  /** The HTTP method we should use to call &#x60;callback_url&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60; and the default is POST. */
+  /** The HTTP method we should use to call `callback_url`. Can be: `GET` or `POST` and the default is POST. */
   callbackMethod?: string;
-  /** The SID of the Account to which the Sim resource should belong. The Account SID can only be that of the requesting Account or that of a Subaccount of the requesting Account. Only valid when the Sim resource\\\&#39;s status is new. */
+  /** The SID of the Account to which the Sim resource should belong. The Account SID can only be that of the requesting Account or that of a Subaccount of the requesting Account. Only valid when the Sim resource\\\'s status is new. */
   accountSid?: string;
 }
 
@@ -57,7 +57,7 @@ export interface SimListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface SimListInstanceEachOptions {
-  /** The status of the Sim resources to read. Can be &#x60;new&#x60;, &#x60;ready&#x60;, &#x60;active&#x60;, &#x60;inactive&#x60;, or &#x60;scheduled&#x60;. */
+  /** The status of the Sim resources to read. Can be `new`, `ready`, `active`, `inactive`, or `scheduled`. */
   status?: SimStatus;
   /** The SID or unique name of the Fleet to which a list of Sims are assigned. */
   fleet?: string;
@@ -77,7 +77,7 @@ export interface SimListInstanceEachOptions {
  * Options to pass to list
  */
 export interface SimListInstanceOptions {
-  /** The status of the Sim resources to read. Can be &#x60;new&#x60;, &#x60;ready&#x60;, &#x60;active&#x60;, &#x60;inactive&#x60;, or &#x60;scheduled&#x60;. */
+  /** The status of the Sim resources to read. Can be `new`, `ready`, `active`, `inactive`, or `scheduled`. */
   status?: SimStatus;
   /** The SID or unique name of the Fleet to which a list of Sims are assigned. */
   fleet?: string;
@@ -93,7 +93,7 @@ export interface SimListInstanceOptions {
  * Options to pass to page
  */
 export interface SimListInstancePageOptions {
-  /** The status of the Sim resources to read. Can be &#x60;new&#x60;, &#x60;ready&#x60;, &#x60;active&#x60;, &#x60;inactive&#x60;, or &#x60;scheduled&#x60;. */
+  /** The status of the Sim resources to read. Can be `new`, `ready`, `active`, `inactive`, or `scheduled`. */
   status?: SimStatus;
   /** The SID or unique name of the Fleet to which a list of Sims are assigned. */
   fleet?: string;

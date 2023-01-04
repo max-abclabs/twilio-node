@@ -22,7 +22,7 @@ import { isValidPathParam } from "../../../../base/utility";
  * Options to pass to fetch a WorkspaceRealTimeStatisticsInstance
  */
 export interface WorkspaceRealTimeStatisticsContextFetchOptions {
-  /** Only calculate real-time statistics on this TaskChannel. Can be the TaskChannel\&#39;s SID or its &#x60;unique_name&#x60;, such as &#x60;voice&#x60;, &#x60;sms&#x60;, or &#x60;default&#x60;. */
+  /** Only calculate real-time statistics on this TaskChannel. Can be the TaskChannel\'s SID or its `unique_name`, such as `voice`, `sms`, or `default`. */
   taskChannel?: string;
 }
 

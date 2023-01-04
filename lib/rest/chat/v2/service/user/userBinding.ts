@@ -26,7 +26,7 @@ type UserBindingBindingType = "gcm" | "apn" | "fcm";
  * Options to pass to each
  */
 export interface UserBindingListInstanceEachOptions {
-  /** The push technology used by the User Binding resources to read. Can be: &#x60;apn&#x60;, &#x60;gcm&#x60;, or &#x60;fcm&#x60;.  See [push notification configuration](https://www.twilio.com/docs/chat/push-notification-configuration) for more info. */
+  /** The push technology used by the User Binding resources to read. Can be: `apn`, `gcm`, or `fcm`.  See [push notification configuration](https://www.twilio.com/docs/chat/push-notification-configuration) for more info. */
   bindingType?: Array<UserBindingBindingType>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -42,7 +42,7 @@ export interface UserBindingListInstanceEachOptions {
  * Options to pass to list
  */
 export interface UserBindingListInstanceOptions {
-  /** The push technology used by the User Binding resources to read. Can be: &#x60;apn&#x60;, &#x60;gcm&#x60;, or &#x60;fcm&#x60;.  See [push notification configuration](https://www.twilio.com/docs/chat/push-notification-configuration) for more info. */
+  /** The push technology used by the User Binding resources to read. Can be: `apn`, `gcm`, or `fcm`.  See [push notification configuration](https://www.twilio.com/docs/chat/push-notification-configuration) for more info. */
   bindingType?: Array<UserBindingBindingType>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -54,7 +54,7 @@ export interface UserBindingListInstanceOptions {
  * Options to pass to page
  */
 export interface UserBindingListInstancePageOptions {
-  /** The push technology used by the User Binding resources to read. Can be: &#x60;apn&#x60;, &#x60;gcm&#x60;, or &#x60;fcm&#x60;.  See [push notification configuration](https://www.twilio.com/docs/chat/push-notification-configuration) for more info. */
+  /** The push technology used by the User Binding resources to read. Can be: `apn`, `gcm`, or `fcm`.  See [push notification configuration](https://www.twilio.com/docs/chat/push-notification-configuration) for more info. */
   bindingType?: Array<UserBindingBindingType>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

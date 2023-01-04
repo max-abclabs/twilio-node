@@ -42,7 +42,7 @@ type InteractionChannelType =
 export interface InteractionChannelContextUpdateOptions {
   /**  */
   status: InteractionChannelStatus;
-  /** Optional. The state of associated tasks. If not specified, all tasks will be set to &#x60;wrapping&#x60;. */
+  /** Optional. The state of associated tasks. If not specified, all tasks will be set to `wrapping`. */
   routing?: any;
 }
 /**

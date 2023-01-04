@@ -30,9 +30,9 @@ type SettingsUpdateStatus =
  * Options to pass to each
  */
 export interface SettingsUpdateListInstanceEachOptions {
-  /** Filter the Settings Updates by a Super SIM\&#39;s SID or UniqueName. */
+  /** Filter the Settings Updates by a Super SIM\'s SID or UniqueName. */
   sim?: string;
-  /** Filter the Settings Updates by status. Can be &#x60;scheduled&#x60;, &#x60;in-progress&#x60;, &#x60;successful&#x60;, or &#x60;failed&#x60;. */
+  /** Filter the Settings Updates by status. Can be `scheduled`, `in-progress`, `successful`, or `failed`. */
   status?: SettingsUpdateStatus;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -51,9 +51,9 @@ export interface SettingsUpdateListInstanceEachOptions {
  * Options to pass to list
  */
 export interface SettingsUpdateListInstanceOptions {
-  /** Filter the Settings Updates by a Super SIM\&#39;s SID or UniqueName. */
+  /** Filter the Settings Updates by a Super SIM\'s SID or UniqueName. */
   sim?: string;
-  /** Filter the Settings Updates by status. Can be &#x60;scheduled&#x60;, &#x60;in-progress&#x60;, &#x60;successful&#x60;, or &#x60;failed&#x60;. */
+  /** Filter the Settings Updates by status. Can be `scheduled`, `in-progress`, `successful`, or `failed`. */
   status?: SettingsUpdateStatus;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -65,9 +65,9 @@ export interface SettingsUpdateListInstanceOptions {
  * Options to pass to page
  */
 export interface SettingsUpdateListInstancePageOptions {
-  /** Filter the Settings Updates by a Super SIM\&#39;s SID or UniqueName. */
+  /** Filter the Settings Updates by a Super SIM\'s SID or UniqueName. */
   sim?: string;
-  /** Filter the Settings Updates by status. Can be &#x60;scheduled&#x60;, &#x60;in-progress&#x60;, &#x60;successful&#x60;, or &#x60;failed&#x60;. */
+  /** Filter the Settings Updates by status. Can be `scheduled`, `in-progress`, `successful`, or `failed`. */
   status?: SettingsUpdateStatus;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

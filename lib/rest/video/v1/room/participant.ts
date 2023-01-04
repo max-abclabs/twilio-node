@@ -37,9 +37,9 @@ export interface ParticipantContextUpdateOptions {
  * Options to pass to each
  */
 export interface ParticipantListInstanceEachOptions {
-  /** Read only the participants with this status. Can be: &#x60;connected&#x60; or &#x60;disconnected&#x60;. For &#x60;in-progress&#x60; Rooms the default Status is &#x60;connected&#x60;, for &#x60;completed&#x60; Rooms only &#x60;disconnected&#x60; Participants are returned. */
+  /** Read only the participants with this status. Can be: `connected` or `disconnected`. For `in-progress` Rooms the default Status is `connected`, for `completed` Rooms only `disconnected` Participants are returned. */
   status?: RoomParticipantStatus;
-  /** Read only the Participants with this [User](https://www.twilio.com/docs/chat/rest/user-resource) &#x60;identity&#x60; value. */
+  /** Read only the Participants with this [User](https://www.twilio.com/docs/chat/rest/user-resource) `identity` value. */
   identity?: string;
   /** Read only Participants that started after this date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#UTC) format. */
   dateCreatedAfter?: Date;
@@ -59,9 +59,9 @@ export interface ParticipantListInstanceEachOptions {
  * Options to pass to list
  */
 export interface ParticipantListInstanceOptions {
-  /** Read only the participants with this status. Can be: &#x60;connected&#x60; or &#x60;disconnected&#x60;. For &#x60;in-progress&#x60; Rooms the default Status is &#x60;connected&#x60;, for &#x60;completed&#x60; Rooms only &#x60;disconnected&#x60; Participants are returned. */
+  /** Read only the participants with this status. Can be: `connected` or `disconnected`. For `in-progress` Rooms the default Status is `connected`, for `completed` Rooms only `disconnected` Participants are returned. */
   status?: RoomParticipantStatus;
-  /** Read only the Participants with this [User](https://www.twilio.com/docs/chat/rest/user-resource) &#x60;identity&#x60; value. */
+  /** Read only the Participants with this [User](https://www.twilio.com/docs/chat/rest/user-resource) `identity` value. */
   identity?: string;
   /** Read only Participants that started after this date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#UTC) format. */
   dateCreatedAfter?: Date;
@@ -77,9 +77,9 @@ export interface ParticipantListInstanceOptions {
  * Options to pass to page
  */
 export interface ParticipantListInstancePageOptions {
-  /** Read only the participants with this status. Can be: &#x60;connected&#x60; or &#x60;disconnected&#x60;. For &#x60;in-progress&#x60; Rooms the default Status is &#x60;connected&#x60;, for &#x60;completed&#x60; Rooms only &#x60;disconnected&#x60; Participants are returned. */
+  /** Read only the participants with this status. Can be: `connected` or `disconnected`. For `in-progress` Rooms the default Status is `connected`, for `completed` Rooms only `disconnected` Participants are returned. */
   status?: RoomParticipantStatus;
-  /** Read only the Participants with this [User](https://www.twilio.com/docs/chat/rest/user-resource) &#x60;identity&#x60; value. */
+  /** Read only the Participants with this [User](https://www.twilio.com/docs/chat/rest/user-resource) `identity` value. */
   identity?: string;
   /** Read only Participants that started after this date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#UTC) format. */
   dateCreatedAfter?: Date;

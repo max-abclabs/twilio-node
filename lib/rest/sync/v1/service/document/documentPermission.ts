@@ -24,11 +24,11 @@ import { isValidPathParam } from "../../../../../base/utility";
  * Options to pass to update a DocumentPermissionInstance
  */
 export interface DocumentPermissionContextUpdateOptions {
-  /** Whether the identity can read the Sync Document. Default value is &#x60;false&#x60;. */
+  /** Whether the identity can read the Sync Document. Default value is `false`. */
   read: boolean;
-  /** Whether the identity can update the Sync Document. Default value is &#x60;false&#x60;. */
+  /** Whether the identity can update the Sync Document. Default value is `false`. */
   write: boolean;
-  /** Whether the identity can delete the Sync Document. Default value is &#x60;false&#x60;. */
+  /** Whether the identity can delete the Sync Document. Default value is `false`. */
   manage: boolean;
 }
 /**

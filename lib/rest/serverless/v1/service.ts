@@ -32,7 +32,7 @@ export interface ServiceContextUpdateOptions {
   includeCredentials?: boolean;
   /** A descriptive string that you create to describe the Service resource. It can be a maximum of 255 characters. */
   friendlyName?: string;
-  /** Whether the Service resource\\\&#39;s properties and subresources can be edited via the UI. The default value is &#x60;false&#x60;. */
+  /** Whether the Service resource\\\'s properties and subresources can be edited via the UI. The default value is `false`. */
   uiEditable?: boolean;
 }
 
@@ -40,13 +40,13 @@ export interface ServiceContextUpdateOptions {
  * Options to pass to create a ServiceInstance
  */
 export interface ServiceListInstanceCreateOptions {
-  /** A user-defined string that uniquely identifies the Service resource. It can be used as an alternative to the &#x60;sid&#x60; in the URL path to address the Service resource. This value must be 50 characters or less in length and be unique. */
+  /** A user-defined string that uniquely identifies the Service resource. It can be used as an alternative to the `sid` in the URL path to address the Service resource. This value must be 50 characters or less in length and be unique. */
   uniqueName: string;
   /** A descriptive string that you create to describe the Service resource. It can be a maximum of 255 characters. */
   friendlyName: string;
-  /** Whether to inject Account credentials into a function invocation context. The default value is &#x60;true&#x60;. */
+  /** Whether to inject Account credentials into a function invocation context. The default value is `true`. */
   includeCredentials?: boolean;
-  /** Whether the Service\\\&#39;s properties and subresources can be edited via the UI. The default value is &#x60;false&#x60;. */
+  /** Whether the Service\\\'s properties and subresources can be edited via the UI. The default value is `false`. */
   uiEditable?: boolean;
 }
 /**

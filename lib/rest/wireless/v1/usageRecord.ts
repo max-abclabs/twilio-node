@@ -30,7 +30,7 @@ export interface UsageRecordListInstanceEachOptions {
   end?: Date;
   /** Only include usage that has occurred on or after this date. Format is [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html). */
   start?: Date;
-  /** How to summarize the usage by time. Can be: &#x60;daily&#x60;, &#x60;hourly&#x60;, or &#x60;all&#x60;. A value of &#x60;all&#x60; returns one Usage Record that describes the usage for the entire period. */
+  /** How to summarize the usage by time. Can be: `daily`, `hourly`, or `all`. A value of `all` returns one Usage Record that describes the usage for the entire period. */
   granularity?: AccountUsageRecordGranularity;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -50,7 +50,7 @@ export interface UsageRecordListInstanceOptions {
   end?: Date;
   /** Only include usage that has occurred on or after this date. Format is [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html). */
   start?: Date;
-  /** How to summarize the usage by time. Can be: &#x60;daily&#x60;, &#x60;hourly&#x60;, or &#x60;all&#x60;. A value of &#x60;all&#x60; returns one Usage Record that describes the usage for the entire period. */
+  /** How to summarize the usage by time. Can be: `daily`, `hourly`, or `all`. A value of `all` returns one Usage Record that describes the usage for the entire period. */
   granularity?: AccountUsageRecordGranularity;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -66,7 +66,7 @@ export interface UsageRecordListInstancePageOptions {
   end?: Date;
   /** Only include usage that has occurred on or after this date. Format is [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html). */
   start?: Date;
-  /** How to summarize the usage by time. Can be: &#x60;daily&#x60;, &#x60;hourly&#x60;, or &#x60;all&#x60;. A value of &#x60;all&#x60; returns one Usage Record that describes the usage for the entire period. */
+  /** How to summarize the usage by time. Can be: `daily`, `hourly`, or `all`. A value of `all` returns one Usage Record that describes the usage for the entire period. */
   granularity?: AccountUsageRecordGranularity;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

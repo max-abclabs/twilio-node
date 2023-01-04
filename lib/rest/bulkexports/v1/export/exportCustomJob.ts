@@ -30,11 +30,11 @@ export interface ExportCustomJobListInstanceCreateOptions {
   endDay: string;
   /** The friendly name specified when creating the job */
   friendlyName: string;
-  /** The optional webhook url called on completion of the job. If this is supplied, &#x60;WebhookMethod&#x60; must also be supplied. If you set neither webhook nor email, you will have to check your job\\\&#39;s status manually. */
+  /** The optional webhook url called on completion of the job. If this is supplied, `WebhookMethod` must also be supplied. If you set neither webhook nor email, you will have to check your job\\\'s status manually. */
   webhookUrl?: string;
-  /** This is the method used to call the webhook on completion of the job. If this is supplied, &#x60;WebhookUrl&#x60; must also be supplied. */
+  /** This is the method used to call the webhook on completion of the job. If this is supplied, `WebhookUrl` must also be supplied. */
   webhookMethod?: string;
-  /** The optional email to send the completion notification to. You can set both webhook, and email, or one or the other. If you set neither, the job will run but you will have to query to determine your job\\\&#39;s status. */
+  /** The optional email to send the completion notification to. You can set both webhook, and email, or one or the other. If you set neither, the job will run but you will have to query to determine your job\\\'s status. */
   email?: string;
 }
 /**

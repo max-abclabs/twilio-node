@@ -26,7 +26,7 @@ type MessageOrderType = "asc" | "desc";
  * Options to pass to update a MessageInstance
  */
 export interface MessageContextUpdateOptions {
-  /** The message to send to the channel. Can also be an empty string or &#x60;null&#x60;, which sets the value as an empty string. You can send structured data in the body by serializing it as a string. */
+  /** The message to send to the channel. Can also be an empty string or `null`, which sets the value as an empty string. You can send structured data in the body by serializing it as a string. */
   body?: string;
   /** A valid JSON string that contains application-specific data. */
   attributes?: string;
@@ -36,9 +36,9 @@ export interface MessageContextUpdateOptions {
  * Options to pass to create a MessageInstance
  */
 export interface MessageListInstanceCreateOptions {
-  /** The message to send to the channel. Can also be an empty string or &#x60;null&#x60;, which sets the value as an empty string. You can send structured data in the body by serializing it as a string. */
+  /** The message to send to the channel. Can also be an empty string or `null`, which sets the value as an empty string. You can send structured data in the body by serializing it as a string. */
   body: string;
-  /** The [identity](https://www.twilio.com/docs/api/chat/guides/identity) of the new message\\\&#39;s author. The default value is &#x60;system&#x60;. */
+  /** The [identity](https://www.twilio.com/docs/api/chat/guides/identity) of the new message\\\'s author. The default value is `system`. */
   from?: string;
   /** A valid JSON string that contains application-specific data. */
   attributes?: string;
@@ -47,7 +47,7 @@ export interface MessageListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface MessageListInstanceEachOptions {
-  /** The sort order of the returned messages. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending) with &#x60;asc&#x60; as the default. */
+  /** The sort order of the returned messages. Can be: `asc` (ascending) or `desc` (descending) with `asc` as the default. */
   order?: MessageOrderType;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -63,7 +63,7 @@ export interface MessageListInstanceEachOptions {
  * Options to pass to list
  */
 export interface MessageListInstanceOptions {
-  /** The sort order of the returned messages. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending) with &#x60;asc&#x60; as the default. */
+  /** The sort order of the returned messages. Can be: `asc` (ascending) or `desc` (descending) with `asc` as the default. */
   order?: MessageOrderType;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -75,7 +75,7 @@ export interface MessageListInstanceOptions {
  * Options to pass to page
  */
 export interface MessageListInstancePageOptions {
-  /** The sort order of the returned messages. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending) with &#x60;asc&#x60; as the default. */
+  /** The sort order of the returned messages. Can be: `asc` (ascending) or `desc` (descending) with `asc` as the default. */
   order?: MessageOrderType;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

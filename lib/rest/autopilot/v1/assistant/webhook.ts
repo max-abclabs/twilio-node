@@ -24,13 +24,13 @@ import { isValidPathParam } from "../../../../base/utility";
  * Options to pass to update a WebhookInstance
  */
 export interface WebhookContextUpdateOptions {
-  /** An application-defined string that uniquely identifies the new resource. It can be used as an alternative to the &#x60;sid&#x60; in the URL path to address the resource. This value must be unique and 64 characters or less in length. */
+  /** An application-defined string that uniquely identifies the new resource. It can be used as an alternative to the `sid` in the URL path to address the resource. This value must be unique and 64 characters or less in length. */
   uniqueName?: string;
   /** The list of space-separated events that this Webhook will subscribe to. */
   events?: string;
   /** The URL associated with this Webhook. */
   webhookUrl?: string;
-  /** The method to be used when calling the webhook\\\&#39;s URL. */
+  /** The method to be used when calling the webhook\\\'s URL. */
   webhookMethod?: string;
 }
 
@@ -38,13 +38,13 @@ export interface WebhookContextUpdateOptions {
  * Options to pass to create a WebhookInstance
  */
 export interface WebhookListInstanceCreateOptions {
-  /** An application-defined string that uniquely identifies the new resource. It can be used as an alternative to the &#x60;sid&#x60; in the URL path to address the resource. This value must be unique and 64 characters or less in length. */
+  /** An application-defined string that uniquely identifies the new resource. It can be used as an alternative to the `sid` in the URL path to address the resource. This value must be unique and 64 characters or less in length. */
   uniqueName: string;
   /** The list of space-separated events that this Webhook will subscribe to. */
   events: string;
   /** The URL associated with this Webhook. */
   webhookUrl: string;
-  /** The method to be used when calling the webhook\\\&#39;s URL. */
+  /** The method to be used when calling the webhook\\\'s URL. */
   webhookMethod?: string;
 }
 /**

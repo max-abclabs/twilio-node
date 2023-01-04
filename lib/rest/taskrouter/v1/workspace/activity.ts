@@ -24,7 +24,7 @@ import { isValidPathParam } from "../../../../base/utility";
  * Options to pass to update a ActivityInstance
  */
 export interface ActivityContextUpdateOptions {
-  /** A descriptive string that you create to describe the Activity resource. It can be up to 64 characters long. These names are used to calculate and expose statistics about Workers, and provide visibility into the state of each Worker. Examples of friendly names include: &#x60;on-call&#x60;, &#x60;break&#x60;, and &#x60;email&#x60;. */
+  /** A descriptive string that you create to describe the Activity resource. It can be up to 64 characters long. These names are used to calculate and expose statistics about Workers, and provide visibility into the state of each Worker. Examples of friendly names include: `on-call`, `break`, and `email`. */
   friendlyName?: string;
 }
 
@@ -32,18 +32,18 @@ export interface ActivityContextUpdateOptions {
  * Options to pass to create a ActivityInstance
  */
 export interface ActivityListInstanceCreateOptions {
-  /** A descriptive string that you create to describe the Activity resource. It can be up to 64 characters long. These names are used to calculate and expose statistics about Workers, and provide visibility into the state of each Worker. Examples of friendly names include: &#x60;on-call&#x60;, &#x60;break&#x60;, and &#x60;email&#x60;. */
+  /** A descriptive string that you create to describe the Activity resource. It can be up to 64 characters long. These names are used to calculate and expose statistics about Workers, and provide visibility into the state of each Worker. Examples of friendly names include: `on-call`, `break`, and `email`. */
   friendlyName: string;
-  /** Whether the Worker should be eligible to receive a Task when it occupies the Activity. A value of &#x60;true&#x60;, &#x60;1&#x60;, or &#x60;yes&#x60; specifies the Activity is available. All other values specify that it is not. The value cannot be changed after the Activity is created. */
+  /** Whether the Worker should be eligible to receive a Task when it occupies the Activity. A value of `true`, `1`, or `yes` specifies the Activity is available. All other values specify that it is not. The value cannot be changed after the Activity is created. */
   available?: boolean;
 }
 /**
  * Options to pass to each
  */
 export interface ActivityListInstanceEachOptions {
-  /** The &#x60;friendly_name&#x60; of the Activity resources to read. */
+  /** The `friendly_name` of the Activity resources to read. */
   friendlyName?: string;
-  /** Whether return only Activity resources that are available or unavailable. A value of &#x60;true&#x60; returns only available activities. Values of \&#39;1\&#39; or &#x60;yes&#x60; also indicate &#x60;true&#x60;. All other values represent &#x60;false&#x60; and return activities that are unavailable. */
+  /** Whether return only Activity resources that are available or unavailable. A value of `true` returns only available activities. Values of \'1\' or `yes` also indicate `true`. All other values represent `false` and return activities that are unavailable. */
   available?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -59,9 +59,9 @@ export interface ActivityListInstanceEachOptions {
  * Options to pass to list
  */
 export interface ActivityListInstanceOptions {
-  /** The &#x60;friendly_name&#x60; of the Activity resources to read. */
+  /** The `friendly_name` of the Activity resources to read. */
   friendlyName?: string;
-  /** Whether return only Activity resources that are available or unavailable. A value of &#x60;true&#x60; returns only available activities. Values of \&#39;1\&#39; or &#x60;yes&#x60; also indicate &#x60;true&#x60;. All other values represent &#x60;false&#x60; and return activities that are unavailable. */
+  /** Whether return only Activity resources that are available or unavailable. A value of `true` returns only available activities. Values of \'1\' or `yes` also indicate `true`. All other values represent `false` and return activities that are unavailable. */
   available?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -73,9 +73,9 @@ export interface ActivityListInstanceOptions {
  * Options to pass to page
  */
 export interface ActivityListInstancePageOptions {
-  /** The &#x60;friendly_name&#x60; of the Activity resources to read. */
+  /** The `friendly_name` of the Activity resources to read. */
   friendlyName?: string;
-  /** Whether return only Activity resources that are available or unavailable. A value of &#x60;true&#x60; returns only available activities. Values of \&#39;1\&#39; or &#x60;yes&#x60; also indicate &#x60;true&#x60;. All other values represent &#x60;false&#x60; and return activities that are unavailable. */
+  /** Whether return only Activity resources that are available or unavailable. A value of `true` returns only available activities. Values of \'1\' or `yes` also indicate `true`. All other values represent `false` and return activities that are unavailable. */
   available?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

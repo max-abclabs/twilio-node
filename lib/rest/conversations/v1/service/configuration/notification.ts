@@ -24,29 +24,29 @@ import { isValidPathParam } from "../../../../../base/utility";
 export interface NotificationContextUpdateOptions {
   /** Weather the notification logging is enabled. */
   logEnabled?: boolean;
-  /** Whether to send a notification when a new message is added to a conversation. The default is &#x60;false&#x60;. */
+  /** Whether to send a notification when a new message is added to a conversation. The default is `false`. */
   "newMessage.enabled"?: boolean;
-  /** The template to use to create the notification text displayed when a new message is added to a conversation and &#x60;new_message.enabled&#x60; is &#x60;true&#x60;. */
+  /** The template to use to create the notification text displayed when a new message is added to a conversation and `new_message.enabled` is `true`. */
   "newMessage.template"?: string;
-  /** The name of the sound to play when a new message is added to a conversation and &#x60;new_message.enabled&#x60; is &#x60;true&#x60;. */
+  /** The name of the sound to play when a new message is added to a conversation and `new_message.enabled` is `true`. */
   "newMessage.sound"?: string;
-  /** Whether the new message badge is enabled. The default is &#x60;false&#x60;. */
+  /** Whether the new message badge is enabled. The default is `false`. */
   "newMessage.badgeCountEnabled"?: boolean;
-  /** Whether to send a notification when a participant is added to a conversation. The default is &#x60;false&#x60;. */
+  /** Whether to send a notification when a participant is added to a conversation. The default is `false`. */
   "addedToConversation.enabled"?: boolean;
-  /** The template to use to create the notification text displayed when a participant is added to a conversation and &#x60;added_to_conversation.enabled&#x60; is &#x60;true&#x60;. */
+  /** The template to use to create the notification text displayed when a participant is added to a conversation and `added_to_conversation.enabled` is `true`. */
   "addedToConversation.template"?: string;
-  /** The name of the sound to play when a participant is added to a conversation and &#x60;added_to_conversation.enabled&#x60; is &#x60;true&#x60;. */
+  /** The name of the sound to play when a participant is added to a conversation and `added_to_conversation.enabled` is `true`. */
   "addedToConversation.sound"?: string;
-  /** Whether to send a notification to a user when they are removed from a conversation. The default is &#x60;false&#x60;. */
+  /** Whether to send a notification to a user when they are removed from a conversation. The default is `false`. */
   "removedFromConversation.enabled"?: boolean;
-  /** The template to use to create the notification text displayed to a user when they are removed from a conversation and &#x60;removed_from_conversation.enabled&#x60; is &#x60;true&#x60;. */
+  /** The template to use to create the notification text displayed to a user when they are removed from a conversation and `removed_from_conversation.enabled` is `true`. */
   "removedFromConversation.template"?: string;
-  /** The name of the sound to play to a user when they are removed from a conversation and &#x60;removed_from_conversation.enabled&#x60; is &#x60;true&#x60;. */
+  /** The name of the sound to play to a user when they are removed from a conversation and `removed_from_conversation.enabled` is `true`. */
   "removedFromConversation.sound"?: string;
-  /** Whether to send a notification when a new message with media/file attachments is added to a conversation. The default is &#x60;false&#x60;. */
+  /** Whether to send a notification when a new message with media/file attachments is added to a conversation. The default is `false`. */
   "newMessage.withMedia.enabled"?: boolean;
-  /** The template to use to create the notification text displayed when a new message with media/file attachments is added to a conversation and &#x60;new_message.attachments.enabled&#x60; is &#x60;true&#x60;. */
+  /** The template to use to create the notification text displayed when a new message with media/file attachments is added to a conversation and `new_message.attachments.enabled` is `true`. */
   "newMessage.withMedia.template"?: string;
 }
 

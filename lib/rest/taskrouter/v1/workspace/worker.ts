@@ -40,13 +40,13 @@ export interface WorkerContextRemoveOptions {
 export interface WorkerContextUpdateOptions {
   /** The If-Match HTTP request header */
   ifMatch?: string;
-  /** The SID of a valid Activity that will describe the Worker\\\&#39;s initial state. See [Activities](https://www.twilio.com/docs/taskrouter/api/activity) for more information. */
+  /** The SID of a valid Activity that will describe the Worker\\\'s initial state. See [Activities](https://www.twilio.com/docs/taskrouter/api/activity) for more information. */
   activitySid?: string;
-  /** The JSON string that describes the Worker. For example: &#x60;{ \\\&quot;email\\\&quot;: \\\&quot;Bob@example.com\\\&quot;, \\\&quot;phone\\\&quot;: \\\&quot;+5095551234\\\&quot; }&#x60;. This data is passed to the &#x60;assignment_callback_url&#x60; when TaskRouter assigns a Task to the Worker. Defaults to {}. */
+  /** The JSON string that describes the Worker. For example: `{ \\\"email\\\": \\\"Bob@example.com\\\", \\\"phone\\\": \\\"+5095551234\\\" }`. This data is passed to the `assignment_callback_url` when TaskRouter assigns a Task to the Worker. Defaults to {}. */
   attributes?: string;
   /** A descriptive string that you create to describe the Worker. It can be up to 64 characters long. */
   friendlyName?: string;
-  /** Whether to reject the Worker\\\&#39;s pending reservations. This option is only valid if the Worker\\\&#39;s new [Activity](https://www.twilio.com/docs/taskrouter/api/activity) resource has its &#x60;availability&#x60; property set to &#x60;False&#x60;. */
+  /** Whether to reject the Worker\\\'s pending reservations. This option is only valid if the Worker\\\'s new [Activity](https://www.twilio.com/docs/taskrouter/api/activity) resource has its `availability` property set to `False`. */
   rejectPendingReservations?: boolean;
 }
 
@@ -56,26 +56,26 @@ export interface WorkerContextUpdateOptions {
 export interface WorkerListInstanceCreateOptions {
   /** A descriptive string that you create to describe the new Worker. It can be up to 64 characters long. */
   friendlyName: string;
-  /** The SID of a valid Activity that will describe the new Worker\\\&#39;s initial state. See [Activities](https://www.twilio.com/docs/taskrouter/api/activity) for more information. If not provided, the new Worker\\\&#39;s initial state is the &#x60;default_activity_sid&#x60; configured on the Workspace. */
+  /** The SID of a valid Activity that will describe the new Worker\\\'s initial state. See [Activities](https://www.twilio.com/docs/taskrouter/api/activity) for more information. If not provided, the new Worker\\\'s initial state is the `default_activity_sid` configured on the Workspace. */
   activitySid?: string;
-  /** A valid JSON string that describes the new Worker. For example: &#x60;{ \\\&quot;email\\\&quot;: \\\&quot;Bob@example.com\\\&quot;, \\\&quot;phone\\\&quot;: \\\&quot;+5095551234\\\&quot; }&#x60;. This data is passed to the &#x60;assignment_callback_url&#x60; when TaskRouter assigns a Task to the Worker. Defaults to {}. */
+  /** A valid JSON string that describes the new Worker. For example: `{ \\\"email\\\": \\\"Bob@example.com\\\", \\\"phone\\\": \\\"+5095551234\\\" }`. This data is passed to the `assignment_callback_url` when TaskRouter assigns a Task to the Worker. Defaults to {}. */
   attributes?: string;
 }
 /**
  * Options to pass to each
  */
 export interface WorkerListInstanceEachOptions {
-  /** The &#x60;activity_name&#x60; of the Worker resources to read. */
+  /** The `activity_name` of the Worker resources to read. */
   activityName?: string;
-  /** The &#x60;activity_sid&#x60; of the Worker resources to read. */
+  /** The `activity_sid` of the Worker resources to read. */
   activitySid?: string;
-  /** Whether to return only Worker resources that are available or unavailable. Can be &#x60;true&#x60;, &#x60;1&#x60;, or &#x60;yes&#x60; to return Worker resources that are available, and &#x60;false&#x60;, or any value returns the Worker resources that are not available. */
+  /** Whether to return only Worker resources that are available or unavailable. Can be `true`, `1`, or `yes` to return Worker resources that are available, and `false`, or any value returns the Worker resources that are not available. */
   available?: string;
-  /** The &#x60;friendly_name&#x60; of the Worker resources to read. */
+  /** The `friendly_name` of the Worker resources to read. */
   friendlyName?: string;
   /** Filter by Workers that would match an expression on a TaskQueue. This is helpful for debugging which Workers would match a potential queue. */
   targetWorkersExpression?: string;
-  /** The &#x60;friendly_name&#x60; of the TaskQueue that the Workers to read are eligible for. */
+  /** The `friendly_name` of the TaskQueue that the Workers to read are eligible for. */
   taskQueueName?: string;
   /** The SID of the TaskQueue that the Workers to read are eligible for. */
   taskQueueSid?: string;
@@ -95,17 +95,17 @@ export interface WorkerListInstanceEachOptions {
  * Options to pass to list
  */
 export interface WorkerListInstanceOptions {
-  /** The &#x60;activity_name&#x60; of the Worker resources to read. */
+  /** The `activity_name` of the Worker resources to read. */
   activityName?: string;
-  /** The &#x60;activity_sid&#x60; of the Worker resources to read. */
+  /** The `activity_sid` of the Worker resources to read. */
   activitySid?: string;
-  /** Whether to return only Worker resources that are available or unavailable. Can be &#x60;true&#x60;, &#x60;1&#x60;, or &#x60;yes&#x60; to return Worker resources that are available, and &#x60;false&#x60;, or any value returns the Worker resources that are not available. */
+  /** Whether to return only Worker resources that are available or unavailable. Can be `true`, `1`, or `yes` to return Worker resources that are available, and `false`, or any value returns the Worker resources that are not available. */
   available?: string;
-  /** The &#x60;friendly_name&#x60; of the Worker resources to read. */
+  /** The `friendly_name` of the Worker resources to read. */
   friendlyName?: string;
   /** Filter by Workers that would match an expression on a TaskQueue. This is helpful for debugging which Workers would match a potential queue. */
   targetWorkersExpression?: string;
-  /** The &#x60;friendly_name&#x60; of the TaskQueue that the Workers to read are eligible for. */
+  /** The `friendly_name` of the TaskQueue that the Workers to read are eligible for. */
   taskQueueName?: string;
   /** The SID of the TaskQueue that the Workers to read are eligible for. */
   taskQueueSid?: string;
@@ -121,17 +121,17 @@ export interface WorkerListInstanceOptions {
  * Options to pass to page
  */
 export interface WorkerListInstancePageOptions {
-  /** The &#x60;activity_name&#x60; of the Worker resources to read. */
+  /** The `activity_name` of the Worker resources to read. */
   activityName?: string;
-  /** The &#x60;activity_sid&#x60; of the Worker resources to read. */
+  /** The `activity_sid` of the Worker resources to read. */
   activitySid?: string;
-  /** Whether to return only Worker resources that are available or unavailable. Can be &#x60;true&#x60;, &#x60;1&#x60;, or &#x60;yes&#x60; to return Worker resources that are available, and &#x60;false&#x60;, or any value returns the Worker resources that are not available. */
+  /** Whether to return only Worker resources that are available or unavailable. Can be `true`, `1`, or `yes` to return Worker resources that are available, and `false`, or any value returns the Worker resources that are not available. */
   available?: string;
-  /** The &#x60;friendly_name&#x60; of the Worker resources to read. */
+  /** The `friendly_name` of the Worker resources to read. */
   friendlyName?: string;
   /** Filter by Workers that would match an expression on a TaskQueue. This is helpful for debugging which Workers would match a potential queue. */
   targetWorkersExpression?: string;
-  /** The &#x60;friendly_name&#x60; of the TaskQueue that the Workers to read are eligible for. */
+  /** The `friendly_name` of the TaskQueue that the Workers to read are eligible for. */
   taskQueueName?: string;
   /** The SID of the TaskQueue that the Workers to read are eligible for. */
   taskQueueSid?: string;

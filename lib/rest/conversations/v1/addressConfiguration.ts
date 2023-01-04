@@ -38,15 +38,15 @@ export interface AddressConfigurationContextUpdateOptions {
   "autoCreation.type"?: ConfigurationAddressAutoCreationType;
   /** Conversation Service for the auto-created conversation. If not set, the conversation is created in the default service. */
   "autoCreation.conversationServiceSid"?: string;
-  /** For type &#x60;webhook&#x60;, the url for the webhook request. */
+  /** For type `webhook`, the url for the webhook request. */
   "autoCreation.webhookUrl"?: string;
   /**  */
   "autoCreation.webhookMethod"?: ConfigurationAddressMethod;
-  /** The list of events, firing webhook event for this Conversation. Values can be any of the following: &#x60;onMessageAdded&#x60;, &#x60;onMessageUpdated&#x60;, &#x60;onMessageRemoved&#x60;, &#x60;onConversationUpdated&#x60;, &#x60;onConversationStateUpdated&#x60;, &#x60;onConversationRemoved&#x60;, &#x60;onParticipantAdded&#x60;, &#x60;onParticipantUpdated&#x60;, &#x60;onParticipantRemoved&#x60;, &#x60;onDeliveryUpdated&#x60; */
+  /** The list of events, firing webhook event for this Conversation. Values can be any of the following: `onMessageAdded`, `onMessageUpdated`, `onMessageRemoved`, `onConversationUpdated`, `onConversationStateUpdated`, `onConversationRemoved`, `onParticipantAdded`, `onParticipantUpdated`, `onParticipantRemoved`, `onDeliveryUpdated` */
   "autoCreation.webhookFilters"?: Array<string>;
-  /** For type &#x60;studio&#x60;, the studio flow SID where the webhook should be sent to. */
+  /** For type `studio`, the studio flow SID where the webhook should be sent to. */
   "autoCreation.studioFlowSid"?: string;
-  /** For type &#x60;studio&#x60;, number of times to retry the webhook request */
+  /** For type `studio`, number of times to retry the webhook request */
   "autoCreation.studioRetryCount"?: number;
 }
 
@@ -66,22 +66,22 @@ export interface AddressConfigurationListInstanceCreateOptions {
   "autoCreation.type"?: ConfigurationAddressAutoCreationType;
   /** Conversation Service for the auto-created conversation. If not set, the conversation is created in the default service. */
   "autoCreation.conversationServiceSid"?: string;
-  /** For type &#x60;webhook&#x60;, the url for the webhook request. */
+  /** For type `webhook`, the url for the webhook request. */
   "autoCreation.webhookUrl"?: string;
   /**  */
   "autoCreation.webhookMethod"?: ConfigurationAddressMethod;
-  /** The list of events, firing webhook event for this Conversation. Values can be any of the following: &#x60;onMessageAdded&#x60;, &#x60;onMessageUpdated&#x60;, &#x60;onMessageRemoved&#x60;, &#x60;onConversationUpdated&#x60;, &#x60;onConversationStateUpdated&#x60;, &#x60;onConversationRemoved&#x60;, &#x60;onParticipantAdded&#x60;, &#x60;onParticipantUpdated&#x60;, &#x60;onParticipantRemoved&#x60;, &#x60;onDeliveryUpdated&#x60; */
+  /** The list of events, firing webhook event for this Conversation. Values can be any of the following: `onMessageAdded`, `onMessageUpdated`, `onMessageRemoved`, `onConversationUpdated`, `onConversationStateUpdated`, `onConversationRemoved`, `onParticipantAdded`, `onParticipantUpdated`, `onParticipantRemoved`, `onDeliveryUpdated` */
   "autoCreation.webhookFilters"?: Array<string>;
-  /** For type &#x60;studio&#x60;, the studio flow SID where the webhook should be sent to. */
+  /** For type `studio`, the studio flow SID where the webhook should be sent to. */
   "autoCreation.studioFlowSid"?: string;
-  /** For type &#x60;studio&#x60;, number of times to retry the webhook request */
+  /** For type `studio`, number of times to retry the webhook request */
   "autoCreation.studioRetryCount"?: number;
 }
 /**
  * Options to pass to each
  */
 export interface AddressConfigurationListInstanceEachOptions {
-  /** Filter the address configurations by its type. This value can be one of: &#x60;whatsapp&#x60;, &#x60;sms&#x60;. */
+  /** Filter the address configurations by its type. This value can be one of: `whatsapp`, `sms`. */
   type?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -100,7 +100,7 @@ export interface AddressConfigurationListInstanceEachOptions {
  * Options to pass to list
  */
 export interface AddressConfigurationListInstanceOptions {
-  /** Filter the address configurations by its type. This value can be one of: &#x60;whatsapp&#x60;, &#x60;sms&#x60;. */
+  /** Filter the address configurations by its type. This value can be one of: `whatsapp`, `sms`. */
   type?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -112,7 +112,7 @@ export interface AddressConfigurationListInstanceOptions {
  * Options to pass to page
  */
 export interface AddressConfigurationListInstancePageOptions {
-  /** Filter the address configurations by its type. This value can be one of: &#x60;whatsapp&#x60;, &#x60;sms&#x60;. */
+  /** Filter the address configurations by its type. This value can be one of: `whatsapp`, `sms`. */
   type?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

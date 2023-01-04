@@ -32,7 +32,7 @@ type AuthorizationDocumentStatus =
  * Options to pass to update a AuthorizationDocumentInstance
  */
 export interface AuthorizationDocumentContextUpdateOptions {
-  /** A list of HostedNumberOrder sids that this AuthorizationDocument will authorize for hosting phone number capabilities on Twilio\\\&#39;s platform. */
+  /** A list of HostedNumberOrder sids that this AuthorizationDocument will authorize for hosting phone number capabilities on Twilio\\\'s platform. */
   hostedNumberOrderSids?: Array<string>;
   /** A 34 character string that uniquely identifies the Address resource that is associated with this AuthorizationDocument. */
   addressSid?: string;
@@ -52,7 +52,7 @@ export interface AuthorizationDocumentContextUpdateOptions {
  * Options to pass to create a AuthorizationDocumentInstance
  */
 export interface AuthorizationDocumentListInstanceCreateOptions {
-  /** A list of HostedNumberOrder sids that this AuthorizationDocument will authorize for hosting phone number capabilities on Twilio\\\&#39;s platform. */
+  /** A list of HostedNumberOrder sids that this AuthorizationDocument will authorize for hosting phone number capabilities on Twilio\\\'s platform. */
   hostedNumberOrderSids: Array<string>;
   /** A 34 character string that uniquely identifies the Address resource that is associated with this AuthorizationDocument. */
   addressSid: string;

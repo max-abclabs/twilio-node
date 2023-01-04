@@ -33,7 +33,7 @@ type ServiceNumberSelectionBehavior = "avoid-sticky" | "prefer-sticky";
 export interface ServiceContextUpdateOptions {
   /** An application-defined string that uniquely identifies the resource. This value must be 191 characters or fewer in length and be unique. **This value should not have PII.** */
   uniqueName?: string;
-  /** The default &#x60;ttl&#x60; value to set for Sessions created in the Service. The TTL (time to live) is measured in seconds after the Session\\\&#39;s last create or last Interaction. The default value of &#x60;0&#x60; indicates an unlimited Session length. You can override a Session\\\&#39;s default TTL value by setting its &#x60;ttl&#x60; value. */
+  /** The default `ttl` value to set for Sessions created in the Service. The TTL (time to live) is measured in seconds after the Session\\\'s last create or last Interaction. The default value of `0` indicates an unlimited Session length. You can override a Session\\\'s default TTL value by setting its `ttl` value. */
   defaultTtl?: number;
   /** The URL we should call when the interaction status changes. */
   callbackUrl?: string;
@@ -55,7 +55,7 @@ export interface ServiceContextUpdateOptions {
 export interface ServiceListInstanceCreateOptions {
   /** An application-defined string that uniquely identifies the resource. This value must be 191 characters or fewer in length and be unique. **This value should not have PII.** */
   uniqueName: string;
-  /** The default &#x60;ttl&#x60; value to set for Sessions created in the Service. The TTL (time to live) is measured in seconds after the Session\\\&#39;s last create or last Interaction. The default value of &#x60;0&#x60; indicates an unlimited Session length. You can override a Session\\\&#39;s default TTL value by setting its &#x60;ttl&#x60; value. */
+  /** The default `ttl` value to set for Sessions created in the Service. The TTL (time to live) is measured in seconds after the Session\\\'s last create or last Interaction. The default value of `0` indicates an unlimited Session length. You can override a Session\\\'s default TTL value by setting its `ttl` value. */
   defaultTtl?: number;
   /** The URL we should call when the interaction status changes. */
   callbackUrl?: string;

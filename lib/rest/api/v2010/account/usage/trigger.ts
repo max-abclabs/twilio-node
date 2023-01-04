@@ -275,9 +275,9 @@ type UsageTriggerUsageCategory =
  * Options to pass to update a TriggerInstance
  */
 export interface TriggerContextUpdateOptions {
-  /** The HTTP method we should use to call &#x60;callback_url&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60; and the default is &#x60;POST&#x60;. */
+  /** The HTTP method we should use to call `callback_url`. Can be: `GET` or `POST` and the default is `POST`. */
   callbackMethod?: string;
-  /** The URL we should call using &#x60;callback_method&#x60; when the trigger fires. */
+  /** The URL we should call using `callback_method` when the trigger fires. */
   callbackUrl?: string;
   /** A descriptive string that you create to describe the resource. It can be up to 64 characters long. */
   friendlyName?: string;
@@ -287,13 +287,13 @@ export interface TriggerContextUpdateOptions {
  * Options to pass to create a TriggerInstance
  */
 export interface TriggerListInstanceCreateOptions {
-  /** The URL we should call using &#x60;callback_method&#x60; when the trigger fires. */
+  /** The URL we should call using `callback_method` when the trigger fires. */
   callbackUrl: string;
-  /** The usage value at which the trigger should fire.  For convenience, you can use an offset value such as &#x60;+30&#x60; to specify a trigger_value that is 30 units more than the current usage value. Be sure to urlencode a &#x60;+&#x60; as &#x60;%2B&#x60;. */
+  /** The usage value at which the trigger should fire.  For convenience, you can use an offset value such as `+30` to specify a trigger_value that is 30 units more than the current usage value. Be sure to urlencode a `+` as `%2B`. */
   triggerValue: string;
   /**  */
   usageCategory: UsageTriggerUsageCategory;
-  /** The HTTP method we should use to call &#x60;callback_url&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60; and the default is &#x60;POST&#x60;. */
+  /** The HTTP method we should use to call `callback_url`. Can be: `GET` or `POST` and the default is `POST`. */
   callbackMethod?: string;
   /** A descriptive string that you create to describe the resource. It can be up to 64 characters long. */
   friendlyName?: string;
@@ -306,9 +306,9 @@ export interface TriggerListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface TriggerListInstanceEachOptions {
-  /** The frequency of recurring UsageTriggers to read. Can be: &#x60;daily&#x60;, &#x60;monthly&#x60;, or &#x60;yearly&#x60; to read recurring UsageTriggers. An empty value or a value of &#x60;alltime&#x60; reads non-recurring UsageTriggers. */
+  /** The frequency of recurring UsageTriggers to read. Can be: `daily`, `monthly`, or `yearly` to read recurring UsageTriggers. An empty value or a value of `alltime` reads non-recurring UsageTriggers. */
   recurring?: UsageTriggerRecurring;
-  /** The trigger field of the UsageTriggers to read.  Can be: &#x60;count&#x60;, &#x60;usage&#x60;, or &#x60;price&#x60; as described in the [UsageRecords documentation](https://www.twilio.com/docs/usage/api/usage-record#usage-count-price). */
+  /** The trigger field of the UsageTriggers to read.  Can be: `count`, `usage`, or `price` as described in the [UsageRecords documentation](https://www.twilio.com/docs/usage/api/usage-record#usage-count-price). */
   triggerBy?: UsageTriggerTriggerField;
   /** The usage category of the UsageTriggers to read. Must be a supported [usage categories](https://www.twilio.com/docs/usage/api/usage-record#usage-categories). */
   usageCategory?: UsageTriggerUsageCategory;
@@ -326,9 +326,9 @@ export interface TriggerListInstanceEachOptions {
  * Options to pass to list
  */
 export interface TriggerListInstanceOptions {
-  /** The frequency of recurring UsageTriggers to read. Can be: &#x60;daily&#x60;, &#x60;monthly&#x60;, or &#x60;yearly&#x60; to read recurring UsageTriggers. An empty value or a value of &#x60;alltime&#x60; reads non-recurring UsageTriggers. */
+  /** The frequency of recurring UsageTriggers to read. Can be: `daily`, `monthly`, or `yearly` to read recurring UsageTriggers. An empty value or a value of `alltime` reads non-recurring UsageTriggers. */
   recurring?: UsageTriggerRecurring;
-  /** The trigger field of the UsageTriggers to read.  Can be: &#x60;count&#x60;, &#x60;usage&#x60;, or &#x60;price&#x60; as described in the [UsageRecords documentation](https://www.twilio.com/docs/usage/api/usage-record#usage-count-price). */
+  /** The trigger field of the UsageTriggers to read.  Can be: `count`, `usage`, or `price` as described in the [UsageRecords documentation](https://www.twilio.com/docs/usage/api/usage-record#usage-count-price). */
   triggerBy?: UsageTriggerTriggerField;
   /** The usage category of the UsageTriggers to read. Must be a supported [usage categories](https://www.twilio.com/docs/usage/api/usage-record#usage-categories). */
   usageCategory?: UsageTriggerUsageCategory;
@@ -342,9 +342,9 @@ export interface TriggerListInstanceOptions {
  * Options to pass to page
  */
 export interface TriggerListInstancePageOptions {
-  /** The frequency of recurring UsageTriggers to read. Can be: &#x60;daily&#x60;, &#x60;monthly&#x60;, or &#x60;yearly&#x60; to read recurring UsageTriggers. An empty value or a value of &#x60;alltime&#x60; reads non-recurring UsageTriggers. */
+  /** The frequency of recurring UsageTriggers to read. Can be: `daily`, `monthly`, or `yearly` to read recurring UsageTriggers. An empty value or a value of `alltime` reads non-recurring UsageTriggers. */
   recurring?: UsageTriggerRecurring;
-  /** The trigger field of the UsageTriggers to read.  Can be: &#x60;count&#x60;, &#x60;usage&#x60;, or &#x60;price&#x60; as described in the [UsageRecords documentation](https://www.twilio.com/docs/usage/api/usage-record#usage-count-price). */
+  /** The trigger field of the UsageTriggers to read.  Can be: `count`, `usage`, or `price` as described in the [UsageRecords documentation](https://www.twilio.com/docs/usage/api/usage-record#usage-count-price). */
   triggerBy?: UsageTriggerTriggerField;
   /** The usage category of the UsageTriggers to read. Must be a supported [usage categories](https://www.twilio.com/docs/usage/api/usage-record#usage-categories). */
   usageCategory?: UsageTriggerUsageCategory;

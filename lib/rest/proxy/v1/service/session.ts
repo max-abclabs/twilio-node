@@ -30,9 +30,9 @@ type SessionStatus = "open" | "in-progress" | "closed" | "failed" | "unknown";
  * Options to pass to update a SessionInstance
  */
 export interface SessionContextUpdateOptions {
-  /** The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date when the Session should expire. If this is value is present, it overrides the &#x60;ttl&#x60; value. */
+  /** The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date when the Session should expire. If this is value is present, it overrides the `ttl` value. */
   dateExpiry?: Date;
-  /** The time, in seconds, when the session will expire. The time is measured from the last Session create or the Session\\\&#39;s last Interaction. */
+  /** The time, in seconds, when the session will expire. The time is measured from the last Session create or the Session\\\'s last Interaction. */
   ttl?: number;
   /**  */
   status?: SessionStatus;
@@ -44,9 +44,9 @@ export interface SessionContextUpdateOptions {
 export interface SessionListInstanceCreateOptions {
   /** An application-defined string that uniquely identifies the resource. This value must be 191 characters or fewer in length and be unique. **This value should not have PII.** */
   uniqueName?: string;
-  /** The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date when the Session should expire. If this is value is present, it overrides the &#x60;ttl&#x60; value. */
+  /** The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date when the Session should expire. If this is value is present, it overrides the `ttl` value. */
   dateExpiry?: Date;
-  /** The time, in seconds, when the session will expire. The time is measured from the last Session create or the Session\\\&#39;s last Interaction. */
+  /** The time, in seconds, when the session will expire. The time is measured from the last Session create or the Session\\\'s last Interaction. */
   ttl?: number;
   /**  */
   mode?: SessionMode;

@@ -22,7 +22,7 @@ import { isValidPathParam } from "../../../../base/utility";
  * Options to pass to update a DefaultsInstance
  */
 export interface DefaultsContextUpdateOptions {
-  /** A JSON string that describes the default task links for the &#x60;assistant_initiation&#x60;, &#x60;collect&#x60;, and &#x60;fallback&#x60; situations. */
+  /** A JSON string that describes the default task links for the `assistant_initiation`, `collect`, and `fallback` situations. */
   defaults?: any;
 }
 

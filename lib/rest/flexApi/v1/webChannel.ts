@@ -40,11 +40,11 @@ export interface WebChannelListInstanceCreateOptions {
   flexFlowSid: string;
   /** The chat identity. */
   identity: string;
-  /** The chat participant\\\&#39;s friendly name. */
+  /** The chat participant\\\'s friendly name. */
   customerFriendlyName: string;
-  /** The chat channel\\\&#39;s friendly name. */
+  /** The chat channel\\\'s friendly name. */
   chatFriendlyName: string;
-  /** The chat channel\\\&#39;s unique name. */
+  /** The chat channel\\\'s unique name. */
   chatUniqueName?: string;
   /** The pre-engagement data. */
   preEngagementData?: string;

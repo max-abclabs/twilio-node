@@ -24,7 +24,7 @@ import { isValidPathParam } from "../../../../../../base/utility";
  * Options to pass to update a CredentialInstance
  */
 export interface CredentialContextUpdateOptions {
-  /** The password that the username will use when authenticating SIP requests. The password must be a minimum of 12 characters, contain at least 1 digit, and have mixed case. (eg &#x60;IWasAtSignal2018&#x60;) */
+  /** The password that the username will use when authenticating SIP requests. The password must be a minimum of 12 characters, contain at least 1 digit, and have mixed case. (eg `IWasAtSignal2018`) */
   password?: string;
 }
 
@@ -32,9 +32,9 @@ export interface CredentialContextUpdateOptions {
  * Options to pass to create a CredentialInstance
  */
 export interface CredentialListInstanceCreateOptions {
-  /** The username that will be passed when authenticating SIP requests. The username should be sent in response to Twilio\\\&#39;s challenge of the initial INVITE. It can be up to 32 characters long. */
+  /** The username that will be passed when authenticating SIP requests. The username should be sent in response to Twilio\\\'s challenge of the initial INVITE. It can be up to 32 characters long. */
   username: string;
-  /** The password that the username will use when authenticating SIP requests. The password must be a minimum of 12 characters, contain at least 1 digit, and have mixed case. (eg &#x60;IWasAtSignal2018&#x60;) */
+  /** The password that the username will use when authenticating SIP requests. The password must be a minimum of 12 characters, contain at least 1 digit, and have mixed case. (eg `IWasAtSignal2018`) */
   password: string;
 }
 /**

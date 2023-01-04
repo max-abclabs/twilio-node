@@ -30,7 +30,7 @@ import { TaskStatisticsListInstance } from "./task/taskStatistics";
 export interface TaskContextUpdateOptions {
   /** A descriptive string that you create to describe the resource. It is not unique and can be up to 255 characters long. */
   friendlyName?: string;
-  /** An application-defined string that uniquely identifies the resource. This value must be 64 characters or less in length and be unique. It can be used as an alternative to the &#x60;sid&#x60; in the URL path to address the resource. */
+  /** An application-defined string that uniquely identifies the resource. This value must be 64 characters or less in length and be unique. It can be used as an alternative to the `sid` in the URL path to address the resource. */
   uniqueName?: string;
   /** The JSON string that specifies the [actions](https://www.twilio.com/docs/autopilot/actions) that instruct the Assistant on how to perform the task. */
   actions?: any;
@@ -42,7 +42,7 @@ export interface TaskContextUpdateOptions {
  * Options to pass to create a TaskInstance
  */
 export interface TaskListInstanceCreateOptions {
-  /** An application-defined string that uniquely identifies the new resource. It can be used as an alternative to the &#x60;sid&#x60; in the URL path to address the resource. This value must be unique and 64 characters or less in length. */
+  /** An application-defined string that uniquely identifies the new resource. It can be used as an alternative to the `sid` in the URL path to address the resource. This value must be unique and 64 characters or less in length. */
   uniqueName: string;
   /** A descriptive string that you create to describe the new resource. It is not unique and can be up to 255 characters long. */
   friendlyName?: string;

@@ -22,7 +22,7 @@ import { isValidPathParam } from "../../../../base/utility";
  * Options to pass to update a SettingsInstance
  */
 export interface SettingsContextUpdateOptions {
-  /** &#x60;true&#x60; for the sub-account to inherit voice dialing permissions from the Master Project; otherwise &#x60;false&#x60;. */
+  /** `true` for the sub-account to inherit voice dialing permissions from the Master Project; otherwise `false`. */
   dialingPermissionsInheritance?: boolean;
 }
 

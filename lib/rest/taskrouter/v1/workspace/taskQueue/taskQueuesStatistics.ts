@@ -26,13 +26,13 @@ import { isValidPathParam } from "../../../../../base/utility";
 export interface TaskQueuesStatisticsListInstanceEachOptions {
   /** Only calculate statistics from this date and time and earlier, specified in GMT as an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date-time. */
   endDate?: Date;
-  /** The &#x60;friendly_name&#x60; of the TaskQueue statistics to read. */
+  /** The `friendly_name` of the TaskQueue statistics to read. */
   friendlyName?: string;
   /** Only calculate statistics since this many minutes in the past. The default is 15 minutes. */
   minutes?: number;
   /** Only calculate statistics from this date and time and later, specified in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format. */
   startDate?: Date;
-  /** Only calculate statistics on this TaskChannel. Can be the TaskChannel\&#39;s SID or its &#x60;unique_name&#x60;, such as &#x60;voice&#x60;, &#x60;sms&#x60;, or &#x60;default&#x60;. */
+  /** Only calculate statistics on this TaskChannel. Can be the TaskChannel\'s SID or its `unique_name`, such as `voice`, `sms`, or `default`. */
   taskChannel?: string;
   /** A comma separated list of values that describes the thresholds, in seconds, to calculate statistics on. For each threshold specified, the number of Tasks canceled and reservations accepted above and below the specified thresholds in seconds are computed. */
   splitByWaitTime?: string;
@@ -55,13 +55,13 @@ export interface TaskQueuesStatisticsListInstanceEachOptions {
 export interface TaskQueuesStatisticsListInstanceOptions {
   /** Only calculate statistics from this date and time and earlier, specified in GMT as an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date-time. */
   endDate?: Date;
-  /** The &#x60;friendly_name&#x60; of the TaskQueue statistics to read. */
+  /** The `friendly_name` of the TaskQueue statistics to read. */
   friendlyName?: string;
   /** Only calculate statistics since this many minutes in the past. The default is 15 minutes. */
   minutes?: number;
   /** Only calculate statistics from this date and time and later, specified in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format. */
   startDate?: Date;
-  /** Only calculate statistics on this TaskChannel. Can be the TaskChannel\&#39;s SID or its &#x60;unique_name&#x60;, such as &#x60;voice&#x60;, &#x60;sms&#x60;, or &#x60;default&#x60;. */
+  /** Only calculate statistics on this TaskChannel. Can be the TaskChannel\'s SID or its `unique_name`, such as `voice`, `sms`, or `default`. */
   taskChannel?: string;
   /** A comma separated list of values that describes the thresholds, in seconds, to calculate statistics on. For each threshold specified, the number of Tasks canceled and reservations accepted above and below the specified thresholds in seconds are computed. */
   splitByWaitTime?: string;
@@ -77,13 +77,13 @@ export interface TaskQueuesStatisticsListInstanceOptions {
 export interface TaskQueuesStatisticsListInstancePageOptions {
   /** Only calculate statistics from this date and time and earlier, specified in GMT as an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date-time. */
   endDate?: Date;
-  /** The &#x60;friendly_name&#x60; of the TaskQueue statistics to read. */
+  /** The `friendly_name` of the TaskQueue statistics to read. */
   friendlyName?: string;
   /** Only calculate statistics since this many minutes in the past. The default is 15 minutes. */
   minutes?: number;
   /** Only calculate statistics from this date and time and later, specified in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format. */
   startDate?: Date;
-  /** Only calculate statistics on this TaskChannel. Can be the TaskChannel\&#39;s SID or its &#x60;unique_name&#x60;, such as &#x60;voice&#x60;, &#x60;sms&#x60;, or &#x60;default&#x60;. */
+  /** Only calculate statistics on this TaskChannel. Can be the TaskChannel\'s SID or its `unique_name`, such as `voice`, `sms`, or `default`. */
   taskChannel?: string;
   /** A comma separated list of values that describes the thresholds, in seconds, to calculate statistics on. For each threshold specified, the number of Tasks canceled and reservations accepted above and below the specified thresholds in seconds are computed. */
   splitByWaitTime?: string;

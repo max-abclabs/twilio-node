@@ -51,7 +51,7 @@ export interface SinkListInstanceCreateOptions {
 export interface SinkListInstanceEachOptions {
   /** A boolean query parameter filtering the results to return sinks used/not used by a subscription. */
   inUse?: boolean;
-  /** A String query parameter filtering the results by status &#x60;initialized&#x60;, &#x60;validating&#x60;, &#x60;active&#x60; or &#x60;failed&#x60;. */
+  /** A String query parameter filtering the results by status `initialized`, `validating`, `active` or `failed`. */
   status?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -69,7 +69,7 @@ export interface SinkListInstanceEachOptions {
 export interface SinkListInstanceOptions {
   /** A boolean query parameter filtering the results to return sinks used/not used by a subscription. */
   inUse?: boolean;
-  /** A String query parameter filtering the results by status &#x60;initialized&#x60;, &#x60;validating&#x60;, &#x60;active&#x60; or &#x60;failed&#x60;. */
+  /** A String query parameter filtering the results by status `initialized`, `validating`, `active` or `failed`. */
   status?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -83,7 +83,7 @@ export interface SinkListInstanceOptions {
 export interface SinkListInstancePageOptions {
   /** A boolean query parameter filtering the results to return sinks used/not used by a subscription. */
   inUse?: boolean;
-  /** A String query parameter filtering the results by status &#x60;initialized&#x60;, &#x60;validating&#x60;, &#x60;active&#x60; or &#x60;failed&#x60;. */
+  /** A String query parameter filtering the results by status `initialized`, `validating`, `active` or `failed`. */
   status?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

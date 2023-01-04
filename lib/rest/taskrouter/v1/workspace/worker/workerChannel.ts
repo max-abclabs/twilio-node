@@ -26,7 +26,7 @@ import { isValidPathParam } from "../../../../../base/utility";
 export interface WorkerChannelContextUpdateOptions {
   /** The total number of Tasks that the Worker should handle for the TaskChannel type. TaskRouter creates reservations for Tasks of this TaskChannel type up to the specified capacity. If the capacity is 0, no new reservations will be created. */
   capacity?: number;
-  /** Whether the WorkerChannel is available. Set to &#x60;false&#x60; to prevent the Worker from receiving any new Tasks of this TaskChannel type. */
+  /** Whether the WorkerChannel is available. Set to `false` to prevent the Worker from receiving any new Tasks of this TaskChannel type. */
   available?: boolean;
 }
 /**

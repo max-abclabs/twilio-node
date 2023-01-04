@@ -24,17 +24,17 @@ import { isValidPathParam } from "../../../../base/utility";
  * Options to pass to update a ShortCodeInstance
  */
 export interface ShortCodeContextUpdateOptions {
-  /** A descriptive string that you created to describe this resource. It can be up to 64 characters long. By default, the &#x60;FriendlyName&#x60; is the short code. */
+  /** A descriptive string that you created to describe this resource. It can be up to 64 characters long. By default, the `FriendlyName` is the short code. */
   friendlyName?: string;
-  /** The API version to use to start a new TwiML session. Can be: &#x60;2010-04-01&#x60; or &#x60;2008-08-01&#x60;. */
+  /** The API version to use to start a new TwiML session. Can be: `2010-04-01` or `2008-08-01`. */
   apiVersion?: string;
   /** The URL we should call when receiving an incoming SMS message to this short code. */
   smsUrl?: string;
-  /** The HTTP method we should use when calling the &#x60;sms_url&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60;. */
+  /** The HTTP method we should use when calling the `sms_url`. Can be: `GET` or `POST`. */
   smsMethod?: string;
-  /** The URL that we should call if an error occurs while retrieving or executing the TwiML from &#x60;sms_url&#x60;. */
+  /** The URL that we should call if an error occurs while retrieving or executing the TwiML from `sms_url`. */
   smsFallbackUrl?: string;
-  /** The HTTP method that we should use to call the &#x60;sms_fallback_url&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60;. */
+  /** The HTTP method that we should use to call the `sms_fallback_url`. Can be: `GET` or `POST`. */
   smsFallbackMethod?: string;
 }
 /**
@@ -43,7 +43,7 @@ export interface ShortCodeContextUpdateOptions {
 export interface ShortCodeListInstanceEachOptions {
   /** The string that identifies the ShortCode resources to read. */
   friendlyName?: string;
-  /** Only show the ShortCode resources that match this pattern. You can specify partial numbers and use \&#39;*\&#39; as a wildcard for any digit. */
+  /** Only show the ShortCode resources that match this pattern. You can specify partial numbers and use \'*\' as a wildcard for any digit. */
   shortCode?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -61,7 +61,7 @@ export interface ShortCodeListInstanceEachOptions {
 export interface ShortCodeListInstanceOptions {
   /** The string that identifies the ShortCode resources to read. */
   friendlyName?: string;
-  /** Only show the ShortCode resources that match this pattern. You can specify partial numbers and use \&#39;*\&#39; as a wildcard for any digit. */
+  /** Only show the ShortCode resources that match this pattern. You can specify partial numbers and use \'*\' as a wildcard for any digit. */
   shortCode?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -75,7 +75,7 @@ export interface ShortCodeListInstanceOptions {
 export interface ShortCodeListInstancePageOptions {
   /** The string that identifies the ShortCode resources to read. */
   friendlyName?: string;
-  /** Only show the ShortCode resources that match this pattern. You can specify partial numbers and use \&#39;*\&#39; as a wildcard for any digit. */
+  /** Only show the ShortCode resources that match this pattern. You can specify partial numbers and use \'*\' as a wildcard for any digit. */
   shortCode?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

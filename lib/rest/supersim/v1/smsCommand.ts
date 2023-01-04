@@ -28,13 +28,13 @@ type SmsCommandStatus = "queued" | "sent" | "delivered" | "received" | "failed";
  * Options to pass to create a SmsCommandInstance
  */
 export interface SmsCommandListInstanceCreateOptions {
-  /** The &#x60;sid&#x60; or &#x60;unique_name&#x60; of the [SIM](https://www.twilio.com/docs/iot/supersim/api/sim-resource) to send the SMS Command to. */
+  /** The `sid` or `unique_name` of the [SIM](https://www.twilio.com/docs/iot/supersim/api/sim-resource) to send the SMS Command to. */
   sim: string;
   /** The message body of the SMS Command. */
   payload: string;
-  /** The HTTP method we should use to call &#x60;callback_url&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60; and the default is POST. */
+  /** The HTTP method we should use to call `callback_url`. Can be: `GET` or `POST` and the default is POST. */
   callbackMethod?: string;
-  /** The URL we should call using the &#x60;callback_method&#x60; after we have sent the command. */
+  /** The URL we should call using the `callback_method` after we have sent the command. */
   callbackUrl?: string;
 }
 /**
@@ -43,9 +43,9 @@ export interface SmsCommandListInstanceCreateOptions {
 export interface SmsCommandListInstanceEachOptions {
   /** The SID or unique name of the Sim resource that SMS Command was sent to or from. */
   sim?: string;
-  /** The status of the SMS Command. Can be: &#x60;queued&#x60;, &#x60;sent&#x60;, &#x60;delivered&#x60;, &#x60;received&#x60; or &#x60;failed&#x60;. See the [SMS Command Status Values](https://www.twilio.com/docs/wireless/api/smscommand-resource#status-values) for a description of each. */
+  /** The status of the SMS Command. Can be: `queued`, `sent`, `delivered`, `received` or `failed`. See the [SMS Command Status Values](https://www.twilio.com/docs/wireless/api/smscommand-resource#status-values) for a description of each. */
   status?: SmsCommandStatus;
-  /** The direction of the SMS Command. Can be &#x60;to_sim&#x60; or &#x60;from_sim&#x60;. The value of &#x60;to_sim&#x60; is synonymous with the term &#x60;mobile terminated&#x60;, and &#x60;from_sim&#x60; is synonymous with the term &#x60;mobile originated&#x60;. */
+  /** The direction of the SMS Command. Can be `to_sim` or `from_sim`. The value of `to_sim` is synonymous with the term `mobile terminated`, and `from_sim` is synonymous with the term `mobile originated`. */
   direction?: SmsCommandDirection;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -63,9 +63,9 @@ export interface SmsCommandListInstanceEachOptions {
 export interface SmsCommandListInstanceOptions {
   /** The SID or unique name of the Sim resource that SMS Command was sent to or from. */
   sim?: string;
-  /** The status of the SMS Command. Can be: &#x60;queued&#x60;, &#x60;sent&#x60;, &#x60;delivered&#x60;, &#x60;received&#x60; or &#x60;failed&#x60;. See the [SMS Command Status Values](https://www.twilio.com/docs/wireless/api/smscommand-resource#status-values) for a description of each. */
+  /** The status of the SMS Command. Can be: `queued`, `sent`, `delivered`, `received` or `failed`. See the [SMS Command Status Values](https://www.twilio.com/docs/wireless/api/smscommand-resource#status-values) for a description of each. */
   status?: SmsCommandStatus;
-  /** The direction of the SMS Command. Can be &#x60;to_sim&#x60; or &#x60;from_sim&#x60;. The value of &#x60;to_sim&#x60; is synonymous with the term &#x60;mobile terminated&#x60;, and &#x60;from_sim&#x60; is synonymous with the term &#x60;mobile originated&#x60;. */
+  /** The direction of the SMS Command. Can be `to_sim` or `from_sim`. The value of `to_sim` is synonymous with the term `mobile terminated`, and `from_sim` is synonymous with the term `mobile originated`. */
   direction?: SmsCommandDirection;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -79,9 +79,9 @@ export interface SmsCommandListInstanceOptions {
 export interface SmsCommandListInstancePageOptions {
   /** The SID or unique name of the Sim resource that SMS Command was sent to or from. */
   sim?: string;
-  /** The status of the SMS Command. Can be: &#x60;queued&#x60;, &#x60;sent&#x60;, &#x60;delivered&#x60;, &#x60;received&#x60; or &#x60;failed&#x60;. See the [SMS Command Status Values](https://www.twilio.com/docs/wireless/api/smscommand-resource#status-values) for a description of each. */
+  /** The status of the SMS Command. Can be: `queued`, `sent`, `delivered`, `received` or `failed`. See the [SMS Command Status Values](https://www.twilio.com/docs/wireless/api/smscommand-resource#status-values) for a description of each. */
   status?: SmsCommandStatus;
-  /** The direction of the SMS Command. Can be &#x60;to_sim&#x60; or &#x60;from_sim&#x60;. The value of &#x60;to_sim&#x60; is synonymous with the term &#x60;mobile terminated&#x60;, and &#x60;from_sim&#x60; is synonymous with the term &#x60;mobile originated&#x60;. */
+  /** The direction of the SMS Command. Can be `to_sim` or `from_sim`. The value of `to_sim` is synonymous with the term `mobile terminated`, and `from_sim` is synonymous with the term `mobile originated`. */
   direction?: SmsCommandDirection;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

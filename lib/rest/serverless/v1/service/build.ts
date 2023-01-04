@@ -33,7 +33,7 @@ export interface BuildListInstanceCreateOptions {
   assetVersions?: Array<string>;
   /** The list of the Function Version resource SIDs to include in the Build. */
   functionVersions?: Array<string>;
-  /** A list of objects that describe the Dependencies included in the Build. Each object contains the &#x60;name&#x60; and &#x60;version&#x60; of the dependency. */
+  /** A list of objects that describe the Dependencies included in the Build. Each object contains the `name` and `version` of the dependency. */
   dependencies?: string;
   /** The Runtime version that will be used to run the Build resource when it is deployed. */
   runtime?: string;

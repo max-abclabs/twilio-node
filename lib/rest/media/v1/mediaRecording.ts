@@ -30,9 +30,9 @@ type MediaRecordingStatus = "processing" | "completed" | "deleted" | "failed";
  * Options to pass to each
  */
 export interface MediaRecordingListInstanceEachOptions {
-  /** The sort order of the list by &#x60;date_created&#x60;. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending) with &#x60;desc&#x60; as the default. */
+  /** The sort order of the list by `date_created`. Can be: `asc` (ascending) or `desc` (descending) with `desc` as the default. */
   order?: MediaRecordingOrder;
-  /** Status to filter by, with possible values &#x60;processing&#x60;, &#x60;completed&#x60;, &#x60;deleted&#x60;, or &#x60;failed&#x60;. */
+  /** Status to filter by, with possible values `processing`, `completed`, `deleted`, or `failed`. */
   status?: MediaRecordingStatus;
   /** SID of a MediaProcessor to filter by. */
   processorSid?: string;
@@ -55,9 +55,9 @@ export interface MediaRecordingListInstanceEachOptions {
  * Options to pass to list
  */
 export interface MediaRecordingListInstanceOptions {
-  /** The sort order of the list by &#x60;date_created&#x60;. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending) with &#x60;desc&#x60; as the default. */
+  /** The sort order of the list by `date_created`. Can be: `asc` (ascending) or `desc` (descending) with `desc` as the default. */
   order?: MediaRecordingOrder;
-  /** Status to filter by, with possible values &#x60;processing&#x60;, &#x60;completed&#x60;, &#x60;deleted&#x60;, or &#x60;failed&#x60;. */
+  /** Status to filter by, with possible values `processing`, `completed`, `deleted`, or `failed`. */
   status?: MediaRecordingStatus;
   /** SID of a MediaProcessor to filter by. */
   processorSid?: string;
@@ -73,9 +73,9 @@ export interface MediaRecordingListInstanceOptions {
  * Options to pass to page
  */
 export interface MediaRecordingListInstancePageOptions {
-  /** The sort order of the list by &#x60;date_created&#x60;. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending) with &#x60;desc&#x60; as the default. */
+  /** The sort order of the list by `date_created`. Can be: `asc` (ascending) or `desc` (descending) with `desc` as the default. */
   order?: MediaRecordingOrder;
-  /** Status to filter by, with possible values &#x60;processing&#x60;, &#x60;completed&#x60;, &#x60;deleted&#x60;, or &#x60;failed&#x60;. */
+  /** Status to filter by, with possible values `processing`, `completed`, `deleted`, or `failed`. */
   status?: MediaRecordingStatus;
   /** SID of a MediaProcessor to filter by. */
   processorSid?: string;

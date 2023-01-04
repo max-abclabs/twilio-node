@@ -45,19 +45,19 @@ export interface RoomListInstanceCreateOptions {
   enableTurn?: boolean;
   /**  */
   type?: RoomRoomType;
-  /** An application-defined string that uniquely identifies the resource. It can be used as a &#x60;room_sid&#x60; in place of the resource\\\&#39;s &#x60;sid&#x60; in the URL to address the resource, assuming it does not contain any [reserved characters](https://tools.ietf.org/html/rfc3986#section-2.2) that would need to be URL encoded. This value is unique for &#x60;in-progress&#x60; rooms. SDK clients can use this name to connect to the room. REST API clients can use this name in place of the Room SID to interact with the room as long as the room is &#x60;in-progress&#x60;. */
+  /** An application-defined string that uniquely identifies the resource. It can be used as a `room_sid` in place of the resource\\\'s `sid` in the URL to address the resource, assuming it does not contain any [reserved characters](https://tools.ietf.org/html/rfc3986#section-2.2) that would need to be URL encoded. This value is unique for `in-progress` rooms. SDK clients can use this name to connect to the room. REST API clients can use this name in place of the Room SID to interact with the room as long as the room is `in-progress`. */
   uniqueName?: string;
-  /** The URL we should call using the &#x60;status_callback_method&#x60; to send status information to your application on every room event. See [Status Callbacks](https://www.twilio.com/docs/video/api/status-callbacks) for more info. */
+  /** The URL we should call using the `status_callback_method` to send status information to your application on every room event. See [Status Callbacks](https://www.twilio.com/docs/video/api/status-callbacks) for more info. */
   statusCallback?: string;
-  /** The HTTP method we should use to call &#x60;status_callback&#x60;. Can be &#x60;POST&#x60; or &#x60;GET&#x60;. */
+  /** The HTTP method we should use to call `status_callback`. Can be `POST` or `GET`. */
   statusCallbackMethod?: string;
   /** The maximum number of concurrent Participants allowed in the room. Peer-to-peer rooms can have up to 10 Participants. Small Group rooms can have up to 4 Participants. Group rooms can have up to 50 Participants. */
   maxParticipants?: number;
-  /** Whether to start recording when Participants connect. ***This feature is not available in &#x60;peer-to-peer&#x60; rooms.*** */
+  /** Whether to start recording when Participants connect. ***This feature is not available in `peer-to-peer` rooms.*** */
   recordParticipantsOnConnect?: boolean;
-  /** An array of the video codecs that are supported when publishing a track in the room.  Can be: &#x60;VP8&#x60; and &#x60;H264&#x60;.  ***This feature is not available in &#x60;peer-to-peer&#x60; rooms*** */
+  /** An array of the video codecs that are supported when publishing a track in the room.  Can be: `VP8` and `H264`.  ***This feature is not available in `peer-to-peer` rooms*** */
   videoCodecs?: Array<RoomVideoCodec>;
-  /** The region for the media server in Group Rooms.  Can be: one of the [available Media Regions](https://www.twilio.com/docs/video/ip-address-whitelisting#group-rooms-media-servers). ***This feature is not available in &#x60;peer-to-peer&#x60; rooms.*** */
+  /** The region for the media server in Group Rooms.  Can be: one of the [available Media Regions](https://www.twilio.com/docs/video/ip-address-whitelisting#group-rooms-media-servers). ***This feature is not available in `peer-to-peer` rooms.*** */
   mediaRegion?: string;
   /** A collection of Recording Rules that describe how to include or exclude matching tracks for recording */
   recordingRules?: any;
@@ -76,13 +76,13 @@ export interface RoomListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface RoomListInstanceEachOptions {
-  /** Read only the rooms with this status. Can be: &#x60;in-progress&#x60; (default) or &#x60;completed&#x60; */
+  /** Read only the rooms with this status. Can be: `in-progress` (default) or `completed` */
   status?: RoomRoomStatus;
-  /** Read only rooms with the this &#x60;unique_name&#x60;. */
+  /** Read only rooms with the this `unique_name`. */
   uniqueName?: string;
-  /** Read only rooms that started on or after this date, given as &#x60;YYYY-MM-DD&#x60;. */
+  /** Read only rooms that started on or after this date, given as `YYYY-MM-DD`. */
   dateCreatedAfter?: Date;
-  /** Read only rooms that started before this date, given as &#x60;YYYY-MM-DD&#x60;. */
+  /** Read only rooms that started before this date, given as `YYYY-MM-DD`. */
   dateCreatedBefore?: Date;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -98,13 +98,13 @@ export interface RoomListInstanceEachOptions {
  * Options to pass to list
  */
 export interface RoomListInstanceOptions {
-  /** Read only the rooms with this status. Can be: &#x60;in-progress&#x60; (default) or &#x60;completed&#x60; */
+  /** Read only the rooms with this status. Can be: `in-progress` (default) or `completed` */
   status?: RoomRoomStatus;
-  /** Read only rooms with the this &#x60;unique_name&#x60;. */
+  /** Read only rooms with the this `unique_name`. */
   uniqueName?: string;
-  /** Read only rooms that started on or after this date, given as &#x60;YYYY-MM-DD&#x60;. */
+  /** Read only rooms that started on or after this date, given as `YYYY-MM-DD`. */
   dateCreatedAfter?: Date;
-  /** Read only rooms that started before this date, given as &#x60;YYYY-MM-DD&#x60;. */
+  /** Read only rooms that started before this date, given as `YYYY-MM-DD`. */
   dateCreatedBefore?: Date;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -116,13 +116,13 @@ export interface RoomListInstanceOptions {
  * Options to pass to page
  */
 export interface RoomListInstancePageOptions {
-  /** Read only the rooms with this status. Can be: &#x60;in-progress&#x60; (default) or &#x60;completed&#x60; */
+  /** Read only the rooms with this status. Can be: `in-progress` (default) or `completed` */
   status?: RoomRoomStatus;
-  /** Read only rooms with the this &#x60;unique_name&#x60;. */
+  /** Read only rooms with the this `unique_name`. */
   uniqueName?: string;
-  /** Read only rooms that started on or after this date, given as &#x60;YYYY-MM-DD&#x60;. */
+  /** Read only rooms that started on or after this date, given as `YYYY-MM-DD`. */
   dateCreatedAfter?: Date;
-  /** Read only rooms that started before this date, given as &#x60;YYYY-MM-DD&#x60;. */
+  /** Read only rooms that started before this date, given as `YYYY-MM-DD`. */
   dateCreatedBefore?: Date;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

@@ -32,7 +32,7 @@ type WebhookVersion = "v1" | "v2";
 export interface WebhookContextUpdateOptions {
   /** The string that you assigned to describe the webhook. **This value should not contain PII.** */
   friendlyName?: string;
-  /** The array of events that this Webhook is subscribed to. Possible event types: &#x60;*, factor.deleted, factor.created, factor.verified, challenge.approved, challenge.denied&#x60; */
+  /** The array of events that this Webhook is subscribed to. Possible event types: `*, factor.deleted, factor.created, factor.verified, challenge.approved, challenge.denied` */
   eventTypes?: Array<string>;
   /** The URL associated with this Webhook. */
   webhookUrl?: string;
@@ -48,7 +48,7 @@ export interface WebhookContextUpdateOptions {
 export interface WebhookListInstanceCreateOptions {
   /** The string that you assigned to describe the webhook. **This value should not contain PII.** */
   friendlyName: string;
-  /** The array of events that this Webhook is subscribed to. Possible event types: &#x60;*, factor.deleted, factor.created, factor.verified, challenge.approved, challenge.denied&#x60; */
+  /** The array of events that this Webhook is subscribed to. Possible event types: `*, factor.deleted, factor.created, factor.verified, challenge.approved, challenge.denied` */
   eventTypes: Array<string>;
   /** The URL associated with this Webhook. */
   webhookUrl: string;

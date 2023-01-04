@@ -24,7 +24,7 @@ import { isValidPathParam } from "../../../../../base/utility";
  * Options to pass to create a InviteInstance
  */
 export interface InviteListInstanceCreateOptions {
-  /** The &#x60;identity&#x60; value that uniquely identifies the new resource\\\&#39;s [User](https://www.twilio.com/docs/api/chat/rest/v1/user) within the [Service](https://www.twilio.com/docs/api/chat/rest/v1/service). See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more info. */
+  /** The `identity` value that uniquely identifies the new resource\\\'s [User](https://www.twilio.com/docs/api/chat/rest/v1/user) within the [Service](https://www.twilio.com/docs/api/chat/rest/v1/service). See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more info. */
   identity: string;
   /** The SID of the [Role](https://www.twilio.com/docs/api/chat/rest/roles) assigned to the new member. */
   roleSid?: string;
@@ -33,7 +33,7 @@ export interface InviteListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface InviteListInstanceEachOptions {
-  /** The [User](https://www.twilio.com/docs/api/chat/rest/v1/user)\&#39;s &#x60;identity&#x60; value of the resources to read. See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more details. */
+  /** The [User](https://www.twilio.com/docs/api/chat/rest/v1/user)\'s `identity` value of the resources to read. See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more details. */
   identity?: Array<string>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -49,7 +49,7 @@ export interface InviteListInstanceEachOptions {
  * Options to pass to list
  */
 export interface InviteListInstanceOptions {
-  /** The [User](https://www.twilio.com/docs/api/chat/rest/v1/user)\&#39;s &#x60;identity&#x60; value of the resources to read. See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more details. */
+  /** The [User](https://www.twilio.com/docs/api/chat/rest/v1/user)\'s `identity` value of the resources to read. See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more details. */
   identity?: Array<string>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -61,7 +61,7 @@ export interface InviteListInstanceOptions {
  * Options to pass to page
  */
 export interface InviteListInstancePageOptions {
-  /** The [User](https://www.twilio.com/docs/api/chat/rest/v1/user)\&#39;s &#x60;identity&#x60; value of the resources to read. See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more details. */
+  /** The [User](https://www.twilio.com/docs/api/chat/rest/v1/user)\'s `identity` value of the resources to read. See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more details. */
   identity?: Array<string>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

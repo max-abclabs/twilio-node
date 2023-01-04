@@ -24,7 +24,7 @@ import { isValidPathParam } from "../../../../../base/utility";
  * Options to pass to create a InteractionChannelInviteInstance
  */
 export interface InteractionChannelInviteListInstanceCreateOptions {
-  /** The Interaction\\\&#39;s routing logic. */
+  /** The Interaction\\\'s routing logic. */
   routing: any;
 }
 /**

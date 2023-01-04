@@ -27,17 +27,17 @@ import { WorkflowStatisticsListInstance } from "./workflow/workflowStatistics";
  * Options to pass to update a WorkflowInstance
  */
 export interface WorkflowContextUpdateOptions {
-  /** A descriptive string that you create to describe the Workflow resource. For example, &#x60;Inbound Call Workflow&#x60; or &#x60;2014 Outbound Campaign&#x60;. */
+  /** A descriptive string that you create to describe the Workflow resource. For example, `Inbound Call Workflow` or `2014 Outbound Campaign`. */
   friendlyName?: string;
   /** The URL from your application that will process task assignment events. See [Handling Task Assignment Callback](https://www.twilio.com/docs/taskrouter/handle-assignment-callbacks) for more details. */
   assignmentCallbackUrl?: string;
-  /** The URL that we should call when a call to the &#x60;assignment_callback_url&#x60; fails. */
+  /** The URL that we should call when a call to the `assignment_callback_url` fails. */
   fallbackAssignmentCallbackUrl?: string;
   /** A JSON string that contains the rules to apply to the Workflow. See [Configuring Workflows](https://www.twilio.com/docs/taskrouter/workflow-configuration) for more information. */
   configuration?: string;
-  /** How long TaskRouter will wait for a confirmation response from your application after it assigns a Task to a Worker. Can be up to &#x60;86,400&#x60; (24 hours) and the default is &#x60;120&#x60;. */
+  /** How long TaskRouter will wait for a confirmation response from your application after it assigns a Task to a Worker. Can be up to `86,400` (24 hours) and the default is `120`. */
   taskReservationTimeout?: number;
-  /** Whether or not to re-evaluate Tasks. The default is &#x60;false&#x60;, which means Tasks in the Workflow will not be processed through the assignment loop again. */
+  /** Whether or not to re-evaluate Tasks. The default is `false`, which means Tasks in the Workflow will not be processed through the assignment loop again. */
   reEvaluateTasks?: string;
 }
 
@@ -45,22 +45,22 @@ export interface WorkflowContextUpdateOptions {
  * Options to pass to create a WorkflowInstance
  */
 export interface WorkflowListInstanceCreateOptions {
-  /** A descriptive string that you create to describe the Workflow resource. For example, &#x60;Inbound Call Workflow&#x60; or &#x60;2014 Outbound Campaign&#x60;. */
+  /** A descriptive string that you create to describe the Workflow resource. For example, `Inbound Call Workflow` or `2014 Outbound Campaign`. */
   friendlyName: string;
   /** A JSON string that contains the rules to apply to the Workflow. See [Configuring Workflows](https://www.twilio.com/docs/taskrouter/workflow-configuration) for more information. */
   configuration: string;
   /** The URL from your application that will process task assignment events. See [Handling Task Assignment Callback](https://www.twilio.com/docs/taskrouter/handle-assignment-callbacks) for more details. */
   assignmentCallbackUrl?: string;
-  /** The URL that we should call when a call to the &#x60;assignment_callback_url&#x60; fails. */
+  /** The URL that we should call when a call to the `assignment_callback_url` fails. */
   fallbackAssignmentCallbackUrl?: string;
-  /** How long TaskRouter will wait for a confirmation response from your application after it assigns a Task to a Worker. Can be up to &#x60;86,400&#x60; (24 hours) and the default is &#x60;120&#x60;. */
+  /** How long TaskRouter will wait for a confirmation response from your application after it assigns a Task to a Worker. Can be up to `86,400` (24 hours) and the default is `120`. */
   taskReservationTimeout?: number;
 }
 /**
  * Options to pass to each
  */
 export interface WorkflowListInstanceEachOptions {
-  /** The &#x60;friendly_name&#x60; of the Workflow resources to read. */
+  /** The `friendly_name` of the Workflow resources to read. */
   friendlyName?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -76,7 +76,7 @@ export interface WorkflowListInstanceEachOptions {
  * Options to pass to list
  */
 export interface WorkflowListInstanceOptions {
-  /** The &#x60;friendly_name&#x60; of the Workflow resources to read. */
+  /** The `friendly_name` of the Workflow resources to read. */
   friendlyName?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -88,7 +88,7 @@ export interface WorkflowListInstanceOptions {
  * Options to pass to page
  */
 export interface WorkflowListInstancePageOptions {
-  /** The &#x60;friendly_name&#x60; of the Workflow resources to read. */
+  /** The `friendly_name` of the Workflow resources to read. */
   friendlyName?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

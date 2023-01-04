@@ -37,7 +37,7 @@ export interface ServiceContextUpdateOptions {
   codeLength?: number;
   /** Whether to perform a lookup with each verification started and return info about the phone number. */
   lookupEnabled?: boolean;
-  /** Whether to skip sending SMS verifications to landlines. Requires &#x60;lookup_enabled&#x60;. */
+  /** Whether to skip sending SMS verifications to landlines. Requires `lookup_enabled`. */
   skipSmsToLandlines?: boolean;
   /** Whether to ask the user to press a number before delivering the verify code in a phone call. */
   dtmfInputRequired?: boolean;
@@ -49,7 +49,7 @@ export interface ServiceContextUpdateOptions {
   doNotShareWarningEnabled?: boolean;
   /** Whether to allow sending verifications with a custom code instead of a randomly generated one. Not available for all customers. */
   customCodeEnabled?: boolean;
-  /** Optional configuration for the Push factors. If true, include the date in the Challenge\\\&#39;s response. Otherwise, the date is omitted from the response. See [Challenge](https://www.twilio.com/docs/verify/api/challenge) resource’s details parameter for more info. Default: false. **Deprecated** do not use this parameter. */
+  /** Optional configuration for the Push factors. If true, include the date in the Challenge\\\'s response. Otherwise, the date is omitted from the response. See [Challenge](https://www.twilio.com/docs/verify/api/challenge) resource’s details parameter for more info. Default: false. **Deprecated** do not use this parameter. */
   "push.includeDate"?: boolean;
   /** Optional configuration for the Push factors. Set the APN Credential for this service. This will allow to send push notifications to iOS devices. See [Credential Resource](https://www.twilio.com/docs/notify/api/credential-resource) */
   "push.apnCredentialSid"?: string;
@@ -77,7 +77,7 @@ export interface ServiceListInstanceCreateOptions {
   codeLength?: number;
   /** Whether to perform a lookup with each verification started and return info about the phone number. */
   lookupEnabled?: boolean;
-  /** Whether to skip sending SMS verifications to landlines. Requires &#x60;lookup_enabled&#x60;. */
+  /** Whether to skip sending SMS verifications to landlines. Requires `lookup_enabled`. */
   skipSmsToLandlines?: boolean;
   /** Whether to ask the user to press a number before delivering the verify code in a phone call. */
   dtmfInputRequired?: boolean;
@@ -85,11 +85,11 @@ export interface ServiceListInstanceCreateOptions {
   ttsName?: string;
   /** Whether to pass PSD2 transaction parameters when starting a verification. */
   psd2Enabled?: boolean;
-  /** Whether to add a security warning at the end of an SMS verification body. Disabled by default and applies only to SMS. Example SMS body: &#x60;Your AppName verification code is: 1234. Don’t share this code with anyone; our employees will never ask for the code&#x60; */
+  /** Whether to add a security warning at the end of an SMS verification body. Disabled by default and applies only to SMS. Example SMS body: `Your AppName verification code is: 1234. Don’t share this code with anyone; our employees will never ask for the code` */
   doNotShareWarningEnabled?: boolean;
   /** Whether to allow sending verifications with a custom code instead of a randomly generated one. Not available for all customers. */
   customCodeEnabled?: boolean;
-  /** Optional configuration for the Push factors. If true, include the date in the Challenge\\\&#39;s response. Otherwise, the date is omitted from the response. See [Challenge](https://www.twilio.com/docs/verify/api/challenge) resource’s details parameter for more info. Default: false. **Deprecated** do not use this parameter. This timestamp value is the same one as the one found in &#x60;date_created&#x60;, please use that one instead. */
+  /** Optional configuration for the Push factors. If true, include the date in the Challenge\\\'s response. Otherwise, the date is omitted from the response. See [Challenge](https://www.twilio.com/docs/verify/api/challenge) resource’s details parameter for more info. Default: false. **Deprecated** do not use this parameter. This timestamp value is the same one as the one found in `date_created`, please use that one instead. */
   "push.includeDate"?: boolean;
   /** Optional configuration for the Push factors. Set the APN Credential for this service. This will allow to send push notifications to iOS devices. See [Credential Resource](https://www.twilio.com/docs/notify/api/credential-resource) */
   "push.apnCredentialSid"?: string;

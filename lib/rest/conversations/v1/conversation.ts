@@ -47,17 +47,17 @@ export interface ConversationContextUpdateOptions {
   dateCreated?: Date;
   /** The date that this resource was last updated. */
   dateUpdated?: Date;
-  /** An optional string metadata field you can use to store any data you wish. The string value must contain structurally valid JSON if specified.  **Note** that if the attributes are not set \\\&quot;{}\\\&quot; will be returned. */
+  /** An optional string metadata field you can use to store any data you wish. The string value must contain structurally valid JSON if specified.  **Note** that if the attributes are not set \\\"{}\\\" will be returned. */
   attributes?: string;
   /** The unique ID of the [Messaging Service](https://www.twilio.com/docs/sms/services/api) this conversation belongs to. */
   messagingServiceSid?: string;
   /**  */
   state?: ConversationState;
-  /** ISO8601 duration when conversation will be switched to &#x60;inactive&#x60; state. Minimum value for this timer is 1 minute. */
+  /** ISO8601 duration when conversation will be switched to `inactive` state. Minimum value for this timer is 1 minute. */
   "timers.inactive"?: string;
-  /** ISO8601 duration when conversation will be switched to &#x60;closed&#x60; state. Minimum value for this timer is 10 minutes. */
+  /** ISO8601 duration when conversation will be switched to `closed` state. Minimum value for this timer is 10 minutes. */
   "timers.closed"?: string;
-  /** An application-defined string that uniquely identifies the resource. It can be used to address the resource in place of the resource\\\&#39;s &#x60;sid&#x60; in the URL. */
+  /** An application-defined string that uniquely identifies the resource. It can be used to address the resource in place of the resource\\\'s `sid` in the URL. */
   uniqueName?: string;
 }
 
@@ -69,7 +69,7 @@ export interface ConversationListInstanceCreateOptions {
   xTwilioWebhookEnabled?: ConversationWebhookEnabledType;
   /** The human-readable name of this conversation, limited to 256 characters. Optional. */
   friendlyName?: string;
-  /** An application-defined string that uniquely identifies the resource. It can be used to address the resource in place of the resource\\\&#39;s &#x60;sid&#x60; in the URL. */
+  /** An application-defined string that uniquely identifies the resource. It can be used to address the resource in place of the resource\\\'s `sid` in the URL. */
   uniqueName?: string;
   /** The date that this resource was created. */
   dateCreated?: Date;
@@ -77,13 +77,13 @@ export interface ConversationListInstanceCreateOptions {
   dateUpdated?: Date;
   /** The unique ID of the [Messaging Service](https://www.twilio.com/docs/sms/services/api) this conversation belongs to. */
   messagingServiceSid?: string;
-  /** An optional string metadata field you can use to store any data you wish. The string value must contain structurally valid JSON if specified.  **Note** that if the attributes are not set \\\&quot;{}\\\&quot; will be returned. */
+  /** An optional string metadata field you can use to store any data you wish. The string value must contain structurally valid JSON if specified.  **Note** that if the attributes are not set \\\"{}\\\" will be returned. */
   attributes?: string;
   /**  */
   state?: ConversationState;
-  /** ISO8601 duration when conversation will be switched to &#x60;inactive&#x60; state. Minimum value for this timer is 1 minute. */
+  /** ISO8601 duration when conversation will be switched to `inactive` state. Minimum value for this timer is 1 minute. */
   "timers.inactive"?: string;
-  /** ISO8601 duration when conversation will be switched to &#x60;closed&#x60; state. Minimum value for this timer is 10 minutes. */
+  /** ISO8601 duration when conversation will be switched to `closed` state. Minimum value for this timer is 10 minutes. */
   "timers.closed"?: string;
 }
 /**

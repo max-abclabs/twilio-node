@@ -34,17 +34,17 @@ import { WebhookListInstance } from "./assistant/webhook";
 export interface AssistantContextUpdateOptions {
   /** A descriptive string that you create to describe the resource. It is not unique and can be up to 255 characters long. */
   friendlyName?: string;
-  /** Whether queries should be logged and kept after training. Can be: &#x60;true&#x60; or &#x60;false&#x60; and defaults to &#x60;true&#x60;. If &#x60;true&#x60;, queries are stored for 30 days, and then deleted. If &#x60;false&#x60;, no queries are stored. */
+  /** Whether queries should be logged and kept after training. Can be: `true` or `false` and defaults to `true`. If `true`, queries are stored for 30 days, and then deleted. If `false`, no queries are stored. */
   logQueries?: boolean;
-  /** An application-defined string that uniquely identifies the resource. It can be used as an alternative to the &#x60;sid&#x60; in the URL path to address the resource. The first 64 characters must be unique. */
+  /** An application-defined string that uniquely identifies the resource. It can be used as an alternative to the `sid` in the URL path to address the resource. The first 64 characters must be unique. */
   uniqueName?: string;
   /** Reserved. */
   callbackUrl?: string;
   /** Reserved. */
   callbackEvents?: string;
-  /** The JSON string that defines the Assistant\\\&#39;s [style sheet](https://www.twilio.com/docs/autopilot/api/assistant/stylesheet) */
+  /** The JSON string that defines the Assistant\\\'s [style sheet](https://www.twilio.com/docs/autopilot/api/assistant/stylesheet) */
   styleSheet?: any;
-  /** A JSON object that defines the Assistant\\\&#39;s [default tasks](https://www.twilio.com/docs/autopilot/api/assistant/defaults) for various scenarios, including initiation actions and fallback tasks. */
+  /** A JSON object that defines the Assistant\\\'s [default tasks](https://www.twilio.com/docs/autopilot/api/assistant/defaults) for various scenarios, including initiation actions and fallback tasks. */
   defaults?: any;
   /** A string describing the state of the assistant. */
   developmentStage?: string;
@@ -56,17 +56,17 @@ export interface AssistantContextUpdateOptions {
 export interface AssistantListInstanceCreateOptions {
   /** A descriptive string that you create to describe the new resource. It is not unique and can be up to 255 characters long. */
   friendlyName?: string;
-  /** Whether queries should be logged and kept after training. Can be: &#x60;true&#x60; or &#x60;false&#x60; and defaults to &#x60;true&#x60;. If &#x60;true&#x60;, queries are stored for 30 days, and then deleted. If &#x60;false&#x60;, no queries are stored. */
+  /** Whether queries should be logged and kept after training. Can be: `true` or `false` and defaults to `true`. If `true`, queries are stored for 30 days, and then deleted. If `false`, no queries are stored. */
   logQueries?: boolean;
-  /** An application-defined string that uniquely identifies the new resource. It can be used as an alternative to the &#x60;sid&#x60; in the URL path to address the resource. The first 64 characters must be unique. */
+  /** An application-defined string that uniquely identifies the new resource. It can be used as an alternative to the `sid` in the URL path to address the resource. The first 64 characters must be unique. */
   uniqueName?: string;
   /** Reserved. */
   callbackUrl?: string;
   /** Reserved. */
   callbackEvents?: string;
-  /** The JSON string that defines the Assistant\\\&#39;s [style sheet](https://www.twilio.com/docs/autopilot/api/assistant/stylesheet) */
+  /** The JSON string that defines the Assistant\\\'s [style sheet](https://www.twilio.com/docs/autopilot/api/assistant/stylesheet) */
   styleSheet?: any;
-  /** A JSON object that defines the Assistant\\\&#39;s [default tasks](https://www.twilio.com/docs/autopilot/api/assistant/defaults) for various scenarios, including initiation actions and fallback tasks. */
+  /** A JSON object that defines the Assistant\\\'s [default tasks](https://www.twilio.com/docs/autopilot/api/assistant/defaults) for various scenarios, including initiation actions and fallback tasks. */
   defaults?: any;
 }
 /**

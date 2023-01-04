@@ -62,7 +62,7 @@ export interface AccountContextUpdateOptions {
  * Options to pass to create a AccountInstance
  */
 export interface AccountListInstanceCreateOptions {
-  /** A human readable description of the account to create, defaults to &#x60;SubAccount Created at {YYYY-MM-DD HH:MM meridian}&#x60; */
+  /** A human readable description of the account to create, defaults to `SubAccount Created at {YYYY-MM-DD HH:MM meridian}` */
   friendlyName?: string;
 }
 /**
@@ -71,7 +71,7 @@ export interface AccountListInstanceCreateOptions {
 export interface AccountListInstanceEachOptions {
   /** Only return the Account resources with friendly names that exactly match this name. */
   friendlyName?: string;
-  /** Only return Account resources with the given status. Can be &#x60;closed&#x60;, &#x60;suspended&#x60; or &#x60;active&#x60;. */
+  /** Only return Account resources with the given status. Can be `closed`, `suspended` or `active`. */
   status?: AccountStatus;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -89,7 +89,7 @@ export interface AccountListInstanceEachOptions {
 export interface AccountListInstanceOptions {
   /** Only return the Account resources with friendly names that exactly match this name. */
   friendlyName?: string;
-  /** Only return Account resources with the given status. Can be &#x60;closed&#x60;, &#x60;suspended&#x60; or &#x60;active&#x60;. */
+  /** Only return Account resources with the given status. Can be `closed`, `suspended` or `active`. */
   status?: AccountStatus;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -103,7 +103,7 @@ export interface AccountListInstanceOptions {
 export interface AccountListInstancePageOptions {
   /** Only return the Account resources with friendly names that exactly match this name. */
   friendlyName?: string;
-  /** Only return Account resources with the given status. Can be &#x60;closed&#x60;, &#x60;suspended&#x60; or &#x60;active&#x60;. */
+  /** Only return Account resources with the given status. Can be `closed`, `suspended` or `active`. */
   status?: AccountStatus;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

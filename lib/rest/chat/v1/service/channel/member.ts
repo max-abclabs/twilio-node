@@ -34,7 +34,7 @@ export interface MemberContextUpdateOptions {
  * Options to pass to create a MemberInstance
  */
 export interface MemberListInstanceCreateOptions {
-  /** The &#x60;identity&#x60; value that uniquely identifies the new resource\\\&#39;s [User](https://www.twilio.com/docs/api/chat/rest/v1/user) within the [Service](https://www.twilio.com/docs/api/chat/rest/services). See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more details. */
+  /** The `identity` value that uniquely identifies the new resource\\\'s [User](https://www.twilio.com/docs/api/chat/rest/v1/user) within the [Service](https://www.twilio.com/docs/api/chat/rest/services). See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more details. */
   identity: string;
   /** The SID of the [Role](https://www.twilio.com/docs/api/chat/rest/roles) to assign to the member. The default roles are those specified on the [Service](https://www.twilio.com/docs/chat/api/services). */
   roleSid?: string;
@@ -43,7 +43,7 @@ export interface MemberListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface MemberListInstanceEachOptions {
-  /** The [User](https://www.twilio.com/docs/api/chat/rest/v1/user)\&#39;s &#x60;identity&#x60; value of the resources to read. See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more details. */
+  /** The [User](https://www.twilio.com/docs/api/chat/rest/v1/user)\'s `identity` value of the resources to read. See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more details. */
   identity?: Array<string>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -59,7 +59,7 @@ export interface MemberListInstanceEachOptions {
  * Options to pass to list
  */
 export interface MemberListInstanceOptions {
-  /** The [User](https://www.twilio.com/docs/api/chat/rest/v1/user)\&#39;s &#x60;identity&#x60; value of the resources to read. See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more details. */
+  /** The [User](https://www.twilio.com/docs/api/chat/rest/v1/user)\'s `identity` value of the resources to read. See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more details. */
   identity?: Array<string>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -71,7 +71,7 @@ export interface MemberListInstanceOptions {
  * Options to pass to page
  */
 export interface MemberListInstancePageOptions {
-  /** The [User](https://www.twilio.com/docs/api/chat/rest/v1/user)\&#39;s &#x60;identity&#x60; value of the resources to read. See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more details. */
+  /** The [User](https://www.twilio.com/docs/api/chat/rest/v1/user)\'s `identity` value of the resources to read. See [access tokens](https://www.twilio.com/docs/api/chat/guides/create-tokens) for more details. */
   identity?: Array<string>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

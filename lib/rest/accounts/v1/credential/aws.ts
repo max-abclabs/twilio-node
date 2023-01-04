@@ -32,7 +32,7 @@ export interface AwsContextUpdateOptions {
  * Options to pass to create a AwsInstance
  */
 export interface AwsListInstanceCreateOptions {
-  /** A string that contains the AWS access credentials in the format &#x60;&lt;AWS_ACCESS_KEY_ID&gt;:&lt;AWS_SECRET_ACCESS_KEY&gt;&#x60;. For example, &#x60;AKIAIOSFODNN7EXAMPLE:wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY&#x60; */
+  /** A string that contains the AWS access credentials in the format `<AWS_ACCESS_KEY_ID>:<AWS_SECRET_ACCESS_KEY>`. For example, `AKIAIOSFODNN7EXAMPLE:wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY` */
   credentials: string;
   /** A descriptive string that you create to describe the resource. It can be up to 64 characters long. */
   friendlyName?: string;

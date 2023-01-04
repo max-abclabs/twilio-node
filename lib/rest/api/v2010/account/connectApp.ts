@@ -30,9 +30,9 @@ export interface ConnectAppContextUpdateOptions {
   authorizeRedirectUrl?: string;
   /** The company name to set for the Connect App. */
   companyName?: string;
-  /** The HTTP method to use when calling &#x60;deauthorize_callback_url&#x60;. */
+  /** The HTTP method to use when calling `deauthorize_callback_url`. */
   deauthorizeCallbackMethod?: string;
-  /** The URL to call using the &#x60;deauthorize_callback_method&#x60; to de-authorize the Connect App. */
+  /** The URL to call using the `deauthorize_callback_method` to de-authorize the Connect App. */
   deauthorizeCallbackUrl?: string;
   /** A description of the Connect App. */
   description?: string;
@@ -40,7 +40,7 @@ export interface ConnectAppContextUpdateOptions {
   friendlyName?: string;
   /** A public URL where users can obtain more information about this Connect App. */
   homepageUrl?: string;
-  /** A comma-separated list of the permissions you will request from the users of this ConnectApp.  Can include: &#x60;get-all&#x60; and &#x60;post-all&#x60;. */
+  /** A comma-separated list of the permissions you will request from the users of this ConnectApp.  Can include: `get-all` and `post-all`. */
   permissions?: Array<ConnectAppPermission>;
 }
 /**

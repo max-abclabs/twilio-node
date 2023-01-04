@@ -36,7 +36,7 @@ export interface VerificationAttemptsSummaryContextFetchOptions {
   dateCreatedBefore?: Date;
   /** Filter used to consider only Verification Attempts sent to the specified destination country on the summary aggregation. */
   country?: string;
-  /** Filter Verification Attempts considered on the summary aggregation by communication channel. Valid values are &#x60;SMS&#x60; and &#x60;CALL&#x60; */
+  /** Filter Verification Attempts considered on the summary aggregation by communication channel. Valid values are `SMS` and `CALL` */
   channel?: VerificationAttemptsSummaryChannels;
   /** Filter the Verification Attempts considered on the summary aggregation by Destination prefix. It is the prefix of a phone number in E.164 format. */
   destinationPrefix?: string;

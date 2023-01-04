@@ -57,7 +57,7 @@ export interface TollfreeVerificationListInstanceCreateOptions {
   messageVolume: string;
   /** The SID of the Phone Number associated with the Tollfree Verification. */
   tollfreePhoneNumberSid: string;
-  /** Customer\\\&#39;s Profile Bundle BundleSid. */
+  /** Customer\\\'s Profile Bundle BundleSid. */
   customerProfileSid?: string;
   /** The address of the business or organization using the Tollfree number. */
   businessStreetAddress?: string;

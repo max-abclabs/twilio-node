@@ -24,7 +24,7 @@ import { isValidPathParam } from "../../../../../base/utility";
  * Options to pass to create a FieldValueInstance
  */
 export interface FieldValueListInstanceCreateOptions {
-  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) tag that specifies the language of the value. Currently supported tags: &#x60;en-US&#x60; */
+  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) tag that specifies the language of the value. Currently supported tags: `en-US` */
   language: string;
   /** The Field Value data. */
   value: string;
@@ -35,7 +35,7 @@ export interface FieldValueListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface FieldValueListInstanceEachOptions {
-  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) tag that specifies the language of the value. Currently supported tags: &#x60;en-US&#x60; */
+  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) tag that specifies the language of the value. Currently supported tags: `en-US` */
   language?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -51,7 +51,7 @@ export interface FieldValueListInstanceEachOptions {
  * Options to pass to list
  */
 export interface FieldValueListInstanceOptions {
-  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) tag that specifies the language of the value. Currently supported tags: &#x60;en-US&#x60; */
+  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) tag that specifies the language of the value. Currently supported tags: `en-US` */
   language?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -63,7 +63,7 @@ export interface FieldValueListInstanceOptions {
  * Options to pass to page
  */
 export interface FieldValueListInstancePageOptions {
-  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) tag that specifies the language of the value. Currently supported tags: &#x60;en-US&#x60; */
+  /** The [ISO language-country](https://docs.oracle.com/cd/E13214_01/wli/docs92/xref/xqisocodes.html) tag that specifies the language of the value. Currently supported tags: `en-US` */
   language?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

@@ -30,7 +30,7 @@ export interface ConfigurationContextUpdateOptions {
   defaultConversationRoleSid?: string;
   /** The service-level role assigned to users when they are added to the service. See the [Conversation Role](https://www.twilio.com/docs/conversations/api/role-resource) for more info about roles. */
   defaultChatServiceRoleSid?: string;
-  /** Whether the [Reachability Indicator](https://www.twilio.com/docs/chat/reachability-indicator) is enabled for this Conversations Service. The default is &#x60;false&#x60;. */
+  /** Whether the [Reachability Indicator](https://www.twilio.com/docs/chat/reachability-indicator) is enabled for this Conversations Service. The default is `false`. */
   reachabilityEnabled?: boolean;
 }
 

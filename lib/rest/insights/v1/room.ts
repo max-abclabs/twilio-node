@@ -60,9 +60,9 @@ type VideoRoomSummaryTwilioRealm =
  * Options to pass to each
  */
 export interface RoomListInstanceEachOptions {
-  /** Type of room. Can be &#x60;go&#x60;, &#x60;peer_to_peer&#x60;, &#x60;group&#x60;, or &#x60;group_small&#x60;. */
+  /** Type of room. Can be `go`, `peer_to_peer`, `group`, or `group_small`. */
   roomType?: Array<VideoRoomSummaryRoomType>;
-  /** Codecs used by participants in the room. Can be &#x60;VP8&#x60;, &#x60;H264&#x60;, or &#x60;VP9&#x60;. */
+  /** Codecs used by participants in the room. Can be `VP8`, `H264`, or `VP9`. */
   codec?: Array<VideoRoomSummaryCodec>;
   /** Room friendly name. */
   roomName?: string;
@@ -84,9 +84,9 @@ export interface RoomListInstanceEachOptions {
  * Options to pass to list
  */
 export interface RoomListInstanceOptions {
-  /** Type of room. Can be &#x60;go&#x60;, &#x60;peer_to_peer&#x60;, &#x60;group&#x60;, or &#x60;group_small&#x60;. */
+  /** Type of room. Can be `go`, `peer_to_peer`, `group`, or `group_small`. */
   roomType?: Array<VideoRoomSummaryRoomType>;
-  /** Codecs used by participants in the room. Can be &#x60;VP8&#x60;, &#x60;H264&#x60;, or &#x60;VP9&#x60;. */
+  /** Codecs used by participants in the room. Can be `VP8`, `H264`, or `VP9`. */
   codec?: Array<VideoRoomSummaryCodec>;
   /** Room friendly name. */
   roomName?: string;
@@ -104,9 +104,9 @@ export interface RoomListInstanceOptions {
  * Options to pass to page
  */
 export interface RoomListInstancePageOptions {
-  /** Type of room. Can be &#x60;go&#x60;, &#x60;peer_to_peer&#x60;, &#x60;group&#x60;, or &#x60;group_small&#x60;. */
+  /** Type of room. Can be `go`, `peer_to_peer`, `group`, or `group_small`. */
   roomType?: Array<VideoRoomSummaryRoomType>;
-  /** Codecs used by participants in the room. Can be &#x60;VP8&#x60;, &#x60;H264&#x60;, or &#x60;VP9&#x60;. */
+  /** Codecs used by participants in the room. Can be `VP8`, `H264`, or `VP9`. */
   codec?: Array<VideoRoomSummaryCodec>;
   /** Room friendly name. */
   roomName?: string;

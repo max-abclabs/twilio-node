@@ -28,15 +28,15 @@ type ChannelWebhookType = "webhook" | "trigger" | "studio";
  * Options to pass to update a WebhookInstance
  */
 export interface WebhookContextUpdateOptions {
-  /** The URL of the webhook to call using the &#x60;configuration.method&#x60;. */
+  /** The URL of the webhook to call using the `configuration.method`. */
   "configuration.url"?: string;
   /**  */
   "configuration.method"?: ChannelWebhookMethod;
-  /** The events that cause us to call the Channel Webhook. Used when &#x60;type&#x60; is &#x60;webhook&#x60;. This parameter takes only one event. To specify more than one event, repeat this parameter for each event. For the list of possible events, see [Webhook Event Triggers](https://www.twilio.com/docs/chat/webhook-events#webhook-event-trigger). */
+  /** The events that cause us to call the Channel Webhook. Used when `type` is `webhook`. This parameter takes only one event. To specify more than one event, repeat this parameter for each event. For the list of possible events, see [Webhook Event Triggers](https://www.twilio.com/docs/chat/webhook-events#webhook-event-trigger). */
   "configuration.filters"?: Array<string>;
-  /** A string that will cause us to call the webhook when it is present in a message body. This parameter takes only one trigger string. To specify more than one, repeat this parameter for each trigger string up to a total of 5 trigger strings. Used only when &#x60;type&#x60; &#x3D; &#x60;trigger&#x60;. */
+  /** A string that will cause us to call the webhook when it is present in a message body. This parameter takes only one trigger string. To specify more than one, repeat this parameter for each trigger string up to a total of 5 trigger strings. Used only when `type` = `trigger`. */
   "configuration.triggers"?: Array<string>;
-  /** The SID of the Studio [Flow](https://www.twilio.com/docs/studio/rest-api/flow) to call when an event in &#x60;configuration.filters&#x60; occurs. Used only when &#x60;type&#x60; &#x3D; &#x60;studio&#x60;. */
+  /** The SID of the Studio [Flow](https://www.twilio.com/docs/studio/rest-api/flow) to call when an event in `configuration.filters` occurs. Used only when `type` = `studio`. */
   "configuration.flowSid"?: string;
   /** The number of times to retry the webhook if the first attempt fails. Can be an integer between 0 and 3, inclusive, and the default is 0. */
   "configuration.retryCount"?: number;
@@ -48,15 +48,15 @@ export interface WebhookContextUpdateOptions {
 export interface WebhookListInstanceCreateOptions {
   /**  */
   type: ChannelWebhookType;
-  /** The URL of the webhook to call using the &#x60;configuration.method&#x60;. */
+  /** The URL of the webhook to call using the `configuration.method`. */
   "configuration.url"?: string;
   /**  */
   "configuration.method"?: ChannelWebhookMethod;
-  /** The events that cause us to call the Channel Webhook. Used when &#x60;type&#x60; is &#x60;webhook&#x60;. This parameter takes only one event. To specify more than one event, repeat this parameter for each event. For the list of possible events, see [Webhook Event Triggers](https://www.twilio.com/docs/chat/webhook-events#webhook-event-trigger). */
+  /** The events that cause us to call the Channel Webhook. Used when `type` is `webhook`. This parameter takes only one event. To specify more than one event, repeat this parameter for each event. For the list of possible events, see [Webhook Event Triggers](https://www.twilio.com/docs/chat/webhook-events#webhook-event-trigger). */
   "configuration.filters"?: Array<string>;
-  /** A string that will cause us to call the webhook when it is present in a message body. This parameter takes only one trigger string. To specify more than one, repeat this parameter for each trigger string up to a total of 5 trigger strings. Used only when &#x60;type&#x60; &#x3D; &#x60;trigger&#x60;. */
+  /** A string that will cause us to call the webhook when it is present in a message body. This parameter takes only one trigger string. To specify more than one, repeat this parameter for each trigger string up to a total of 5 trigger strings. Used only when `type` = `trigger`. */
   "configuration.triggers"?: Array<string>;
-  /** The SID of the Studio [Flow](https://www.twilio.com/docs/studio/rest-api/flow) to call when an event in &#x60;configuration.filters&#x60; occurs. Used only when &#x60;type&#x60; is &#x60;studio&#x60;. */
+  /** The SID of the Studio [Flow](https://www.twilio.com/docs/studio/rest-api/flow) to call when an event in `configuration.filters` occurs. Used only when `type` is `studio`. */
   "configuration.flowSid"?: string;
   /** The number of times to retry the webhook if the first attempt fails. Can be an integer between 0 and 3, inclusive, and the default is 0. */
   "configuration.retryCount"?: number;

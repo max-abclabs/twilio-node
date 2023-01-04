@@ -41,7 +41,7 @@ export interface DocumentListInstanceCreateOptions {
   uniqueName?: string;
   /** A JSON string that represents an arbitrary, schema-less object that the Sync Document stores. Can be up to 16 KiB in length. */
   data?: any;
-  /** How long, [in seconds](https://www.twilio.com/docs/sync/limits#sync-payload-limits), before the Sync Document expires and is deleted (the Sync Document\\\&#39;s time-to-live). */
+  /** How long, [in seconds](https://www.twilio.com/docs/sync/limits#sync-payload-limits), before the Sync Document expires and is deleted (the Sync Document\\\'s time-to-live). */
   ttl?: number;
 }
 /**

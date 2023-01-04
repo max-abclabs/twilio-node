@@ -45,35 +45,35 @@ type IncomingPhoneNumberLocalVoiceReceiveMode = "voice" | "fax";
 export interface LocalListInstanceCreateOptions {
   /** The phone number to purchase specified in [E.164](https://www.twilio.com/docs/glossary/what-e164) format.  E.164 phone numbers consist of a + followed by the country code and subscriber number without punctuation characters. For example, +14155551234. */
   phoneNumber: string;
-  /** The API version to use for incoming calls made to the new phone number. The default is &#x60;2010-04-01&#x60;. */
+  /** The API version to use for incoming calls made to the new phone number. The default is `2010-04-01`. */
   apiVersion?: string;
   /** A descriptive string that you created to describe the new phone number. It can be up to 64 characters long. By default, this is a formatted version of the phone number. */
   friendlyName?: string;
-  /** The SID of the application that should handle SMS messages sent to the new phone number. If an &#x60;sms_application_sid&#x60; is present, we ignore all of the &#x60;sms_*_url&#x60; urls and use those set on the application. */
+  /** The SID of the application that should handle SMS messages sent to the new phone number. If an `sms_application_sid` is present, we ignore all of the `sms_*_url` urls and use those set on the application. */
   smsApplicationSid?: string;
-  /** The HTTP method that we should use to call &#x60;sms_fallback_url&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60; and defaults to &#x60;POST&#x60;. */
+  /** The HTTP method that we should use to call `sms_fallback_url`. Can be: `GET` or `POST` and defaults to `POST`. */
   smsFallbackMethod?: string;
-  /** The URL that we should call when an error occurs while requesting or executing the TwiML defined by &#x60;sms_url&#x60;. */
+  /** The URL that we should call when an error occurs while requesting or executing the TwiML defined by `sms_url`. */
   smsFallbackUrl?: string;
-  /** The HTTP method that we should use to call &#x60;sms_url&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60; and defaults to &#x60;POST&#x60;. */
+  /** The HTTP method that we should use to call `sms_url`. Can be: `GET` or `POST` and defaults to `POST`. */
   smsMethod?: string;
   /** The URL we should call when the new phone number receives an incoming SMS message. */
   smsUrl?: string;
-  /** The URL we should call using the &#x60;status_callback_method&#x60; to send status information to your application. */
+  /** The URL we should call using the `status_callback_method` to send status information to your application. */
   statusCallback?: string;
-  /** The HTTP method we should use to call &#x60;status_callback&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60; and defaults to &#x60;POST&#x60;. */
+  /** The HTTP method we should use to call `status_callback`. Can be: `GET` or `POST` and defaults to `POST`. */
   statusCallbackMethod?: string;
-  /** The SID of the application we should use to handle calls to the new phone number. If a &#x60;voice_application_sid&#x60; is present, we ignore all of the voice urls and use only those set on the application. Setting a &#x60;voice_application_sid&#x60; will automatically delete your &#x60;trunk_sid&#x60; and vice versa. */
+  /** The SID of the application we should use to handle calls to the new phone number. If a `voice_application_sid` is present, we ignore all of the voice urls and use only those set on the application. Setting a `voice_application_sid` will automatically delete your `trunk_sid` and vice versa. */
   voiceApplicationSid?: string;
-  /** Whether to lookup the caller\\\&#39;s name from the CNAM database and post it to your app. Can be: &#x60;true&#x60; or &#x60;false&#x60; and defaults to &#x60;false&#x60;. */
+  /** Whether to lookup the caller\\\'s name from the CNAM database and post it to your app. Can be: `true` or `false` and defaults to `false`. */
   voiceCallerIdLookup?: boolean;
-  /** The HTTP method that we should use to call &#x60;voice_fallback_url&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60; and defaults to &#x60;POST&#x60;. */
+  /** The HTTP method that we should use to call `voice_fallback_url`. Can be: `GET` or `POST` and defaults to `POST`. */
   voiceFallbackMethod?: string;
-  /** The URL that we should call when an error occurs retrieving or executing the TwiML requested by &#x60;url&#x60;. */
+  /** The URL that we should call when an error occurs retrieving or executing the TwiML requested by `url`. */
   voiceFallbackUrl?: string;
-  /** The HTTP method that we should use to call &#x60;voice_url&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60; and defaults to &#x60;POST&#x60;. */
+  /** The HTTP method that we should use to call `voice_url`. Can be: `GET` or `POST` and defaults to `POST`. */
   voiceMethod?: string;
-  /** The URL that we should call to answer a call to the new phone number. The &#x60;voice_url&#x60; will not be called if a &#x60;voice_application_sid&#x60; or a &#x60;trunk_sid&#x60; is set. */
+  /** The URL that we should call to answer a call to the new phone number. The `voice_url` will not be called if a `voice_application_sid` or a `trunk_sid` is set. */
   voiceUrl?: string;
   /** The SID of the Identity resource that we should associate with the new phone number. Some regions require an identity to meet local regulations. */
   identitySid?: string;
@@ -83,7 +83,7 @@ export interface LocalListInstanceCreateOptions {
   emergencyStatus?: IncomingPhoneNumberLocalEmergencyStatus;
   /** The SID of the emergency address configuration to use for emergency calling from the new phone number. */
   emergencyAddressSid?: string;
-  /** The SID of the Trunk we should use to handle calls to the new phone number. If a &#x60;trunk_sid&#x60; is present, we ignore all of the voice urls and voice applications and use only those set on the Trunk. Setting a &#x60;trunk_sid&#x60; will automatically delete your &#x60;voice_application_sid&#x60; and vice versa. */
+  /** The SID of the Trunk we should use to handle calls to the new phone number. If a `trunk_sid` is present, we ignore all of the voice urls and voice applications and use only those set on the Trunk. Setting a `trunk_sid` will automatically delete your `voice_application_sid` and vice versa. */
   trunkSid?: string;
   /**  */
   voiceReceiveMode?: IncomingPhoneNumberLocalVoiceReceiveMode;
@@ -94,13 +94,13 @@ export interface LocalListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface LocalListInstanceEachOptions {
-  /** Whether to include phone numbers new to the Twilio platform. Can be: &#x60;true&#x60; or &#x60;false&#x60; and the default is &#x60;true&#x60;. */
+  /** Whether to include phone numbers new to the Twilio platform. Can be: `true` or `false` and the default is `true`. */
   beta?: boolean;
   /** A string that identifies the resources to read. */
   friendlyName?: string;
-  /** The phone numbers of the IncomingPhoneNumber resources to read. You can specify partial numbers and use \&#39;*\&#39; as a wildcard for any digit. */
+  /** The phone numbers of the IncomingPhoneNumber resources to read. You can specify partial numbers and use \'*\' as a wildcard for any digit. */
   phoneNumber?: string;
-  /** Whether to include phone numbers based on their origin. Can be: &#x60;twilio&#x60; or &#x60;hosted&#x60;. By default, phone numbers of all origin are included. */
+  /** Whether to include phone numbers based on their origin. Can be: `twilio` or `hosted`. By default, phone numbers of all origin are included. */
   origin?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -116,13 +116,13 @@ export interface LocalListInstanceEachOptions {
  * Options to pass to list
  */
 export interface LocalListInstanceOptions {
-  /** Whether to include phone numbers new to the Twilio platform. Can be: &#x60;true&#x60; or &#x60;false&#x60; and the default is &#x60;true&#x60;. */
+  /** Whether to include phone numbers new to the Twilio platform. Can be: `true` or `false` and the default is `true`. */
   beta?: boolean;
   /** A string that identifies the resources to read. */
   friendlyName?: string;
-  /** The phone numbers of the IncomingPhoneNumber resources to read. You can specify partial numbers and use \&#39;*\&#39; as a wildcard for any digit. */
+  /** The phone numbers of the IncomingPhoneNumber resources to read. You can specify partial numbers and use \'*\' as a wildcard for any digit. */
   phoneNumber?: string;
-  /** Whether to include phone numbers based on their origin. Can be: &#x60;twilio&#x60; or &#x60;hosted&#x60;. By default, phone numbers of all origin are included. */
+  /** Whether to include phone numbers based on their origin. Can be: `twilio` or `hosted`. By default, phone numbers of all origin are included. */
   origin?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -134,13 +134,13 @@ export interface LocalListInstanceOptions {
  * Options to pass to page
  */
 export interface LocalListInstancePageOptions {
-  /** Whether to include phone numbers new to the Twilio platform. Can be: &#x60;true&#x60; or &#x60;false&#x60; and the default is &#x60;true&#x60;. */
+  /** Whether to include phone numbers new to the Twilio platform. Can be: `true` or `false` and the default is `true`. */
   beta?: boolean;
   /** A string that identifies the resources to read. */
   friendlyName?: string;
-  /** The phone numbers of the IncomingPhoneNumber resources to read. You can specify partial numbers and use \&#39;*\&#39; as a wildcard for any digit. */
+  /** The phone numbers of the IncomingPhoneNumber resources to read. You can specify partial numbers and use \'*\' as a wildcard for any digit. */
   phoneNumber?: string;
-  /** Whether to include phone numbers based on their origin. Can be: &#x60;twilio&#x60; or &#x60;hosted&#x60;. By default, phone numbers of all origin are included. */
+  /** Whether to include phone numbers based on their origin. Can be: `twilio` or `hosted`. By default, phone numbers of all origin are included. */
   origin?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

@@ -27,9 +27,9 @@ export interface ConfigurationContextUpdateOptions {
   defaultChatServiceSid?: string;
   /** The SID of the default [Messaging Service](https://www.twilio.com/docs/sms/services/api) to use when creating a conversation. */
   defaultMessagingServiceSid?: string;
-  /** Default ISO8601 duration when conversation will be switched to &#x60;inactive&#x60; state. Minimum value for this timer is 1 minute. */
+  /** Default ISO8601 duration when conversation will be switched to `inactive` state. Minimum value for this timer is 1 minute. */
   defaultInactiveTimer?: string;
-  /** Default ISO8601 duration when conversation will be switched to &#x60;closed&#x60; state. Minimum value for this timer is 10 minutes. */
+  /** Default ISO8601 duration when conversation will be switched to `closed` state. Minimum value for this timer is 10 minutes. */
   defaultClosedTimer?: string;
 }
 

@@ -36,13 +36,13 @@ export interface VerificationAttemptListInstanceEachOptions {
   "channelData.to"?: string;
   /** Filter used to query Verification Attempts sent to the specified destination country. */
   country?: string;
-  /** Filter used to query Verification Attempts by communication channel. Valid values are &#x60;SMS&#x60; and &#x60;CALL&#x60; */
+  /** Filter used to query Verification Attempts by communication channel. Valid values are `SMS` and `CALL` */
   channel?: VerificationAttemptChannels;
   /** Filter used to query Verification Attempts by verify service. Only attempts of the provided SID will be returned. */
   verifyServiceSid?: string;
   /** Filter used to return all the Verification Attempts of a single verification. Only attempts of the provided verification SID will be returned. */
   verificationSid?: string;
-  /** Filter used to query Verification Attempts by conversion status. Valid values are &#x60;UNCONVERTED&#x60;, for attempts that were not converted, and &#x60;CONVERTED&#x60;, for attempts that were confirmed. */
+  /** Filter used to query Verification Attempts by conversion status. Valid values are `UNCONVERTED`, for attempts that were not converted, and `CONVERTED`, for attempts that were confirmed. */
   status?: VerificationAttemptConversionStatus;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -69,13 +69,13 @@ export interface VerificationAttemptListInstanceOptions {
   "channelData.to"?: string;
   /** Filter used to query Verification Attempts sent to the specified destination country. */
   country?: string;
-  /** Filter used to query Verification Attempts by communication channel. Valid values are &#x60;SMS&#x60; and &#x60;CALL&#x60; */
+  /** Filter used to query Verification Attempts by communication channel. Valid values are `SMS` and `CALL` */
   channel?: VerificationAttemptChannels;
   /** Filter used to query Verification Attempts by verify service. Only attempts of the provided SID will be returned. */
   verifyServiceSid?: string;
   /** Filter used to return all the Verification Attempts of a single verification. Only attempts of the provided verification SID will be returned. */
   verificationSid?: string;
-  /** Filter used to query Verification Attempts by conversion status. Valid values are &#x60;UNCONVERTED&#x60;, for attempts that were not converted, and &#x60;CONVERTED&#x60;, for attempts that were confirmed. */
+  /** Filter used to query Verification Attempts by conversion status. Valid values are `UNCONVERTED`, for attempts that were not converted, and `CONVERTED`, for attempts that were confirmed. */
   status?: VerificationAttemptConversionStatus;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -95,13 +95,13 @@ export interface VerificationAttemptListInstancePageOptions {
   "channelData.to"?: string;
   /** Filter used to query Verification Attempts sent to the specified destination country. */
   country?: string;
-  /** Filter used to query Verification Attempts by communication channel. Valid values are &#x60;SMS&#x60; and &#x60;CALL&#x60; */
+  /** Filter used to query Verification Attempts by communication channel. Valid values are `SMS` and `CALL` */
   channel?: VerificationAttemptChannels;
   /** Filter used to query Verification Attempts by verify service. Only attempts of the provided SID will be returned. */
   verifyServiceSid?: string;
   /** Filter used to return all the Verification Attempts of a single verification. Only attempts of the provided verification SID will be returned. */
   verificationSid?: string;
-  /** Filter used to query Verification Attempts by conversion status. Valid values are &#x60;UNCONVERTED&#x60;, for attempts that were not converted, and &#x60;CONVERTED&#x60;, for attempts that were confirmed. */
+  /** Filter used to query Verification Attempts by conversion status. Valid values are `UNCONVERTED`, for attempts that were not converted, and `CONVERTED`, for attempts that were confirmed. */
   status?: VerificationAttemptConversionStatus;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

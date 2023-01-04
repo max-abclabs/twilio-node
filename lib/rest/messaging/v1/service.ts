@@ -33,13 +33,13 @@ type ServiceScanMessageContent = "inherit" | "enable" | "disable";
 export interface ServiceContextUpdateOptions {
   /** A descriptive string that you create to describe the resource. It can be up to 64 characters long. */
   friendlyName?: string;
-  /** The URL we call using &#x60;inbound_method&#x60; when a message is received by any phone number or short code in the Service. When this property is &#x60;null&#x60;, receiving inbound messages is disabled. All messages sent to the Twilio phone number or short code will not be logged and received on the Account. If the &#x60;use_inbound_webhook_on_number&#x60; field is enabled then the webhook url defined on the phone number will override the &#x60;inbound_request_url&#x60; defined for the Messaging Service. */
+  /** The URL we call using `inbound_method` when a message is received by any phone number or short code in the Service. When this property is `null`, receiving inbound messages is disabled. All messages sent to the Twilio phone number or short code will not be logged and received on the Account. If the `use_inbound_webhook_on_number` field is enabled then the webhook url defined on the phone number will override the `inbound_request_url` defined for the Messaging Service. */
   inboundRequestUrl?: string;
-  /** The HTTP method we should use to call &#x60;inbound_request_url&#x60;. Can be &#x60;GET&#x60; or &#x60;POST&#x60; and the default is &#x60;POST&#x60;. */
+  /** The HTTP method we should use to call `inbound_request_url`. Can be `GET` or `POST` and the default is `POST`. */
   inboundMethod?: string;
-  /** The URL that we call using &#x60;fallback_method&#x60; if an error occurs while retrieving or executing the TwiML from the Inbound Request URL. If the &#x60;use_inbound_webhook_on_number&#x60; field is enabled then the webhook url defined on the phone number will override the &#x60;fallback_url&#x60; defined for the Messaging Service. */
+  /** The URL that we call using `fallback_method` if an error occurs while retrieving or executing the TwiML from the Inbound Request URL. If the `use_inbound_webhook_on_number` field is enabled then the webhook url defined on the phone number will override the `fallback_url` defined for the Messaging Service. */
   fallbackUrl?: string;
-  /** The HTTP method we should use to call &#x60;fallback_url&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60;. */
+  /** The HTTP method we should use to call `fallback_url`. Can be: `GET` or `POST`. */
   fallbackMethod?: string;
   /** The URL we should call to [pass status updates](https://www.twilio.com/docs/sms/api/message-resource#message-status-values) about message delivery. */
   statusCallback?: string;
@@ -55,13 +55,13 @@ export interface ServiceContextUpdateOptions {
   fallbackToLongCode?: boolean;
   /** Whether to enable [Area Code Geomatch](https://www.twilio.com/docs/sms/services#area-code-geomatch) on the Service Instance. */
   areaCodeGeomatch?: boolean;
-  /** How long, in seconds, messages sent from the Service are valid. Can be an integer from &#x60;1&#x60; to &#x60;14,400&#x60;. */
+  /** How long, in seconds, messages sent from the Service are valid. Can be an integer from `1` to `14,400`. */
   validityPeriod?: number;
   /** Reserved. */
   synchronousValidation?: boolean;
   /** A string that describes the scenario in which the Messaging Service will be used. Examples: [notification, marketing, verification, poll ..] */
   usecase?: string;
-  /** A boolean value that indicates either the webhook url configured on the phone number will be used or &#x60;inbound_request_url&#x60;/&#x60;fallback_url&#x60; url will be called when a message is received from the phone number. If this field is enabled then the webhook url defined on the phone number will override the &#x60;inbound_request_url&#x60;/&#x60;fallback_url&#x60; defined for the Messaging Service. */
+  /** A boolean value that indicates either the webhook url configured on the phone number will be used or `inbound_request_url`/`fallback_url` url will be called when a message is received from the phone number. If this field is enabled then the webhook url defined on the phone number will override the `inbound_request_url`/`fallback_url` defined for the Messaging Service. */
   useInboundWebhookOnNumber?: boolean;
 }
 
@@ -71,13 +71,13 @@ export interface ServiceContextUpdateOptions {
 export interface ServiceListInstanceCreateOptions {
   /** A descriptive string that you create to describe the resource. It can be up to 64 characters long. */
   friendlyName: string;
-  /** The URL we call using &#x60;inbound_method&#x60; when a message is received by any phone number or short code in the Service. When this property is &#x60;null&#x60;, receiving inbound messages is disabled. All messages sent to the Twilio phone number or short code will not be logged and received on the Account. If the &#x60;use_inbound_webhook_on_number&#x60; field is enabled then the webhook url defined on the phone number will override the &#x60;inbound_request_url&#x60; defined for the Messaging Service. */
+  /** The URL we call using `inbound_method` when a message is received by any phone number or short code in the Service. When this property is `null`, receiving inbound messages is disabled. All messages sent to the Twilio phone number or short code will not be logged and received on the Account. If the `use_inbound_webhook_on_number` field is enabled then the webhook url defined on the phone number will override the `inbound_request_url` defined for the Messaging Service. */
   inboundRequestUrl?: string;
-  /** The HTTP method we should use to call &#x60;inbound_request_url&#x60;. Can be &#x60;GET&#x60; or &#x60;POST&#x60; and the default is &#x60;POST&#x60;. */
+  /** The HTTP method we should use to call `inbound_request_url`. Can be `GET` or `POST` and the default is `POST`. */
   inboundMethod?: string;
-  /** The URL that we call using &#x60;fallback_method&#x60; if an error occurs while retrieving or executing the TwiML from the Inbound Request URL. If the &#x60;use_inbound_webhook_on_number&#x60; field is enabled then the webhook url defined on the phone number will override the &#x60;fallback_url&#x60; defined for the Messaging Service. */
+  /** The URL that we call using `fallback_method` if an error occurs while retrieving or executing the TwiML from the Inbound Request URL. If the `use_inbound_webhook_on_number` field is enabled then the webhook url defined on the phone number will override the `fallback_url` defined for the Messaging Service. */
   fallbackUrl?: string;
-  /** The HTTP method we should use to call &#x60;fallback_url&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60;. */
+  /** The HTTP method we should use to call `fallback_url`. Can be: `GET` or `POST`. */
   fallbackMethod?: string;
   /** The URL we should call to [pass status updates](https://www.twilio.com/docs/sms/api/message-resource#message-status-values) about message delivery. */
   statusCallback?: string;
@@ -93,13 +93,13 @@ export interface ServiceListInstanceCreateOptions {
   fallbackToLongCode?: boolean;
   /** Whether to enable [Area Code Geomatch](https://www.twilio.com/docs/sms/services#area-code-geomatch) on the Service Instance. */
   areaCodeGeomatch?: boolean;
-  /** How long, in seconds, messages sent from the Service are valid. Can be an integer from &#x60;1&#x60; to &#x60;14,400&#x60;. */
+  /** How long, in seconds, messages sent from the Service are valid. Can be an integer from `1` to `14,400`. */
   validityPeriod?: number;
   /** Reserved. */
   synchronousValidation?: boolean;
   /** A string that describes the scenario in which the Messaging Service will be used. Examples: [notification, marketing, verification, poll ..]. */
   usecase?: string;
-  /** A boolean value that indicates either the webhook url configured on the phone number will be used or &#x60;inbound_request_url&#x60;/&#x60;fallback_url&#x60; url will be called when a message is received from the phone number. If this field is enabled then the webhook url defined on the phone number will override the &#x60;inbound_request_url&#x60;/&#x60;fallback_url&#x60; defined for the Messaging Service. */
+  /** A boolean value that indicates either the webhook url configured on the phone number will be used or `inbound_request_url`/`fallback_url` url will be called when a message is received from the phone number. If this field is enabled then the webhook url defined on the phone number will override the `inbound_request_url`/`fallback_url` defined for the Messaging Service. */
   useInboundWebhookOnNumber?: boolean;
 }
 /**

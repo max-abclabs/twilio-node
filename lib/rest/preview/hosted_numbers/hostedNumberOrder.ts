@@ -66,7 +66,7 @@ export interface HostedNumberOrderContextUpdateOptions {
 export interface HostedNumberOrderListInstanceCreateOptions {
   /** The number to host in [+E.164](https://en.wikipedia.org/wiki/E.164) format */
   phoneNumber: string;
-  /** Used to specify that the SMS capability will be hosted on Twilio\\\&#39;s platform. */
+  /** Used to specify that the SMS capability will be hosted on Twilio\\\'s platform. */
   smsCapability: boolean;
   /** This defaults to the AccountSid of the authorization the user is using. This can be provided to specify a subaccount to add the HostedNumberOrder to. */
   accountSid?: string;
@@ -78,17 +78,17 @@ export interface HostedNumberOrderListInstanceCreateOptions {
   ccEmails?: Array<string>;
   /** The URL that Twilio should request when somebody sends an SMS to the phone number. This will be copied onto the IncomingPhoneNumber resource. */
   smsUrl?: string;
-  /** The HTTP method that should be used to request the SmsUrl. Must be either &#x60;GET&#x60; or &#x60;POST&#x60;.  This will be copied onto the IncomingPhoneNumber resource. */
+  /** The HTTP method that should be used to request the SmsUrl. Must be either `GET` or `POST`.  This will be copied onto the IncomingPhoneNumber resource. */
   smsMethod?: string;
   /** A URL that Twilio will request if an error occurs requesting or executing the TwiML defined by SmsUrl. This will be copied onto the IncomingPhoneNumber resource. */
   smsFallbackUrl?: string;
-  /** The HTTP method that should be used to request the SmsFallbackUrl. Must be either &#x60;GET&#x60; or &#x60;POST&#x60;. This will be copied onto the IncomingPhoneNumber resource. */
+  /** The HTTP method that should be used to request the SmsFallbackUrl. Must be either `GET` or `POST`. This will be copied onto the IncomingPhoneNumber resource. */
   smsFallbackMethod?: string;
   /** Optional. The Status Callback URL attached to the IncomingPhoneNumber resource. */
   statusCallbackUrl?: string;
   /** Optional. The Status Callback Method attached to the IncomingPhoneNumber resource. */
   statusCallbackMethod?: string;
-  /** Optional. The 34 character sid of the application Twilio should use to handle SMS messages sent to this number. If a &#x60;SmsApplicationSid&#x60; is present, Twilio will ignore all of the SMS urls above and use those set on the application. */
+  /** Optional. The 34 character sid of the application Twilio should use to handle SMS messages sent to this number. If a `SmsApplicationSid` is present, Twilio will ignore all of the SMS urls above and use those set on the application. */
   smsApplicationSid?: string;
   /** Optional. A 34 character string that uniquely identifies the Address resource that represents the address of the owner of this phone number. */
   addressSid?: string;
@@ -103,7 +103,7 @@ export interface HostedNumberOrderListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface HostedNumberOrderListInstanceEachOptions {
-  /** The Status of this HostedNumberOrder. One of &#x60;received&#x60;, &#x60;pending-verification&#x60;, &#x60;verified&#x60;, &#x60;pending-loa&#x60;, &#x60;carrier-processing&#x60;, &#x60;testing&#x60;, &#x60;completed&#x60;, &#x60;failed&#x60;, or &#x60;action-required&#x60;. */
+  /** The Status of this HostedNumberOrder. One of `received`, `pending-verification`, `verified`, `pending-loa`, `carrier-processing`, `testing`, `completed`, `failed`, or `action-required`. */
   status?: HostedNumberOrderStatus;
   /** An E164 formatted phone number hosted by this HostedNumberOrder. */
   phoneNumber?: string;
@@ -130,7 +130,7 @@ export interface HostedNumberOrderListInstanceEachOptions {
  * Options to pass to list
  */
 export interface HostedNumberOrderListInstanceOptions {
-  /** The Status of this HostedNumberOrder. One of &#x60;received&#x60;, &#x60;pending-verification&#x60;, &#x60;verified&#x60;, &#x60;pending-loa&#x60;, &#x60;carrier-processing&#x60;, &#x60;testing&#x60;, &#x60;completed&#x60;, &#x60;failed&#x60;, or &#x60;action-required&#x60;. */
+  /** The Status of this HostedNumberOrder. One of `received`, `pending-verification`, `verified`, `pending-loa`, `carrier-processing`, `testing`, `completed`, `failed`, or `action-required`. */
   status?: HostedNumberOrderStatus;
   /** An E164 formatted phone number hosted by this HostedNumberOrder. */
   phoneNumber?: string;
@@ -150,7 +150,7 @@ export interface HostedNumberOrderListInstanceOptions {
  * Options to pass to page
  */
 export interface HostedNumberOrderListInstancePageOptions {
-  /** The Status of this HostedNumberOrder. One of &#x60;received&#x60;, &#x60;pending-verification&#x60;, &#x60;verified&#x60;, &#x60;pending-loa&#x60;, &#x60;carrier-processing&#x60;, &#x60;testing&#x60;, &#x60;completed&#x60;, &#x60;failed&#x60;, or &#x60;action-required&#x60;. */
+  /** The Status of this HostedNumberOrder. One of `received`, `pending-verification`, `verified`, `pending-loa`, `carrier-processing`, `testing`, `completed`, `failed`, or `action-required`. */
   status?: HostedNumberOrderStatus;
   /** An E164 formatted phone number hosted by this HostedNumberOrder. */
   phoneNumber?: string;

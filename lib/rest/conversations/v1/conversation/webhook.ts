@@ -56,7 +56,7 @@ export interface WebhookListInstanceCreateOptions {
   "configuration.triggers"?: Array<string>;
   /** The studio flow SID, where the webhook should be sent to. */
   "configuration.flowSid"?: string;
-  /** The message index for which and it\\\&#39;s successors the webhook will be replayed. Not set by default */
+  /** The message index for which and it\\\'s successors the webhook will be replayed. Not set by default */
   "configuration.replayAfter"?: number;
 }
 /**

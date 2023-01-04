@@ -26,9 +26,9 @@ type VerificationCheckChannel = "sms" | "call" | "email" | "whatsapp" | "sna";
 export interface VerificationCheckListInstanceCreateOptions {
   /** The 4-10 character string being verified. */
   code?: string;
-  /** The phone number or [email](https://www.twilio.com/docs/verify/email) to verify. Either this parameter or the &#x60;verification_sid&#x60; must be specified. Phone numbers must be in [E.164 format](https://www.twilio.com/docs/glossary/what-e164). */
+  /** The phone number or [email](https://www.twilio.com/docs/verify/email) to verify. Either this parameter or the `verification_sid` must be specified. Phone numbers must be in [E.164 format](https://www.twilio.com/docs/glossary/what-e164). */
   to?: string;
-  /** A SID that uniquely identifies the Verification Check. Either this parameter or the &#x60;to&#x60; phone number/[email](https://www.twilio.com/docs/verify/email) must be specified. */
+  /** A SID that uniquely identifies the Verification Check. Either this parameter or the `to` phone number/[email](https://www.twilio.com/docs/verify/email) must be specified. */
   verificationSid?: string;
   /** The amount of the associated PSD2 compliant transaction. Requires the PSD2 Service flag enabled. */
   amount?: string;

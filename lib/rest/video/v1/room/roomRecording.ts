@@ -32,9 +32,9 @@ type RoomRecordingType = "audio" | "video" | "data";
  * Options to pass to each
  */
 export interface RoomRecordingListInstanceEachOptions {
-  /** Read only the recordings with this status. Can be: &#x60;processing&#x60;, &#x60;completed&#x60;, or &#x60;deleted&#x60;. */
+  /** Read only the recordings with this status. Can be: `processing`, `completed`, or `deleted`. */
   status?: RoomRecordingStatus;
-  /** Read only the recordings that have this &#x60;source_sid&#x60;. */
+  /** Read only the recordings that have this `source_sid`. */
   sourceSid?: string;
   /** Read only recordings that started on or after this [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) datetime with time zone. */
   dateCreatedAfter?: Date;
@@ -54,9 +54,9 @@ export interface RoomRecordingListInstanceEachOptions {
  * Options to pass to list
  */
 export interface RoomRecordingListInstanceOptions {
-  /** Read only the recordings with this status. Can be: &#x60;processing&#x60;, &#x60;completed&#x60;, or &#x60;deleted&#x60;. */
+  /** Read only the recordings with this status. Can be: `processing`, `completed`, or `deleted`. */
   status?: RoomRecordingStatus;
-  /** Read only the recordings that have this &#x60;source_sid&#x60;. */
+  /** Read only the recordings that have this `source_sid`. */
   sourceSid?: string;
   /** Read only recordings that started on or after this [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) datetime with time zone. */
   dateCreatedAfter?: Date;
@@ -72,9 +72,9 @@ export interface RoomRecordingListInstanceOptions {
  * Options to pass to page
  */
 export interface RoomRecordingListInstancePageOptions {
-  /** Read only the recordings with this status. Can be: &#x60;processing&#x60;, &#x60;completed&#x60;, or &#x60;deleted&#x60;. */
+  /** Read only the recordings with this status. Can be: `processing`, `completed`, or `deleted`. */
   status?: RoomRecordingStatus;
-  /** Read only the recordings that have this &#x60;source_sid&#x60;. */
+  /** Read only the recordings that have this `source_sid`. */
   sourceSid?: string;
   /** Read only recordings that started on or after this [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) datetime with time zone. */
   dateCreatedAfter?: Date;

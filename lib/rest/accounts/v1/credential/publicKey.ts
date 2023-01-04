@@ -32,7 +32,7 @@ export interface PublicKeyContextUpdateOptions {
  * Options to pass to create a PublicKeyInstance
  */
 export interface PublicKeyListInstanceCreateOptions {
-  /** A URL encoded representation of the public key. For example, &#x60;-----BEGIN PUBLIC KEY-----MIIBIjANB.pa9xQIDAQAB-----END PUBLIC KEY-----&#x60; */
+  /** A URL encoded representation of the public key. For example, `-----BEGIN PUBLIC KEY-----MIIBIjANB.pa9xQIDAQAB-----END PUBLIC KEY-----` */
   publicKey: string;
   /** A descriptive string that you create to describe the resource. It can be up to 64 characters long. */
   friendlyName?: string;

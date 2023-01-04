@@ -49,7 +49,7 @@ export interface BrandRegistrationListInstanceCreateOptions {
   customerProfileBundleSid: string;
   /** A2P Messaging Profile Bundle Sid. */
   a2PProfileBundleSid: string;
-  /** Type of brand being created. One of: \\\&quot;STANDARD\\\&quot;, \\\&quot;STARTER\\\&quot;. STARTER is for low volume, starter use cases. STANDARD is for all other use cases. */
+  /** Type of brand being created. One of: \\\"STANDARD\\\", \\\"STARTER\\\". STARTER is for low volume, starter use cases. STANDARD is for all other use cases. */
   brandType?: string;
   /** A boolean that specifies whether brand should be a mock or not. If true, brand will be registered as a mock brand. Defaults to false if no value is provided. */
   mock?: boolean;

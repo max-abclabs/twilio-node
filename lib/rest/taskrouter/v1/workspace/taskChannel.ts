@@ -26,7 +26,7 @@ import { isValidPathParam } from "../../../../base/utility";
 export interface TaskChannelContextUpdateOptions {
   /** A descriptive string that you create to describe the Task Channel. It can be up to 64 characters long. */
   friendlyName?: string;
-  /** Whether the TaskChannel should prioritize Workers that have been idle. If &#x60;true&#x60;, Workers that have been idle the longest are prioritized. */
+  /** Whether the TaskChannel should prioritize Workers that have been idle. If `true`, Workers that have been idle the longest are prioritized. */
   channelOptimizedRouting?: boolean;
 }
 
@@ -36,9 +36,9 @@ export interface TaskChannelContextUpdateOptions {
 export interface TaskChannelListInstanceCreateOptions {
   /** A descriptive string that you create to describe the Task Channel. It can be up to 64 characters long. */
   friendlyName: string;
-  /** An application-defined string that uniquely identifies the Task Channel, such as &#x60;voice&#x60; or &#x60;sms&#x60;. */
+  /** An application-defined string that uniquely identifies the Task Channel, such as `voice` or `sms`. */
   uniqueName: string;
-  /** Whether the Task Channel should prioritize Workers that have been idle. If &#x60;true&#x60;, Workers that have been idle the longest are prioritized. */
+  /** Whether the Task Channel should prioritize Workers that have been idle. If `true`, Workers that have been idle the longest are prioritized. */
   channelOptimizedRouting?: boolean;
 }
 /**

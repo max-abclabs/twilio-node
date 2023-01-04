@@ -27,7 +27,7 @@ import { FieldValueListInstance } from "./fieldType/fieldValue";
 export interface FieldTypeContextUpdateOptions {
   /** A descriptive string that you create to describe the resource. It is not unique and can be up to 255 characters long. */
   friendlyName?: string;
-  /** An application-defined string that uniquely identifies the resource. It can be used as an alternative to the &#x60;sid&#x60; in the URL path to address the resource. The first 64 characters must be unique. */
+  /** An application-defined string that uniquely identifies the resource. It can be used as an alternative to the `sid` in the URL path to address the resource. The first 64 characters must be unique. */
   uniqueName?: string;
 }
 
@@ -35,7 +35,7 @@ export interface FieldTypeContextUpdateOptions {
  * Options to pass to create a FieldTypeInstance
  */
 export interface FieldTypeListInstanceCreateOptions {
-  /** An application-defined string that uniquely identifies the new resource. It can be used as an alternative to the &#x60;sid&#x60; in the URL path to address the resource. The first 64 characters must be unique. */
+  /** An application-defined string that uniquely identifies the new resource. It can be used as an alternative to the `sid` in the URL path to address the resource. The first 64 characters must be unique. */
   uniqueName: string;
   /** A descriptive string that you create to describe the new resource. It is not unique and can be up to 255 characters long. */
   friendlyName?: string;

@@ -31,7 +31,7 @@ type ChannelChannelType = "public" | "private";
 export interface ChannelContextUpdateOptions {
   /** A descriptive string that you create to describe the resource. It can be up to 64 characters long. */
   friendlyName?: string;
-  /** An application-defined string that uniquely identifies the resource. It can be used to address the resource in place of the resource\\\&#39;s &#x60;sid&#x60; in the URL. This value must be 64 characters or less in length and be unique within the Service. */
+  /** An application-defined string that uniquely identifies the resource. It can be used to address the resource in place of the resource\\\'s `sid` in the URL. This value must be 64 characters or less in length and be unique within the Service. */
   uniqueName?: string;
   /** A valid JSON string that contains application-specific data. */
   attributes?: string;
@@ -43,7 +43,7 @@ export interface ChannelContextUpdateOptions {
 export interface ChannelListInstanceCreateOptions {
   /** A descriptive string that you create to describe the new resource. It can be up to 64 characters long. */
   friendlyName?: string;
-  /** An application-defined string that uniquely identifies the resource. It can be used to address the resource in place of the resource\\\&#39;s &#x60;sid&#x60; in the URL. This value must be 64 characters or less in length and be unique within the Service. */
+  /** An application-defined string that uniquely identifies the resource. It can be used to address the resource in place of the resource\\\'s `sid` in the URL. This value must be 64 characters or less in length and be unique within the Service. */
   uniqueName?: string;
   /** A valid JSON string that contains application-specific data. */
   attributes?: string;
@@ -54,7 +54,7 @@ export interface ChannelListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface ChannelListInstanceEachOptions {
-  /** The visibility of the Channels to read. Can be: &#x60;public&#x60; or &#x60;private&#x60; and defaults to &#x60;public&#x60;. */
+  /** The visibility of the Channels to read. Can be: `public` or `private` and defaults to `public`. */
   type?: Array<ChannelChannelType>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -70,7 +70,7 @@ export interface ChannelListInstanceEachOptions {
  * Options to pass to list
  */
 export interface ChannelListInstanceOptions {
-  /** The visibility of the Channels to read. Can be: &#x60;public&#x60; or &#x60;private&#x60; and defaults to &#x60;public&#x60;. */
+  /** The visibility of the Channels to read. Can be: `public` or `private` and defaults to `public`. */
   type?: Array<ChannelChannelType>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -82,7 +82,7 @@ export interface ChannelListInstanceOptions {
  * Options to pass to page
  */
 export interface ChannelListInstancePageOptions {
-  /** The visibility of the Channels to read. Can be: &#x60;public&#x60; or &#x60;private&#x60; and defaults to &#x60;public&#x60;. */
+  /** The visibility of the Channels to read. Can be: `public` or `private` and defaults to `public`. */
   type?: Array<ChannelChannelType>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

@@ -24,11 +24,11 @@ import { isValidPathParam } from "../../../../../base/utility";
  * Options to pass to update a SyncListPermissionInstance
  */
 export interface SyncListPermissionContextUpdateOptions {
-  /** Whether the identity can read the Sync List and its Items. Default value is &#x60;false&#x60;. */
+  /** Whether the identity can read the Sync List and its Items. Default value is `false`. */
   read: boolean;
-  /** Whether the identity can create, update, and delete Items in the Sync List. Default value is &#x60;false&#x60;. */
+  /** Whether the identity can create, update, and delete Items in the Sync List. Default value is `false`. */
   write: boolean;
-  /** Whether the identity can delete the Sync List. Default value is &#x60;false&#x60;. */
+  /** Whether the identity can delete the Sync List. Default value is `false`. */
   manage: boolean;
 }
 /**

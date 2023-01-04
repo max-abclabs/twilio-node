@@ -54,7 +54,7 @@ export interface MemberContextUpdateOptions {
  * Options to pass to create a MemberInstance
  */
 export interface MemberListInstanceCreateOptions {
-  /** The &#x60;identity&#x60; value that uniquely identifies the new resource\\\&#39;s [User](https://www.twilio.com/docs/chat/rest/user-resource) within the [Service](https://www.twilio.com/docs/chat/rest/service-resource). See [access tokens](https://www.twilio.com/docs/chat/create-tokens) for more info. */
+  /** The `identity` value that uniquely identifies the new resource\\\'s [User](https://www.twilio.com/docs/chat/rest/user-resource) within the [Service](https://www.twilio.com/docs/chat/rest/service-resource). See [access tokens](https://www.twilio.com/docs/chat/create-tokens) for more info. */
   identity: string;
   /** The X-Twilio-Webhook-Enabled HTTP request header */
   xTwilioWebhookEnabled?: MemberWebhookEnabledType;
@@ -66,7 +66,7 @@ export interface MemberListInstanceCreateOptions {
   lastConsumptionTimestamp?: Date;
   /** The date, specified in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format, to assign to the resource as the date it was created. The default value is the current time set by the Chat service.  Note that this parameter should only be used when a Member is being recreated from a backup/separate source. */
   dateCreated?: Date;
-  /** The date, specified in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format, to assign to the resource as the date it was last updated. The default value is &#x60;null&#x60;. Note that this parameter should only be used when a Member is being recreated from a backup/separate source and where a Member was previously updated. */
+  /** The date, specified in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format, to assign to the resource as the date it was last updated. The default value is `null`. Note that this parameter should only be used when a Member is being recreated from a backup/separate source and where a Member was previously updated. */
   dateUpdated?: Date;
   /** A valid JSON string that contains application-specific data. */
   attributes?: string;
@@ -75,7 +75,7 @@ export interface MemberListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface MemberListInstanceEachOptions {
-  /** The [User](https://www.twilio.com/docs/chat/rest/user-resource)\&#39;s &#x60;identity&#x60; value of the Member resources to read. See [access tokens](https://www.twilio.com/docs/chat/create-tokens) for more details. */
+  /** The [User](https://www.twilio.com/docs/chat/rest/user-resource)\'s `identity` value of the Member resources to read. See [access tokens](https://www.twilio.com/docs/chat/create-tokens) for more details. */
   identity?: Array<string>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -91,7 +91,7 @@ export interface MemberListInstanceEachOptions {
  * Options to pass to list
  */
 export interface MemberListInstanceOptions {
-  /** The [User](https://www.twilio.com/docs/chat/rest/user-resource)\&#39;s &#x60;identity&#x60; value of the Member resources to read. See [access tokens](https://www.twilio.com/docs/chat/create-tokens) for more details. */
+  /** The [User](https://www.twilio.com/docs/chat/rest/user-resource)\'s `identity` value of the Member resources to read. See [access tokens](https://www.twilio.com/docs/chat/create-tokens) for more details. */
   identity?: Array<string>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -103,7 +103,7 @@ export interface MemberListInstanceOptions {
  * Options to pass to page
  */
 export interface MemberListInstancePageOptions {
-  /** The [User](https://www.twilio.com/docs/chat/rest/user-resource)\&#39;s &#x60;identity&#x60; value of the Member resources to read. See [access tokens](https://www.twilio.com/docs/chat/create-tokens) for more details. */
+  /** The [User](https://www.twilio.com/docs/chat/rest/user-resource)\'s `identity` value of the Member resources to read. See [access tokens](https://www.twilio.com/docs/chat/create-tokens) for more details. */
   identity?: Array<string>;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

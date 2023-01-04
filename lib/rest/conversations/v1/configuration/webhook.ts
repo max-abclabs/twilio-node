@@ -28,7 +28,7 @@ type ConfigurationWebhookTarget = "webhook" | "flex";
 export interface WebhookContextUpdateOptions {
   /** The HTTP method to be used when sending a webhook request. */
   method?: string;
-  /** The list of webhook event triggers that are enabled for this Service: &#x60;onMessageAdded&#x60;, &#x60;onMessageUpdated&#x60;, &#x60;onMessageRemoved&#x60;, &#x60;onConversationUpdated&#x60;, &#x60;onConversationRemoved&#x60;, &#x60;onParticipantAdded&#x60;, &#x60;onParticipantUpdated&#x60;, &#x60;onParticipantRemoved&#x60; */
+  /** The list of webhook event triggers that are enabled for this Service: `onMessageAdded`, `onMessageUpdated`, `onMessageRemoved`, `onConversationUpdated`, `onConversationRemoved`, `onParticipantAdded`, `onParticipantUpdated`, `onParticipantRemoved` */
   filters?: Array<string>;
   /** The absolute url the pre-event webhook request should be sent to. */
   preWebhookUrl?: string;

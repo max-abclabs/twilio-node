@@ -26,19 +26,19 @@ import { isValidPathParam } from "../../../base/utility";
 export interface ChannelListInstanceCreateOptions {
   /** The SID of the Flex Flow. */
   flexFlowSid: string;
-  /** The &#x60;identity&#x60; value that uniquely identifies the new resource\\\&#39;s chat User. */
+  /** The `identity` value that uniquely identifies the new resource\\\'s chat User. */
   identity: string;
-  /** The chat participant\\\&#39;s friendly name. */
+  /** The chat participant\\\'s friendly name. */
   chatUserFriendlyName: string;
-  /** The chat channel\\\&#39;s friendly name. */
+  /** The chat channel\\\'s friendly name. */
   chatFriendlyName: string;
   /** The Target Contact Identity, for example the phone number of an SMS. */
   target?: string;
-  /** The chat channel\\\&#39;s unique name. */
+  /** The chat channel\\\'s unique name. */
   chatUniqueName?: string;
   /** The pre-engagement data. */
   preEngagementData?: string;
-  /** The SID of the TaskRouter Task. Only valid when integration type is &#x60;task&#x60;. &#x60;null&#x60; for integration types &#x60;studio&#x60; &amp; &#x60;external&#x60; */
+  /** The SID of the TaskRouter Task. Only valid when integration type is `task`. `null` for integration types `studio` & `external` */
   taskSid?: string;
   /** The Task attributes to be added for the TaskRouter Task. */
   taskAttributes?: string;

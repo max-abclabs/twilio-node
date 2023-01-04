@@ -30,11 +30,11 @@ export interface WorkersStatisticsContextFetchOptions {
   endDate?: Date;
   /** The SID of the TaskQueue for which to fetch Worker statistics. */
   taskQueueSid?: string;
-  /** The &#x60;friendly_name&#x60; of the TaskQueue for which to fetch Worker statistics. */
+  /** The `friendly_name` of the TaskQueue for which to fetch Worker statistics. */
   taskQueueName?: string;
-  /** Only include Workers with &#x60;friendly_name&#x60; values that match this parameter. */
+  /** Only include Workers with `friendly_name` values that match this parameter. */
   friendlyName?: string;
-  /** Only calculate statistics on this TaskChannel. Can be the TaskChannel\&#39;s SID or its &#x60;unique_name&#x60;, such as &#x60;voice&#x60;, &#x60;sms&#x60;, or &#x60;default&#x60;. */
+  /** Only calculate statistics on this TaskChannel. Can be the TaskChannel\'s SID or its `unique_name`, such as `voice`, `sms`, or `default`. */
   taskChannel?: string;
 }
 

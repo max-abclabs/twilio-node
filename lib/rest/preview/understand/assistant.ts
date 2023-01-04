@@ -42,7 +42,7 @@ export interface AssistantContextUpdateOptions {
   callbackUrl?: string;
   /** Space-separated list of callback events that will trigger callbacks. */
   callbackEvents?: string;
-  /** The JSON actions to be executed when the user\\\&#39;s input is not recognized as matching any Task. */
+  /** The JSON actions to be executed when the user\\\'s input is not recognized as matching any Task. */
   fallbackActions?: any;
   /** The JSON actions to be executed on inbound phone calls when the Assistant has to say something first. */
   initiationActions?: any;
@@ -64,7 +64,7 @@ export interface AssistantListInstanceCreateOptions {
   callbackUrl?: string;
   /** Space-separated list of callback events that will trigger callbacks. */
   callbackEvents?: string;
-  /** The JSON actions to be executed when the user\\\&#39;s input is not recognized as matching any Task. */
+  /** The JSON actions to be executed when the user\\\'s input is not recognized as matching any Task. */
   fallbackActions?: any;
   /** The JSON actions to be executed on inbound phone calls when the Assistant has to say something first. */
   initiationActions?: any;

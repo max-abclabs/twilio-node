@@ -26,7 +26,7 @@ import { SyncListPermissionListInstance } from "./syncList/syncListPermission";
  * Options to pass to update a SyncListInstance
  */
 export interface SyncListContextUpdateOptions {
-  /** An alias for &#x60;collection_ttl&#x60;. If both are provided, this value is ignored. */
+  /** An alias for `collection_ttl`. If both are provided, this value is ignored. */
   ttl?: number;
   /** How long, [in seconds](https://www.twilio.com/docs/sync/limits#sync-payload-limits), before the Sync List expires (time-to-live) and is deleted. */
   collectionTtl?: number;
@@ -36,7 +36,7 @@ export interface SyncListContextUpdateOptions {
  * Options to pass to create a SyncListInstance
  */
 export interface SyncListListInstanceCreateOptions {
-  /** An application-defined string that uniquely identifies the resource. This value must be unique within its Service and it can be up to 320 characters long. The &#x60;unique_name&#x60; value can be used as an alternative to the &#x60;sid&#x60; in the URL path to address the resource. */
+  /** An application-defined string that uniquely identifies the resource. This value must be unique within its Service and it can be up to 320 characters long. The `unique_name` value can be used as an alternative to the `sid` in the URL path to address the resource. */
   uniqueName?: string;
   /** Alias for collection_ttl. If both are provided, this value is ignored. */
   ttl?: number;

@@ -42,13 +42,13 @@ export interface ParticipantContextUpdateOptions {
   dateUpdated?: Date;
   /** A unique string identifier for the conversation participant as [Conversation User](https://www.twilio.com/docs/conversations/api/user-resource). This parameter is non-null if (and only if) the participant is using the Conversation SDK to communicate. Limited to 256 characters. */
   identity?: string;
-  /** An optional string metadata field you can use to store any data you wish. The string value must contain structurally valid JSON if specified.  **Note** that if the attributes are not set \\\&quot;{}\\\&quot; will be returned. */
+  /** An optional string metadata field you can use to store any data you wish. The string value must contain structurally valid JSON if specified.  **Note** that if the attributes are not set \\\"{}\\\" will be returned. */
   attributes?: string;
   /** The SID of a conversation-level [Role](https://www.twilio.com/docs/conversations/api/role-resource) to assign to the participant. */
   roleSid?: string;
-  /** The address of the Twilio phone number that the participant is in contact with. \\\&#39;null\\\&#39; value will remove it. */
+  /** The address of the Twilio phone number that the participant is in contact with. \\\'null\\\' value will remove it. */
   "messagingBinding.proxyAddress"?: string;
-  /** The address of the Twilio phone number that is used in Group MMS. \\\&#39;null\\\&#39; value will remove it. */
+  /** The address of the Twilio phone number that is used in Group MMS. \\\'null\\\' value will remove it. */
   "messagingBinding.projectedAddress"?: string;
   /** Index of last “read” message in the [Conversation](https://www.twilio.com/docs/conversations/api/conversation-resource) for the Participant. */
   lastReadMessageIndex?: number;
@@ -64,15 +64,15 @@ export interface ParticipantListInstanceCreateOptions {
   xTwilioWebhookEnabled?: ServiceConversationParticipantWebhookEnabledType;
   /** A unique string identifier for the conversation participant as [Conversation User](https://www.twilio.com/docs/conversations/api/user-resource). This parameter is non-null if (and only if) the participant is using the Conversation SDK to communicate. Limited to 256 characters. */
   identity?: string;
-  /** The address of the participant\\\&#39;s device, e.g. a phone or WhatsApp number. Together with the Proxy address, this determines a participant uniquely. This field (with proxy_address) is only null when the participant is interacting from an SDK endpoint (see the \\\&#39;identity\\\&#39; field). */
+  /** The address of the participant\\\'s device, e.g. a phone or WhatsApp number. Together with the Proxy address, this determines a participant uniquely. This field (with proxy_address) is only null when the participant is interacting from an SDK endpoint (see the \\\'identity\\\' field). */
   "messagingBinding.address"?: string;
-  /** The address of the Twilio phone number (or WhatsApp number) that the participant is in contact with. This field, together with participant address, is only null when the participant is interacting from an SDK endpoint (see the \\\&#39;identity\\\&#39; field). */
+  /** The address of the Twilio phone number (or WhatsApp number) that the participant is in contact with. This field, together with participant address, is only null when the participant is interacting from an SDK endpoint (see the \\\'identity\\\' field). */
   "messagingBinding.proxyAddress"?: string;
   /** The date that this resource was created. */
   dateCreated?: Date;
   /** The date that this resource was last updated. */
   dateUpdated?: Date;
-  /** An optional string metadata field you can use to store any data you wish. The string value must contain structurally valid JSON if specified.  **Note** that if the attributes are not set \\\&quot;{}\\\&quot; will be returned. */
+  /** An optional string metadata field you can use to store any data you wish. The string value must contain structurally valid JSON if specified.  **Note** that if the attributes are not set \\\"{}\\\" will be returned. */
   attributes?: string;
   /** The address of the Twilio phone number that is used in Group MMS. Communication mask for the Conversation participant with Identity. */
   "messagingBinding.projectedAddress"?: string;

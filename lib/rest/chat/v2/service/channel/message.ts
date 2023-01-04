@@ -38,17 +38,17 @@ export interface MessageContextRemoveOptions {
 export interface MessageContextUpdateOptions {
   /** The X-Twilio-Webhook-Enabled HTTP request header */
   xTwilioWebhookEnabled?: MessageWebhookEnabledType;
-  /** The message to send to the channel. Can be an empty string or &#x60;null&#x60;, which sets the value as an empty string. You can send structured data in the body by serializing it as a string. */
+  /** The message to send to the channel. Can be an empty string or `null`, which sets the value as an empty string. You can send structured data in the body by serializing it as a string. */
   body?: string;
   /** A valid JSON string that contains application-specific data. */
   attributes?: string;
-  /** The date, specified in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format, to assign to the resource as the date it was created. The default value is the current time set by the Chat service. This parameter should only be used when a Chat\\\&#39;s history is being recreated from a backup/separate source. */
+  /** The date, specified in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format, to assign to the resource as the date it was created. The default value is the current time set by the Chat service. This parameter should only be used when a Chat\\\'s history is being recreated from a backup/separate source. */
   dateCreated?: Date;
   /** The date, specified in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format, to assign to the resource as the date it was last updated. */
   dateUpdated?: Date;
   /** The [Identity](https://www.twilio.com/docs/chat/identity) of the User who last updated the Message, if applicable. */
   lastUpdatedBy?: string;
-  /** The [Identity](https://www.twilio.com/docs/chat/identity) of the message\\\&#39;s author. */
+  /** The [Identity](https://www.twilio.com/docs/chat/identity) of the message\\\'s author. */
   from?: string;
 }
 
@@ -58,17 +58,17 @@ export interface MessageContextUpdateOptions {
 export interface MessageListInstanceCreateOptions {
   /** The X-Twilio-Webhook-Enabled HTTP request header */
   xTwilioWebhookEnabled?: MessageWebhookEnabledType;
-  /** The [Identity](https://www.twilio.com/docs/chat/identity) of the new message\\\&#39;s author. The default value is &#x60;system&#x60;. */
+  /** The [Identity](https://www.twilio.com/docs/chat/identity) of the new message\\\'s author. The default value is `system`. */
   from?: string;
   /** A valid JSON string that contains application-specific data. */
   attributes?: string;
-  /** The date, specified in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format, to assign to the resource as the date it was created. The default value is the current time set by the Chat service. This parameter should only be used when a Chat\\\&#39;s history is being recreated from a backup/separate source. */
+  /** The date, specified in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format, to assign to the resource as the date it was created. The default value is the current time set by the Chat service. This parameter should only be used when a Chat\\\'s history is being recreated from a backup/separate source. */
   dateCreated?: Date;
   /** The date, specified in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format, to assign to the resource as the date it was last updated. */
   dateUpdated?: Date;
   /** The [Identity](https://www.twilio.com/docs/chat/identity) of the User who last updated the Message, if applicable. */
   lastUpdatedBy?: string;
-  /** The message to send to the channel. Can be an empty string or &#x60;null&#x60;, which sets the value as an empty string. You can send structured data in the body by serializing it as a string. */
+  /** The message to send to the channel. Can be an empty string or `null`, which sets the value as an empty string. You can send structured data in the body by serializing it as a string. */
   body?: string;
   /** The SID of the [Media](https://www.twilio.com/docs/chat/rest/media) to attach to the new Message. */
   mediaSid?: string;
@@ -77,7 +77,7 @@ export interface MessageListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface MessageListInstanceEachOptions {
-  /** The sort order of the returned messages. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending) with &#x60;asc&#x60; as the default. */
+  /** The sort order of the returned messages. Can be: `asc` (ascending) or `desc` (descending) with `asc` as the default. */
   order?: MessageOrderType;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -93,7 +93,7 @@ export interface MessageListInstanceEachOptions {
  * Options to pass to list
  */
 export interface MessageListInstanceOptions {
-  /** The sort order of the returned messages. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending) with &#x60;asc&#x60; as the default. */
+  /** The sort order of the returned messages. Can be: `asc` (ascending) or `desc` (descending) with `asc` as the default. */
   order?: MessageOrderType;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -105,7 +105,7 @@ export interface MessageListInstanceOptions {
  * Options to pass to page
  */
 export interface MessageListInstancePageOptions {
-  /** The sort order of the returned messages. Can be: &#x60;asc&#x60; (ascending) or &#x60;desc&#x60; (descending) with &#x60;asc&#x60; as the default. */
+  /** The sort order of the returned messages. Can be: `asc` (ascending) or `desc` (descending) with `asc` as the default. */
   order?: MessageOrderType;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

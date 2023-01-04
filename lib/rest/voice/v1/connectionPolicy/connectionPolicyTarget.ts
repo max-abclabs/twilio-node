@@ -26,7 +26,7 @@ import { isValidPathParam } from "../../../../base/utility";
 export interface ConnectionPolicyTargetContextUpdateOptions {
   /** A descriptive string that you create to describe the resource. It is not unique and can be up to 255 characters long. */
   friendlyName?: string;
-  /** The SIP address you want Twilio to route your calls to. This must be a &#x60;sip:&#x60; schema. &#x60;sips&#x60; is NOT supported. */
+  /** The SIP address you want Twilio to route your calls to. This must be a `sip:` schema. `sips` is NOT supported. */
   target?: string;
   /** The relative importance of the target. Can be an integer from 0 to 65535, inclusive. The lowest number represents the most important target. */
   priority?: number;
@@ -40,7 +40,7 @@ export interface ConnectionPolicyTargetContextUpdateOptions {
  * Options to pass to create a ConnectionPolicyTargetInstance
  */
 export interface ConnectionPolicyTargetListInstanceCreateOptions {
-  /** The SIP address you want Twilio to route your calls to. This must be a &#x60;sip:&#x60; schema. &#x60;sips&#x60; is NOT supported. */
+  /** The SIP address you want Twilio to route your calls to. This must be a `sip:` schema. `sips` is NOT supported. */
   target: string;
   /** A descriptive string that you create to describe the resource. It is not unique and can be up to 255 characters long. */
   friendlyName?: string;
@@ -48,7 +48,7 @@ export interface ConnectionPolicyTargetListInstanceCreateOptions {
   priority?: number;
   /** The value that determines the relative share of the load the Target should receive compared to other Targets with the same priority. Can be an integer from 1 to 65535, inclusive, and the default is 10. Targets with higher values receive more load than those with lower ones with the same priority. */
   weight?: number;
-  /** Whether the Target is enabled. The default is &#x60;true&#x60;. */
+  /** Whether the Target is enabled. The default is `true`. */
   enabled?: boolean;
 }
 /**

@@ -40,33 +40,33 @@ export interface FlexFlowContextUpdateOptions {
   chatServiceSid?: string;
   /**  */
   channelType?: FlexFlowChannelType;
-  /** The channel contact\\\&#39;s Identity. */
+  /** The channel contact\\\'s Identity. */
   contactIdentity?: string;
   /** Whether the new Flex Flow is enabled. */
   enabled?: boolean;
   /**  */
   integrationType?: FlexFlowIntegrationType;
-  /** The SID of the Studio Flow. Required when &#x60;integrationType&#x60; is &#x60;studio&#x60;. */
+  /** The SID of the Studio Flow. Required when `integrationType` is `studio`. */
   "integration.flowSid"?: string;
-  /** The URL of the external webhook. Required when &#x60;integrationType&#x60; is &#x60;external&#x60;. */
+  /** The URL of the external webhook. Required when `integrationType` is `external`. */
   "integration.url"?: string;
-  /** The Workspace SID for a new Task. Required when &#x60;integrationType&#x60; is &#x60;task&#x60;. */
+  /** The Workspace SID for a new Task. Required when `integrationType` is `task`. */
   "integration.workspaceSid"?: string;
-  /** The Workflow SID for a new Task. Required when &#x60;integrationType&#x60; is &#x60;task&#x60;. */
+  /** The Workflow SID for a new Task. Required when `integrationType` is `task`. */
   "integration.workflowSid"?: string;
-  /** The Task Channel SID (TCXXXX) or unique name (e.g., &#x60;sms&#x60;) to use for the Task that will be created. Applicable and required when &#x60;integrationType&#x60; is &#x60;task&#x60;. The default value is &#x60;default&#x60;. */
+  /** The Task Channel SID (TCXXXX) or unique name (e.g., `sms`) to use for the Task that will be created. Applicable and required when `integrationType` is `task`. The default value is `default`. */
   "integration.channel"?: string;
-  /** The Task timeout in seconds for a new Task. Default is 86,400 seconds (24 hours). Optional when &#x60;integrationType&#x60; is &#x60;task&#x60;, not applicable otherwise. */
+  /** The Task timeout in seconds for a new Task. Default is 86,400 seconds (24 hours). Optional when `integrationType` is `task`, not applicable otherwise. */
   "integration.timeout"?: number;
-  /** The Task priority of a new Task. The default priority is 0. Optional when &#x60;integrationType&#x60; is &#x60;task&#x60;, not applicable otherwise. */
+  /** The Task priority of a new Task. The default priority is 0. Optional when `integrationType` is `task`, not applicable otherwise. */
   "integration.priority"?: number;
   /** In the context of outbound messaging, defines whether to create a Task immediately (and therefore reserve the conversation to current agent), or delay Task creation until the customer sends the first response. Set to false to create immediately, true to delay Task creation. This setting is only applicable for outbound messaging. */
   "integration.creationOnMessage"?: boolean;
-  /** When enabled, Flex will keep the chat channel active so that it may be used for subsequent interactions with a contact identity. Defaults to &#x60;false&#x60;. */
+  /** When enabled, Flex will keep the chat channel active so that it may be used for subsequent interactions with a contact identity. Defaults to `false`. */
   longLived?: boolean;
-  /** When enabled, the Messaging Channel Janitor will remove active Proxy sessions if the associated Task is deleted outside of the Flex UI. Defaults to &#x60;false&#x60;. */
+  /** When enabled, the Messaging Channel Janitor will remove active Proxy sessions if the associated Task is deleted outside of the Flex UI. Defaults to `false`. */
   janitorEnabled?: boolean;
-  /** The number of times to retry the Studio Flow or webhook in case of failure. Takes integer values from 0 to 3 with the default being 3. Optional when &#x60;integrationType&#x60; is &#x60;studio&#x60; or &#x60;external&#x60;, not applicable otherwise. */
+  /** The number of times to retry the Studio Flow or webhook in case of failure. Takes integer values from 0 to 3 with the default being 3. Optional when `integrationType` is `studio` or `external`, not applicable otherwise. */
   "integration.retryCount"?: number;
 }
 
@@ -80,40 +80,40 @@ export interface FlexFlowListInstanceCreateOptions {
   chatServiceSid: string;
   /**  */
   channelType: FlexFlowChannelType;
-  /** The channel contact\\\&#39;s Identity. */
+  /** The channel contact\\\'s Identity. */
   contactIdentity?: string;
   /** Whether the new Flex Flow is enabled. */
   enabled?: boolean;
   /**  */
   integrationType?: FlexFlowIntegrationType;
-  /** The SID of the Studio Flow. Required when &#x60;integrationType&#x60; is &#x60;studio&#x60;. */
+  /** The SID of the Studio Flow. Required when `integrationType` is `studio`. */
   "integration.flowSid"?: string;
-  /** The URL of the external webhook. Required when &#x60;integrationType&#x60; is &#x60;external&#x60;. */
+  /** The URL of the external webhook. Required when `integrationType` is `external`. */
   "integration.url"?: string;
-  /** The Workspace SID for a new Task. Required when &#x60;integrationType&#x60; is &#x60;task&#x60;. */
+  /** The Workspace SID for a new Task. Required when `integrationType` is `task`. */
   "integration.workspaceSid"?: string;
-  /** The Workflow SID for a new Task. Required when &#x60;integrationType&#x60; is &#x60;task&#x60;. */
+  /** The Workflow SID for a new Task. Required when `integrationType` is `task`. */
   "integration.workflowSid"?: string;
-  /** The Task Channel SID (TCXXXX) or unique name (e.g., &#x60;sms&#x60;) to use for the Task that will be created. Applicable and required when &#x60;integrationType&#x60; is &#x60;task&#x60;. The default value is &#x60;default&#x60;. */
+  /** The Task Channel SID (TCXXXX) or unique name (e.g., `sms`) to use for the Task that will be created. Applicable and required when `integrationType` is `task`. The default value is `default`. */
   "integration.channel"?: string;
-  /** The Task timeout in seconds for a new Task. Default is 86,400 seconds (24 hours). Optional when &#x60;integrationType&#x60; is &#x60;task&#x60;, not applicable otherwise. */
+  /** The Task timeout in seconds for a new Task. Default is 86,400 seconds (24 hours). Optional when `integrationType` is `task`, not applicable otherwise. */
   "integration.timeout"?: number;
-  /** The Task priority of a new Task. The default priority is 0. Optional when &#x60;integrationType&#x60; is &#x60;task&#x60;, not applicable otherwise. */
+  /** The Task priority of a new Task. The default priority is 0. Optional when `integrationType` is `task`, not applicable otherwise. */
   "integration.priority"?: number;
   /** In the context of outbound messaging, defines whether to create a Task immediately (and therefore reserve the conversation to current agent), or delay Task creation until the customer sends the first response. Set to false to create immediately, true to delay Task creation. This setting is only applicable for outbound messaging. */
   "integration.creationOnMessage"?: boolean;
-  /** When enabled, Flex will keep the chat channel active so that it may be used for subsequent interactions with a contact identity. Defaults to &#x60;false&#x60;. */
+  /** When enabled, Flex will keep the chat channel active so that it may be used for subsequent interactions with a contact identity. Defaults to `false`. */
   longLived?: boolean;
-  /** When enabled, the Messaging Channel Janitor will remove active Proxy sessions if the associated Task is deleted outside of the Flex UI. Defaults to &#x60;false&#x60;. */
+  /** When enabled, the Messaging Channel Janitor will remove active Proxy sessions if the associated Task is deleted outside of the Flex UI. Defaults to `false`. */
   janitorEnabled?: boolean;
-  /** The number of times to retry the Studio Flow or webhook in case of failure. Takes integer values from 0 to 3 with the default being 3. Optional when &#x60;integrationType&#x60; is &#x60;studio&#x60; or &#x60;external&#x60;, not applicable otherwise. */
+  /** The number of times to retry the Studio Flow or webhook in case of failure. Takes integer values from 0 to 3 with the default being 3. Optional when `integrationType` is `studio` or `external`, not applicable otherwise. */
   "integration.retryCount"?: number;
 }
 /**
  * Options to pass to each
  */
 export interface FlexFlowListInstanceEachOptions {
-  /** The &#x60;friendly_name&#x60; of the Flex Flow resources to read. */
+  /** The `friendly_name` of the Flex Flow resources to read. */
   friendlyName?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -129,7 +129,7 @@ export interface FlexFlowListInstanceEachOptions {
  * Options to pass to list
  */
 export interface FlexFlowListInstanceOptions {
-  /** The &#x60;friendly_name&#x60; of the Flex Flow resources to read. */
+  /** The `friendly_name` of the Flex Flow resources to read. */
   friendlyName?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -141,7 +141,7 @@ export interface FlexFlowListInstanceOptions {
  * Options to pass to page
  */
 export interface FlexFlowListInstancePageOptions {
-  /** The &#x60;friendly_name&#x60; of the Flex Flow resources to read. */
+  /** The `friendly_name` of the Flex Flow resources to read. */
   friendlyName?: string;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

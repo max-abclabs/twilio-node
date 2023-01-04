@@ -28,15 +28,15 @@ type CallFeedbackSummaryStatus =
  * Options to pass to create a FeedbackSummaryInstance
  */
 export interface FeedbackSummaryListInstanceCreateOptions {
-  /** Only include feedback given on or after this date. Format is &#x60;YYYY-MM-DD&#x60; and specified in UTC. */
+  /** Only include feedback given on or after this date. Format is `YYYY-MM-DD` and specified in UTC. */
   startDate: Date;
-  /** Only include feedback given on or before this date. Format is &#x60;YYYY-MM-DD&#x60; and specified in UTC. */
+  /** Only include feedback given on or before this date. Format is `YYYY-MM-DD` and specified in UTC. */
   endDate: Date;
-  /** Whether to also include Feedback resources from all subaccounts. &#x60;true&#x60; includes feedback from all subaccounts and &#x60;false&#x60;, the default, includes feedback from only the specified account. */
+  /** Whether to also include Feedback resources from all subaccounts. `true` includes feedback from all subaccounts and `false`, the default, includes feedback from only the specified account. */
   includeSubaccounts?: boolean;
   /** The URL that we will request when the feedback summary is complete. */
   statusCallback?: string;
-  /** The HTTP method (&#x60;GET&#x60; or &#x60;POST&#x60;) we use to make the request to the &#x60;StatusCallback&#x60; URL. */
+  /** The HTTP method (`GET` or `POST`) we use to make the request to the `StatusCallback` URL. */
   statusCallbackMethod?: string;
 }
 

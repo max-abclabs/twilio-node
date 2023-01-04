@@ -77,7 +77,7 @@ export interface ReservationContextUpdateOptions {
   callTimeout?: number;
   /** The contact URI of the worker when executing a Call instruction. Can be the URI of the Twilio Client, the SIP URI for Programmable SIP, or the [E.164](https://www.twilio.com/docs/glossary/what-e164) formatted phone number, depending on the destination. */
   callTo?: string;
-  /** TwiML URI executed on answering the worker\\\&#39;s leg as a result of the Call instruction. */
+  /** TwiML URI executed on answering the worker\\\'s leg as a result of the Call instruction. */
   callUrl?: string;
   /** The URL to call for the completed call event when executing a Call instruction. */
   callStatusCallbackUrl?: string;
@@ -93,53 +93,53 @@ export interface ReservationContextUpdateOptions {
   to?: string;
   /** The caller ID of the call to the worker when executing a Conference instruction. */
   from?: string;
-  /** The URL we should call using the &#x60;status_callback_method&#x60; to send status information to your application. */
+  /** The URL we should call using the `status_callback_method` to send status information to your application. */
   statusCallback?: string;
-  /** The HTTP method we should use to call &#x60;status_callback&#x60;. Can be: &#x60;POST&#x60; or &#x60;GET&#x60; and the default is &#x60;POST&#x60;. */
+  /** The HTTP method we should use to call `status_callback`. Can be: `POST` or `GET` and the default is `POST`. */
   statusCallbackMethod?: string;
-  /** The call progress events that we will send to &#x60;status_callback&#x60;. Can be: &#x60;initiated&#x60;, &#x60;ringing&#x60;, &#x60;answered&#x60;, or &#x60;completed&#x60;. */
+  /** The call progress events that we will send to `status_callback`. Can be: `initiated`, `ringing`, `answered`, or `completed`. */
   statusCallbackEvent?: Array<WorkerReservationCallStatus>;
   /** The timeout for a call when executing a Conference instruction. */
   timeout?: number;
-  /** Whether to record the participant and their conferences, including the time between conferences. Can be &#x60;true&#x60; or &#x60;false&#x60; and the default is &#x60;false&#x60;. */
+  /** Whether to record the participant and their conferences, including the time between conferences. Can be `true` or `false` and the default is `false`. */
   record?: boolean;
-  /** Whether the agent is muted in the conference. Defaults to &#x60;false&#x60;. */
+  /** Whether the agent is muted in the conference. Defaults to `false`. */
   muted?: boolean;
-  /** Whether to play a notification beep when the participant joins or when to play a beep. Can be: &#x60;true&#x60;, &#x60;false&#x60;, &#x60;onEnter&#x60;, or &#x60;onExit&#x60;. The default value is &#x60;true&#x60;. */
+  /** Whether to play a notification beep when the participant joins or when to play a beep. Can be: `true`, `false`, `onEnter`, or `onExit`. The default value is `true`. */
   beep?: string;
-  /** Whether to start the conference when the participant joins, if it has not already started. Can be: &#x60;true&#x60; or &#x60;false&#x60; and the default is &#x60;true&#x60;. If &#x60;false&#x60; and the conference has not started, the participant is muted and hears background music until another participant starts the conference. */
+  /** Whether to start the conference when the participant joins, if it has not already started. Can be: `true` or `false` and the default is `true`. If `false` and the conference has not started, the participant is muted and hears background music until another participant starts the conference. */
   startConferenceOnEnter?: boolean;
   /** Whether to end the conference when the agent leaves. */
   endConferenceOnExit?: boolean;
-  /** The URL we should call using the &#x60;wait_method&#x60; for the music to play while participants are waiting for the conference to start. The default value is the URL of our standard hold music. [Learn more about hold music](https://www.twilio.com/labs/twimlets/holdmusic). */
+  /** The URL we should call using the `wait_method` for the music to play while participants are waiting for the conference to start. The default value is the URL of our standard hold music. [Learn more about hold music](https://www.twilio.com/labs/twimlets/holdmusic). */
   waitUrl?: string;
-  /** The HTTP method we should use to call &#x60;wait_url&#x60;. Can be &#x60;GET&#x60; or &#x60;POST&#x60; and the default is &#x60;POST&#x60;. When using a static audio file, this should be &#x60;GET&#x60; so that we can cache the file. */
+  /** The HTTP method we should use to call `wait_url`. Can be `GET` or `POST` and the default is `POST`. When using a static audio file, this should be `GET` so that we can cache the file. */
   waitMethod?: string;
-  /** Whether to allow an agent to hear the state of the outbound call, including ringing or disconnect messages. The default is &#x60;true&#x60;. */
+  /** Whether to allow an agent to hear the state of the outbound call, including ringing or disconnect messages. The default is `true`. */
   earlyMedia?: boolean;
-  /** The maximum number of participants allowed in the conference. Can be a positive integer from &#x60;2&#x60; to &#x60;250&#x60;. The default value is &#x60;250&#x60;. */
+  /** The maximum number of participants allowed in the conference. Can be a positive integer from `2` to `250`. The default value is `250`. */
   maxParticipants?: number;
-  /** The URL we should call using the &#x60;conference_status_callback_method&#x60; when the conference events in &#x60;conference_status_callback_event&#x60; occur. Only the value set by the first participant to join the conference is used. Subsequent &#x60;conference_status_callback&#x60; values are ignored. */
+  /** The URL we should call using the `conference_status_callback_method` when the conference events in `conference_status_callback_event` occur. Only the value set by the first participant to join the conference is used. Subsequent `conference_status_callback` values are ignored. */
   conferenceStatusCallback?: string;
-  /** The HTTP method we should use to call &#x60;conference_status_callback&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60; and defaults to &#x60;POST&#x60;. */
+  /** The HTTP method we should use to call `conference_status_callback`. Can be: `GET` or `POST` and defaults to `POST`. */
   conferenceStatusCallbackMethod?: string;
-  /** The conference status events that we will send to &#x60;conference_status_callback&#x60;. Can be: &#x60;start&#x60;, &#x60;end&#x60;, &#x60;join&#x60;, &#x60;leave&#x60;, &#x60;mute&#x60;, &#x60;hold&#x60;, &#x60;speaker&#x60;. */
+  /** The conference status events that we will send to `conference_status_callback`. Can be: `start`, `end`, `join`, `leave`, `mute`, `hold`, `speaker`. */
   conferenceStatusCallbackEvent?: Array<WorkerReservationConferenceEvent>;
-  /** Whether to record the conference the participant is joining or when to record the conference. Can be: &#x60;true&#x60;, &#x60;false&#x60;, &#x60;record-from-start&#x60;, and &#x60;do-not-record&#x60;. The default value is &#x60;false&#x60;. */
+  /** Whether to record the conference the participant is joining or when to record the conference. Can be: `true`, `false`, `record-from-start`, and `do-not-record`. The default value is `false`. */
   conferenceRecord?: string;
-  /** Whether to trim leading and trailing silence from your recorded conference audio files. Can be: &#x60;trim-silence&#x60; or &#x60;do-not-trim&#x60; and defaults to &#x60;trim-silence&#x60;. */
+  /** Whether to trim leading and trailing silence from your recorded conference audio files. Can be: `trim-silence` or `do-not-trim` and defaults to `trim-silence`. */
   conferenceTrim?: string;
-  /** The recording channels for the final recording. Can be: &#x60;mono&#x60; or &#x60;dual&#x60; and the default is &#x60;mono&#x60;. */
+  /** The recording channels for the final recording. Can be: `mono` or `dual` and the default is `mono`. */
   recordingChannels?: string;
-  /** The URL that we should call using the &#x60;recording_status_callback_method&#x60; when the recording status changes. */
+  /** The URL that we should call using the `recording_status_callback_method` when the recording status changes. */
   recordingStatusCallback?: string;
-  /** The HTTP method we should use when we call &#x60;recording_status_callback&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60; and defaults to &#x60;POST&#x60;. */
+  /** The HTTP method we should use when we call `recording_status_callback`. Can be: `GET` or `POST` and defaults to `POST`. */
   recordingStatusCallbackMethod?: string;
-  /** The URL we should call using the &#x60;conference_recording_status_callback_method&#x60; when the conference recording is available. */
+  /** The URL we should call using the `conference_recording_status_callback_method` when the conference recording is available. */
   conferenceRecordingStatusCallback?: string;
-  /** The HTTP method we should use to call &#x60;conference_recording_status_callback&#x60;. Can be: &#x60;GET&#x60; or &#x60;POST&#x60; and defaults to &#x60;POST&#x60;. */
+  /** The HTTP method we should use to call `conference_recording_status_callback`. Can be: `GET` or `POST` and defaults to `POST`. */
   conferenceRecordingStatusCallbackMethod?: string;
-  /** The [region](https://support.twilio.com/hc/en-us/articles/223132167-How-global-low-latency-routing-and-region-selection-work-for-conferences-and-Client-calls) where we should mix the recorded audio. Can be:&#x60;us1&#x60;, &#x60;ie1&#x60;, &#x60;de1&#x60;, &#x60;sg1&#x60;, &#x60;br1&#x60;, &#x60;au1&#x60;, or &#x60;jp1&#x60;. */
+  /** The [region](https://support.twilio.com/hc/en-us/articles/223132167-How-global-low-latency-routing-and-region-selection-work-for-conferences-and-Client-calls) where we should mix the recorded audio. Can be:`us1`, `ie1`, `de1`, `sg1`, `br1`, `au1`, or `jp1`. */
   region?: string;
   /** The SIP username used for authentication. */
   sipAuthUsername?: string;
@@ -158,7 +158,7 @@ export interface ReservationContextUpdateOptions {
  * Options to pass to each
  */
 export interface ReservationListInstanceEachOptions {
-  /** Returns the list of reservations for a worker with a specified ReservationStatus. Can be: &#x60;pending&#x60;, &#x60;accepted&#x60;, &#x60;rejected&#x60;, &#x60;timeout&#x60;, &#x60;canceled&#x60;, or &#x60;rescinded&#x60;. */
+  /** Returns the list of reservations for a worker with a specified ReservationStatus. Can be: `pending`, `accepted`, `rejected`, `timeout`, `canceled`, or `rescinded`. */
   reservationStatus?: WorkerReservationStatus;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -174,7 +174,7 @@ export interface ReservationListInstanceEachOptions {
  * Options to pass to list
  */
 export interface ReservationListInstanceOptions {
-  /** Returns the list of reservations for a worker with a specified ReservationStatus. Can be: &#x60;pending&#x60;, &#x60;accepted&#x60;, &#x60;rejected&#x60;, &#x60;timeout&#x60;, &#x60;canceled&#x60;, or &#x60;rescinded&#x60;. */
+  /** Returns the list of reservations for a worker with a specified ReservationStatus. Can be: `pending`, `accepted`, `rejected`, `timeout`, `canceled`, or `rescinded`. */
   reservationStatus?: WorkerReservationStatus;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;
@@ -186,7 +186,7 @@ export interface ReservationListInstanceOptions {
  * Options to pass to page
  */
 export interface ReservationListInstancePageOptions {
-  /** Returns the list of reservations for a worker with a specified ReservationStatus. Can be: &#x60;pending&#x60;, &#x60;accepted&#x60;, &#x60;rejected&#x60;, &#x60;timeout&#x60;, &#x60;canceled&#x60;, or &#x60;rescinded&#x60;. */
+  /** Returns the list of reservations for a worker with a specified ReservationStatus. Can be: `pending`, `accepted`, `rejected`, `timeout`, `canceled`, or `rescinded`. */
   reservationStatus?: WorkerReservationStatus;
   /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
   pageSize?: number;

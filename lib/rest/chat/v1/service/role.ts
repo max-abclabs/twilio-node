@@ -26,7 +26,7 @@ type RoleRoleType = "channel" | "deployment";
  * Options to pass to update a RoleInstance
  */
 export interface RoleContextUpdateOptions {
-  /** A permission that you grant to the role. Only one permission can be granted per parameter. To assign more than one permission, repeat this parameter for each permission value. The values for this parameter depend on the role\\\&#39;s &#x60;type&#x60; and are described in the documentation. */
+  /** A permission that you grant to the role. Only one permission can be granted per parameter. To assign more than one permission, repeat this parameter for each permission value. The values for this parameter depend on the role\\\'s `type` and are described in the documentation. */
   permission: Array<string>;
 }
 
@@ -38,7 +38,7 @@ export interface RoleListInstanceCreateOptions {
   friendlyName: string;
   /**  */
   type: RoleRoleType;
-  /** A permission that you grant to the new role. Only one permission can be granted per parameter. To assign more than one permission, repeat this parameter for each permission value. The values for this parameter depend on the role\\\&#39;s &#x60;type&#x60; and are described in the documentation. */
+  /** A permission that you grant to the new role. Only one permission can be granted per parameter. To assign more than one permission, repeat this parameter for each permission value. The values for this parameter depend on the role\\\'s `type` and are described in the documentation. */
   permission: Array<string>;
 }
 /**

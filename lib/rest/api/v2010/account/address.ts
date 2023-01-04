@@ -37,9 +37,9 @@ export interface AddressContextUpdateOptions {
   region?: string;
   /** The postal code of the address. */
   postalCode?: string;
-  /** Whether to enable emergency calling on the address. Can be: &#x60;true&#x60; or &#x60;false&#x60;. */
+  /** Whether to enable emergency calling on the address. Can be: `true` or `false`. */
   emergencyEnabled?: boolean;
-  /** Whether we should automatically correct the address. Can be: &#x60;true&#x60; or &#x60;false&#x60; and the default is &#x60;true&#x60;. If empty or &#x60;true&#x60;, we will correct the address you provide if necessary. If &#x60;false&#x60;, we won\\\&#39;t alter the address you provide. */
+  /** Whether we should automatically correct the address. Can be: `true` or `false` and the default is `true`. If empty or `true`, we will correct the address you provide if necessary. If `false`, we won\\\'t alter the address you provide. */
   autoCorrectAddress?: boolean;
   /** The additional number and street address of the address. */
   streetSecondary?: string;
@@ -63,9 +63,9 @@ export interface AddressListInstanceCreateOptions {
   isoCountry: string;
   /** A descriptive string that you create to describe the new address. It can be up to 64 characters long. */
   friendlyName?: string;
-  /** Whether to enable emergency calling on the new address. Can be: &#x60;true&#x60; or &#x60;false&#x60;. */
+  /** Whether to enable emergency calling on the new address. Can be: `true` or `false`. */
   emergencyEnabled?: boolean;
-  /** Whether we should automatically correct the address. Can be: &#x60;true&#x60; or &#x60;false&#x60; and the default is &#x60;true&#x60;. If empty or &#x60;true&#x60;, we will correct the address you provide if necessary. If &#x60;false&#x60;, we won\\\&#39;t alter the address you provide. */
+  /** Whether we should automatically correct the address. Can be: `true` or `false` and the default is `true`. If empty or `true`, we will correct the address you provide if necessary. If `false`, we won\\\'t alter the address you provide. */
   autoCorrectAddress?: boolean;
   /** The additional number and street address of the address. */
   streetSecondary?: string;
@@ -74,7 +74,7 @@ export interface AddressListInstanceCreateOptions {
  * Options to pass to each
  */
 export interface AddressListInstanceEachOptions {
-  /** The &#x60;customer_name&#x60; of the Address resources to read. */
+  /** The `customer_name` of the Address resources to read. */
   customerName?: string;
   /** The string that identifies the Address resources to read. */
   friendlyName?: string;
@@ -94,7 +94,7 @@ export interface AddressListInstanceEachOptions {
  * Options to pass to list
  */
 export interface AddressListInstanceOptions {
-  /** The &#x60;customer_name&#x60; of the Address resources to read. */
+  /** The `customer_name` of the Address resources to read. */
   customerName?: string;
   /** The string that identifies the Address resources to read. */
   friendlyName?: string;
@@ -110,7 +110,7 @@ export interface AddressListInstanceOptions {
  * Options to pass to page
  */
 export interface AddressListInstancePageOptions {
-  /** The &#x60;customer_name&#x60; of the Address resources to read. */
+  /** The `customer_name` of the Address resources to read. */
   customerName?: string;
   /** The string that identifies the Address resources to read. */
   friendlyName?: string;

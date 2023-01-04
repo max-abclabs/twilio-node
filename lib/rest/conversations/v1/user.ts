@@ -39,7 +39,7 @@ export interface UserContextUpdateOptions {
   xTwilioWebhookEnabled?: UserWebhookEnabledType;
   /** The string that you assigned to describe the resource. */
   friendlyName?: string;
-  /** The JSON Object string that stores application-specific data. If attributes have not been set, &#x60;{}&#x60; is returned. */
+  /** The JSON Object string that stores application-specific data. If attributes have not been set, `{}` is returned. */
   attributes?: string;
   /** The SID of a service-level [Role](https://www.twilio.com/docs/conversations/api/role-resource) to assign to the user. */
   roleSid?: string;
@@ -49,13 +49,13 @@ export interface UserContextUpdateOptions {
  * Options to pass to create a UserInstance
  */
 export interface UserListInstanceCreateOptions {
-  /** The application-defined string that uniquely identifies the resource\\\&#39;s User within the [Conversation Service](https://www.twilio.com/docs/conversations/api/service-resource). This value is often a username or an email address, and is case-sensitive. */
+  /** The application-defined string that uniquely identifies the resource\\\'s User within the [Conversation Service](https://www.twilio.com/docs/conversations/api/service-resource). This value is often a username or an email address, and is case-sensitive. */
   identity: string;
   /** The X-Twilio-Webhook-Enabled HTTP request header */
   xTwilioWebhookEnabled?: UserWebhookEnabledType;
   /** The string that you assigned to describe the resource. */
   friendlyName?: string;
-  /** The JSON Object string that stores application-specific data. If attributes have not been set, &#x60;{}&#x60; is returned. */
+  /** The JSON Object string that stores application-specific data. If attributes have not been set, `{}` is returned. */
   attributes?: string;
   /** The SID of a service-level [Role](https://www.twilio.com/docs/conversations/api/role-resource) to assign to the user. */
   roleSid?: string;

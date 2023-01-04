@@ -32,15 +32,15 @@ export interface ServiceContextUpdateOptions {
   webhookUrl?: string;
   /** A string that you assign to describe the resource. */
   friendlyName?: string;
-  /** Whether the service instance should call &#x60;webhook_url&#x60; when client endpoints connect to Sync. The default is &#x60;false&#x60;. */
+  /** Whether the service instance should call `webhook_url` when client endpoints connect to Sync. The default is `false`. */
   reachabilityWebhooksEnabled?: boolean;
   /** Whether token identities in the Service must be granted access to Sync objects by using the [Permissions](https://www.twilio.com/docs/sync/api/sync-permissions) resource. */
   aclEnabled?: boolean;
-  /** Whether every &#x60;endpoint_disconnected&#x60; event should occur after a configurable delay. The default is &#x60;false&#x60;, where the &#x60;endpoint_disconnected&#x60; event occurs immediately after disconnection. When &#x60;true&#x60;, intervening reconnections can prevent the &#x60;endpoint_disconnected&#x60; event. */
+  /** Whether every `endpoint_disconnected` event should occur after a configurable delay. The default is `false`, where the `endpoint_disconnected` event occurs immediately after disconnection. When `true`, intervening reconnections can prevent the `endpoint_disconnected` event. */
   reachabilityDebouncingEnabled?: boolean;
-  /** The reachability event delay in milliseconds if &#x60;reachability_debouncing_enabled&#x60; &#x3D; &#x60;true&#x60;.  Must be between 1,000 and 30,000 and defaults to 5,000. This is the number of milliseconds after the last running client disconnects, and a Sync identity is declared offline, before the webhook is called if all endpoints remain offline. A reconnection from the same identity by any endpoint during this interval prevents the webhook from being called. */
+  /** The reachability event delay in milliseconds if `reachability_debouncing_enabled` = `true`.  Must be between 1,000 and 30,000 and defaults to 5,000. This is the number of milliseconds after the last running client disconnects, and a Sync identity is declared offline, before the webhook is called if all endpoints remain offline. A reconnection from the same identity by any endpoint during this interval prevents the webhook from being called. */
   reachabilityDebouncingWindow?: number;
-  /** Whether the Service instance should call &#x60;webhook_url&#x60; when the REST API is used to update Sync objects. The default is &#x60;false&#x60;. */
+  /** Whether the Service instance should call `webhook_url` when the REST API is used to update Sync objects. The default is `false`. */
   webhooksFromRestEnabled?: boolean;
 }
 
@@ -52,15 +52,15 @@ export interface ServiceListInstanceCreateOptions {
   friendlyName?: string;
   /** The URL we should call when Sync objects are manipulated. */
   webhookUrl?: string;
-  /** Whether the service instance should call &#x60;webhook_url&#x60; when client endpoints connect to Sync. The default is &#x60;false&#x60;. */
+  /** Whether the service instance should call `webhook_url` when client endpoints connect to Sync. The default is `false`. */
   reachabilityWebhooksEnabled?: boolean;
   /** Whether token identities in the Service must be granted access to Sync objects by using the [Permissions](https://www.twilio.com/docs/sync/api/sync-permissions) resource. */
   aclEnabled?: boolean;
-  /** Whether every &#x60;endpoint_disconnected&#x60; event should occur after a configurable delay. The default is &#x60;false&#x60;, where the &#x60;endpoint_disconnected&#x60; event occurs immediately after disconnection. When &#x60;true&#x60;, intervening reconnections can prevent the &#x60;endpoint_disconnected&#x60; event. */
+  /** Whether every `endpoint_disconnected` event should occur after a configurable delay. The default is `false`, where the `endpoint_disconnected` event occurs immediately after disconnection. When `true`, intervening reconnections can prevent the `endpoint_disconnected` event. */
   reachabilityDebouncingEnabled?: boolean;
-  /** The reachability event delay in milliseconds if &#x60;reachability_debouncing_enabled&#x60; &#x3D; &#x60;true&#x60;.  Must be between 1,000 and 30,000 and defaults to 5,000. This is the number of milliseconds after the last running client disconnects, and a Sync identity is declared offline, before the &#x60;webhook_url&#x60; is called if all endpoints remain offline. A reconnection from the same identity by any endpoint during this interval prevents the call to &#x60;webhook_url&#x60;. */
+  /** The reachability event delay in milliseconds if `reachability_debouncing_enabled` = `true`.  Must be between 1,000 and 30,000 and defaults to 5,000. This is the number of milliseconds after the last running client disconnects, and a Sync identity is declared offline, before the `webhook_url` is called if all endpoints remain offline. A reconnection from the same identity by any endpoint during this interval prevents the call to `webhook_url`. */
   reachabilityDebouncingWindow?: number;
-  /** Whether the Service instance should call &#x60;webhook_url&#x60; when the REST API is used to update Sync objects. The default is &#x60;false&#x60;. */
+  /** Whether the Service instance should call `webhook_url` when the REST API is used to update Sync objects. The default is `false`. */
   webhooksFromRestEnabled?: boolean;
 }
 /**
